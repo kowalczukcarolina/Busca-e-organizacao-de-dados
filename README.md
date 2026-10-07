@@ -22,6 +22,15 @@ a estrutura que armazenará os resultados da busca. Na primeira implementação,
 * Lista Generalizada (Árvore/Subgrupos)
 * Lista Cruzada (Múltiplos ponteiros sem duplicação)
 
+##Diretórios do projeto:
+
+* dados/ : Guardar os datasets de entrada em formato .csv
+* consultas/ : Guardar os ficheiros de texto (.txt) com as regras de busca (os comandos FILTER, SIM, ORDER, etc.)
+* src/ : Código-fonte (main.c, reader_nada.c, etc)
+* include/ e include/tads/ : arquivos .h (headers)
+
+
+
 ## Execução do programa
 
 | Argumento | Função |
