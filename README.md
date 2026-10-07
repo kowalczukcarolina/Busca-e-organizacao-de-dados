@@ -22,7 +22,7 @@ a estrutura que armazenará os resultados da busca. Na primeira implementação,
 * Lista Generalizada (Árvore/Subgrupos)
 * Lista Cruzada (Múltiplos ponteiros sem duplicação)
 
-##Diretórios do projeto:
+## Diretórios do projeto:
 
 * dados/ : Guardar os datasets de entrada em formato .csv
 * consultas/ : Guardar os ficheiros de texto (.txt) com as regras de busca (os comandos FILTER, SIM, ORDER, etc.)
