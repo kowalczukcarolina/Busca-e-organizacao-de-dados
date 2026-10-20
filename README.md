@@ -10,9 +10,9 @@ a estrutura que armazenará os resultados da busca. Na primeira implementação,
 ## Autores
 |Alunos|Número USP|GitHub|
 |------|----------|------|
-|Julia Barbosa Nogueira|17901347|[Github Julia Nogueira](https://github.com/juliab2nogueira)|
-|Carolina Goulart Kowalczuk|13854629|[Github Carolina Kowalczuk](https://github.com/kowalczukcarolina)|
-|Victor Hugo Adão de Oliveira|17969072|[Github Victor Adão](https://github.com/VihAdao)|
+|Carolina Goulart Kowalczuk|13854629|[GitHub Carolina Kowalczuk](https://github.com/kowalczukcarolina)|
+|Julia Barbosa Nogueira|17901347|[GitHub Julia Nogueira](https://github.com/juliab2nogueira)|
+|Victor Hugo Adão de Oliveira|17969072|[GitHub Victor Adão](https://github.com/VihAdao)|
 
 ## Estruturas de dados implementadas
 * Pilha
