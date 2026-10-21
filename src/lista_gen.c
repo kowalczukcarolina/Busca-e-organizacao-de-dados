@@ -2,6 +2,22 @@
 #include <stdlib.h>
 #include "./include/tads/lista_gen.h"
 
+struct lista_ {
+    NO *inicio;
+    int profundidade;
+};
+
+
+//Atómo: não contém outras listas lá dentro -> átomo é o item para o asteroide
+struct no_ {
+    int tipo; //0 para átomo, 1 para sub-lista
+    union {
+        ITEM *atomo;
+        struct no_ *sublista;
+    } info;
+    NO *prox;
+};
+
 //Cria uma lista generalizada vazia
 LISTA *lgen_criar(void) {
     LISTA *l = (LISTA *) malloc(sizeof(LISTA));//alocando memória
