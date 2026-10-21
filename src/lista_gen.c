@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lista_gen.h"
+#include "./include/tads/lista_gen.h"
 
 //Cria uma lista generalizada vazia
 LISTA *lgen_criar(void) {

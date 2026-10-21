@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lista_seq.h"
+#include "../include/tads/lista_seq.h"
 
 struct lista_ {
     ITEM **itens;     // Arranjo dinâmico de ponteiros para ITEM
@@ -12,7 +12,7 @@ struct lista_ {
 /* Função auxiliar para redimensionar o vetor quando estiver cheio */
 static bool lista_redimensionar(LISTA *lista) {
     int nova_capacidade = lista->capacidade * 2;
-    ITEM **novos_itens = realloc(lista->itens, sizeof(ITEM *) * nova_capacidade);
+    ITEM **novos_itens = realloc(lista->itens, sizeof(ITEM *) * nova_capacidade);//analisar se isso custa d+ considerando que se for uma lista muito grande 
     if (novos_itens == NULL)
         return false;
 
