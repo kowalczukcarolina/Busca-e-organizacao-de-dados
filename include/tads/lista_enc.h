@@ -1,5 +1,5 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef LISTA_ENC_H
+#define LISTA_ENC_H
 
 #include <stdbool.h>
 #include "item.h"

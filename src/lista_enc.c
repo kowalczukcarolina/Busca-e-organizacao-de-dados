@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct no_ NO;
 
@@ -26,7 +27,7 @@ static NO *no_criar(ITEM *item) {
     return novo;
 }
 
-static bool inserir_fim(LISTA *lista, ITEM *item) {
+static bool inserir_fim_enc(LISTA *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
         return false;
@@ -41,7 +42,7 @@ static bool inserir_fim(LISTA *lista, ITEM *item) {
     return true;
 }
 
-static bool inserir_ordenado(LISTA *lista, ITEM *item) {
+static bool inserir_ordenado_enc(LISTA *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
         return false;
@@ -68,7 +69,7 @@ static bool inserir_ordenado(LISTA *lista, ITEM *item) {
     return true;
 }
 
-static ITEM *busca_no_recursiva(const NO *no, int chave, bool ordenada) {
+static ITEM *busca_no_recursiva_enc(const NO *no, int chave, bool ordenada) {
     if (no == NULL)
         return NULL;
 
@@ -79,10 +80,11 @@ static ITEM *busca_no_recursiva(const NO *no, int chave, bool ordenada) {
     if (ordenada && atual > chave)
         return NULL;
 
-    return busca_no_recursiva(no->proximo, chave, ordenada);
+    // CORRIGIDO: chamada com o sufixo _enc correto
+    return busca_no_recursiva_enc(no->proximo, chave, ordenada);
 }
 
-LISTA *lista_criar(bool ordenada) {
+LISTA *lista_criar_enc(bool ordenada) {
     LISTA *lista = malloc(sizeof(LISTA));
     if (lista == NULL)
         return NULL;
@@ -94,7 +96,7 @@ LISTA *lista_criar(bool ordenada) {
     return lista;
 }
 
-void lista_apagar(LISTA **lista) {
+void lista_apagar_enc(LISTA **lista) {
     if (lista == NULL || *lista == NULL)
         return;
 
@@ -110,16 +112,17 @@ void lista_apagar(LISTA **lista) {
     *lista = NULL;
 }
 
-bool lista_inserir(LISTA *lista, ITEM *item) {
+bool lista_inserir_enc(LISTA *lista, ITEM *item) {
     if (lista == NULL || item == NULL)
         return false;
 
+    // CORRIGIDO: chamadas atualizadas para incluir o sufixo _enc
     return lista->ordenada
-        ? inserir_ordenado(lista, item)
-        : inserir_fim(lista, item);
+        ? inserir_ordenado_enc(lista, item)
+        : inserir_fim_enc(lista, item);
 }
 
-ITEM *lista_busca(const LISTA *lista, int chave) {
+ITEM *lista_busca_enc(const LISTA *lista, int chave) {
     if (lista == NULL)
         return NULL;
 
@@ -137,10 +140,11 @@ ITEM *lista_busca_recursiva(const LISTA *lista, int chave) {
     if (lista == NULL)
         return NULL;
 
-    return busca_no_recursiva(lista->inicio, chave, lista->ordenada);
+    // CORRIGIDO: chamada com o sufixo _enc correto
+    return busca_no_recursiva_enc(lista->inicio, chave, lista->ordenada);
 }
 
-ITEM *lista_remover(LISTA *lista, int chave) {
+ITEM *lista_remover_enc(LISTA *lista, int chave) {
     if (lista == NULL || lista->inicio == NULL)
         return NULL;
 
@@ -173,20 +177,20 @@ ITEM *lista_remover(LISTA *lista, int chave) {
     return item;
 }
 
-int lista_tamanho(const LISTA *lista) {
+int lista_tamanho_enc(const LISTA *lista) {
     return lista != NULL ? lista->tamanho : 0;
 }
 
-bool lista_vazia(const LISTA *lista) {
+bool lista_vazia_enc(const LISTA *lista) {
     return lista != NULL && lista->inicio == NULL;
 }
 
-bool lista_cheia(const LISTA *lista) {
+bool lista_cheia_enc(const LISTA *lista) {
     (void)lista;
     return false;
 }
 
-void lista_imprimir(const LISTA *lista) {
+void lista_imprimir_enc(const LISTA *lista) {
     if (lista == NULL) {
         printf("<lista inexistente>\n");
         return;
