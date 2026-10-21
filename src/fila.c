@@ -99,8 +99,6 @@ bool fila_vazia(FILA *fila) {
 }
 
 bool fila_cheia(FILA *fila) {
-    /* Em uma fila dinâmica não há capacidade fixa. A falha é detectada
-       na tentativa real de alocar o novo nó em fila_inserir. */
     return fila == NULL;
 }
 
