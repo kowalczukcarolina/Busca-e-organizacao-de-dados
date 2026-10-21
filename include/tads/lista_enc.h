@@ -6,15 +6,15 @@
 
 typedef struct lista_ LISTA;
 
-LISTA *lista_criar(bool ordenada);
-void lista_apagar(LISTA **lista);
-bool lista_inserir(LISTA *lista, ITEM *item);
-ITEM *lista_busca(const LISTA *lista, int chave);
+LISTA *lista_criar_enc(bool ordenada);
+void lista_apagar_enc(LISTA **lista);
+bool lista_inserir_enc(LISTA *lista, ITEM *item);
+ITEM *lista_busca_enc(const LISTA *lista, int chave);
 ITEM *lista_busca_recursiva(const LISTA *lista, int chave);
-ITEM *lista_remover(LISTA *lista, int chave);
-int lista_tamanho(const LISTA *lista);
-bool lista_vazia(const LISTA *lista);
-bool lista_cheia(const LISTA *lista);
-void lista_imprimir(const LISTA *lista);
+ITEM *lista_remover_enc(LISTA *lista, int chave);
+int lista_tamanho_enc(const LISTA *lista);
+bool lista_vazia_enc(const LISTA *lista);
+bool lista_cheia_enc(const LISTA *lista);
+void lista_imprimir_enc(const LISTA *lista);
 
 #endif
