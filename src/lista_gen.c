@@ -11,11 +11,11 @@ struct lista_ {
 //Atómo: não contém outras listas lá dentro -> átomo é o item para o asteroide
 struct no_ {
     int tipo; //0 para átomo, 1 para sub-lista
-    union {
-        ITEM *atomo;
-        struct no_ *sublista;
+    union { //union info funciona como um if else de structs
+        ITEM *atomo; //se tipo==0, aponta para um item (asteroide)
+        struct no_ *sublista; // se tipo ==1, aponta para o inicio de outra sublista
     } info;
-    NO *prox;
+    NO *prox; //aponta para o proximo no do mesmo nível
 };
 
 //Cria uma lista generalizada vazia
