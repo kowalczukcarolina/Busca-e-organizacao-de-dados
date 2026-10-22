@@ -45,7 +45,6 @@ void item_destruir(ITEM **item);
 
 // Métodos de Acesso Genéricos (Interface do TAD)
 ReaderType item_get_type(const ITEM *item);
-void *item_get_data(const ITEM *item);
 const char *item_get_chave(const ITEM *item); // <-- Adicionada aqui
 
 // Métodos de Avaliação de Filtro e Similaridade
