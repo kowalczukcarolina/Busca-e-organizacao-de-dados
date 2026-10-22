@@ -15,4 +15,4 @@ int lista_tamanho_cab(const LISTA *lista);
 bool lista_vazia_cab(const LISTA *lista);
 void lista_imprimir_cab(const LISTA *lista);
 
-#endif /* LISTA_CAB_H */
+#endif
