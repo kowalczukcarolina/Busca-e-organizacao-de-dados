@@ -40,6 +40,7 @@ static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
     CABECA_EIXO *eixo = (CABECA_EIXO *) malloc(sizeof(CABECA_EIXO));
     if (!eixo) return NULL;
     
+    eixo->chave = malloc(strlen(chave) + 1);
     if (!eixo->chave) {
         free(eixo);
         return NULL;
