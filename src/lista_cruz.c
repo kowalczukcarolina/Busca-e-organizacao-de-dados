@@ -21,11 +21,31 @@ struct lista_cruzada {
     int total_itens;      // quantidade total de nós cruzados
 };
 
-static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
+/*static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
     CABECA_EIXO *eixo = (CABECA_EIXO *) malloc(sizeof(CABECA_EIXO));
     if (!eixo) return NULL;
 
-    eixo->chave = strdup(chave);
+    eixo->chave = malloc(strlen(chave) + 1);
+    if (!eixo->chave) {
+        free(eixo);
+        return NULL;
+    }
+    strcpy(eixo->chave, chave);
+    eixo->inicio = NULL;
+    eixo->prox_eixo = NULL;
+    return eixo;
+}*/
+
+static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
+    CABECA_EIXO *eixo = (CABECA_EIXO *) malloc(sizeof(CABECA_EIXO));
+    if (!eixo) return NULL;
+    
+    if (!eixo->chave) {
+        free(eixo);
+        return NULL;
+    }
+
+    strcpy(eixo->chave, chave);
     eixo->inicio = NULL;
     eixo->prox_eixo = NULL;
     return eixo;
