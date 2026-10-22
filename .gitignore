@@ -1,0 +1,26 @@
+# Executáveis gerados pela compilação
+trabalho
+trabalho_*
+*.exe
+*.out
+*.app
+
+# Arquivos Objetos da compilação em C
+*.o
+src/*.o
+
+# Arquivos de dados / Datasets pesados (para não poluir o repositório)
+dados/*.csv
+dados/*.txt
+!dados/.gitkeep
+
+# Arquivos de resultados gerados pelos testes
+resultado.csv
+*.log
+
+# Arquivos de sistema e editores (VS Code, Linux, etc.)
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
