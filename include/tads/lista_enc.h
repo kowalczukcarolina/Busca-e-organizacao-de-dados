@@ -4,17 +4,17 @@
 #include <stdbool.h>
 #include "item.h"
 
-typedef struct lista_ LISTA;
+typedef struct lista_enc LISTA_ENC;
 
-LISTA *lista_criar_enc(bool ordenada);
-void lista_apagar_enc(LISTA **lista);
-bool lista_inserir_enc(LISTA *lista, ITEM *item);
-ITEM *lista_busca_enc(const LISTA *lista, int chave);
-ITEM *lista_busca_recursiva(const LISTA *lista, int chave);
-ITEM *lista_remover_enc(LISTA *lista, int chave);
-int lista_tamanho_enc(const LISTA *lista);
-bool lista_vazia_enc(const LISTA *lista);
-bool lista_cheia_enc(const LISTA *lista);
-void lista_imprimir_enc(const LISTA *lista);
+LISTA_ENC *lista_criar_enc(bool ordenada);
+void lista_apagar_enc(LISTA_ENC **lista);
+bool lista_inserir_enc(LISTA_ENC *lista, ITEM *item);
+ITEM *lista_busca_enc(const LISTA_ENC *lista, const char *chave);
+ITEM *lista_busca_recursiva_enc(const LISTA_ENC *lista, const char *chave);
+ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave);
+int lista_tamanho_enc(const LISTA_ENC *lista);
+bool lista_vazia_enc(const LISTA_ENC *lista);
+bool lista_cheia_enc(const LISTA_ENC *lista);
+void lista_imprimir_enc(const LISTA_ENC *lista);
 
 #endif

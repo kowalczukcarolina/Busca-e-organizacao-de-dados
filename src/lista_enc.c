@@ -1,17 +1,17 @@
-#include "../include/tads/lista.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+#include "../include/tads/lista_enc.h"
 
 typedef struct no_ NO;
 
-struct no_ {
+static struct no_ {
     ITEM *item;
     NO *proximo;
 };
 
-struct lista_ {
+struct lista_enc {
     NO *inicio;
     NO *fim;
     int tamanho;
@@ -27,7 +27,7 @@ static NO *no_criar(ITEM *item) {
     return novo;
 }
 
-static bool inserir_fim_enc(LISTA *lista, ITEM *item) {
+static bool inserir_fim_enc(LISTA_ENC *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
         return false;
@@ -42,16 +42,16 @@ static bool inserir_fim_enc(LISTA *lista, ITEM *item) {
     return true;
 }
 
-static bool inserir_ordenado_enc(LISTA *lista, ITEM *item) {
+static bool inserir_ordenado_enc(LISTA_ENC *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
         return false;
 
-    const int chave = item_chave(item);
+    const char *chave = item_get_chave(item);
     NO *anterior = NULL;
     NO *atual = lista->inicio;
 
-    while (atual != NULL && item_chave(atual->item) < chave) {
+    while (atual != NULL && strcmp(item_get_chave(atual->item), chave) < 0) {
         anterior = atual;
         atual = atual->proximo;
     }
@@ -69,23 +69,24 @@ static bool inserir_ordenado_enc(LISTA *lista, ITEM *item) {
     return true;
 }
 
-static ITEM *busca_no_recursiva_enc(const NO *no, int chave, bool ordenada) {
+static ITEM *busca_no_recursiva_enc(const NO *no, const char *chave, bool ordenada) {
     if (no == NULL)
         return NULL;
 
-    const int atual = item_chave(no->item);
-    if (atual == chave)
+    const char *atual = item_get_chave(no->item);
+    int comp = strcmp(atual, chave);
+
+    if (comp == 0)
         return no->item;
 
-    if (ordenada && atual > chave)
+    if (ordenada && comp > 0)
         return NULL;
 
-    // CORRIGIDO: chamada com o sufixo _enc correto
     return busca_no_recursiva_enc(no->proximo, chave, ordenada);
 }
 
-LISTA *lista_criar_enc(bool ordenada) {
-    LISTA *lista = malloc(sizeof(LISTA));
+LISTA_ENC *lista_criar_enc(bool ordenada) {
+    LISTA_ENC *lista = malloc(sizeof(LISTA_ENC));
     if (lista == NULL)
         return NULL;
 
@@ -96,14 +97,14 @@ LISTA *lista_criar_enc(bool ordenada) {
     return lista;
 }
 
-void lista_apagar_enc(LISTA **lista) {
+void lista_apagar_enc(LISTA_ENC **lista) {
     if (lista == NULL || *lista == NULL)
         return;
 
     NO *p = (*lista)->inicio;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_apagar(&p->item);
+        item_destruir(&p->item); // Corrigido para item_destruir
         free(p);
         p = proximo;
     }
@@ -112,47 +113,49 @@ void lista_apagar_enc(LISTA **lista) {
     *lista = NULL;
 }
 
-bool lista_inserir_enc(LISTA *lista, ITEM *item) {
+bool lista_inserir_enc(LISTA_ENC *lista, ITEM *item) {
     if (lista == NULL || item == NULL)
         return false;
 
-    // CORRIGIDO: chamadas atualizadas para incluir o sufixo _enc
     return lista->ordenada
         ? inserir_ordenado_enc(lista, item)
         : inserir_fim_enc(lista, item);
 }
 
-ITEM *lista_busca_enc(const LISTA *lista, int chave) {
+ITEM *lista_busca_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
     for (const NO *p = lista->inicio; p != NULL; p = p->proximo) {
-        const int atual = item_chave(p->item);
-        if (atual == chave)
+        const char *atual = item_get_chave(p->item);
+        int comp = strcmp(atual, chave);
+        if (comp == 0)
             return p->item;
-        if (lista->ordenada && atual > chave)
+        if (lista->ordenada && comp > 0)
             return NULL;
     }
     return NULL;
 }
 
-ITEM *lista_busca_recursiva(const LISTA *lista, int chave) {
+ITEM *lista_busca_recursiva_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
-    // CORRIGIDO: chamada com o sufixo _enc correto
     return busca_no_recursiva_enc(lista->inicio, chave, lista->ordenada);
 }
 
-ITEM *lista_remover_enc(LISTA *lista, int chave) {
+ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave) {
     if (lista == NULL || lista->inicio == NULL)
         return NULL;
 
     NO *anterior = NULL;
     NO *atual = lista->inicio;
 
-    while (atual != NULL && item_chave(atual->item) != chave) {
-        if (lista->ordenada && item_chave(atual->item) > chave)
+    while (atual != NULL) {
+        int comp = strcmp(item_get_chave(atual->item), chave);
+        if (comp == 0)
+            break;
+        if (lista->ordenada && comp > 0)
             return NULL;
         anterior = atual;
         atual = atual->proximo;
@@ -177,20 +180,20 @@ ITEM *lista_remover_enc(LISTA *lista, int chave) {
     return item;
 }
 
-int lista_tamanho_enc(const LISTA *lista) {
+int lista_tamanho_enc(const LISTA_ENC *lista) {
     return lista != NULL ? lista->tamanho : 0;
 }
 
-bool lista_vazia_enc(const LISTA *lista) {
-    return lista != NULL && lista->inicio == NULL;
+bool lista_vazia_enc(const LISTA_ENC *lista) {
+    return lista == NULL || lista->inicio == NULL;
 }
 
-bool lista_cheia_enc(const LISTA *lista) {
+bool lista_cheia_enc(const LISTA_ENC *lista) {
     (void)lista;
     return false;
 }
 
-void lista_imprimir_enc(const LISTA *lista) {
+void lista_imprimir_enc(const LISTA_ENC *lista) {
     if (lista == NULL) {
         printf("<lista inexistente>\n");
         return;

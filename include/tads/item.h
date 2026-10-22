@@ -2,6 +2,7 @@
 #define ITEM_H
 
 #include <stdbool.h>
+#include <stdio.h>
 
 //Identificador do leitor em uso (--reader)
 typedef enum {
@@ -45,6 +46,7 @@ void item_destruir(ITEM **item);
 // Métodos de Acesso Genéricos (Interface do TAD)
 ReaderType item_get_type(const ITEM *item);
 void *item_get_data(const ITEM *item);
+const char *item_get_chave(const ITEM *item); // <-- Adicionada aqui
 
 // Métodos de Avaliação de Filtro e Similaridade
 double item_obter_valor_numerico(const ITEM *item, const char *campo);
@@ -53,5 +55,6 @@ const char *item_obter_valor_string(const ITEM *item, const char *campo);
 // Métodos de Ordenação e Impressão
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave);
 void item_imprimir_linha_csv(const ITEM *item, FILE *stream);
+void item_imprimir(const ITEM *item);
 
 #endif // ITEM_H

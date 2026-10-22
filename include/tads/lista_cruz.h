@@ -13,4 +13,4 @@ int lcruz_inserir(LISTA_CRUZADA *lc, ITEM *item, const char *chave_linha, const 
 void lcruz_imprimir_por_linhas(const LISTA_CRUZADA *lc);
 void lcruz_imprimir_por_colunas(const LISTA_CRUZADA *lc);
 
-#endif 
+#endif

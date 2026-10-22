@@ -1,46 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "./include/tads/lista_gen.h"
+#include "../include/tads/lista_gen.h"
 
-struct lista_ {
+// Forward declaration para o nó (struct no_)
+typedef struct no_ NO;
+
+// Atómo: não contém outras listas lá dentro -> átomo é o item para o asteroide
+struct no_ {
+    int tipo; // 0 para átomo, 1 para sub-lista
+    union { // union info funciona como um if else de structs
+        ITEM *atomo; // se tipo==0, aponta para um item (asteroide)
+        NO *sublista; // se tipo == 1, aponta para o inicio de outra sublista
+    } info;
+    NO *prox; // aponta para o proximo no do mesmo nível
+};
+
+struct lista_gen {
     NO *inicio;
     int profundidade;
 };
 
-
-//Atómo: não contém outras listas lá dentro -> átomo é o item para o asteroide
-struct no_ {
-    int tipo; //0 para átomo, 1 para sub-lista
-    union { //union info funciona como um if else de structs
-        ITEM *atomo; //se tipo==0, aponta para um item (asteroide)
-        struct no_ *sublista; // se tipo ==1, aponta para o inicio de outra sublista
-    } info;
-    NO *prox; //aponta para o proximo no do mesmo nível
-};
-
-//Cria uma lista generalizada vazia
-LISTA *lgen_criar(void) {
-    LISTA *l = (LISTA *) malloc(sizeof(LISTA));//alocando memória
+// Cria uma lista generalizada vazia
+LISTA_GEN *lgen_criar(void) {
+    LISTA_GEN *l = (LISTA_GEN *) malloc(sizeof(LISTA_GEN)); // alocando memória
     if (l) {
-        l->inicio = NULL;//lista começa vazia
-        l->profundidade = 0;//lista começa sem profundidade
+        l->inicio = NULL; // lista começa vazia
+        l->profundidade = 0; // lista começa sem profundidade
     }
     return l;
 }
 
-//Função auxiliar recursiva para destruir os nós de uma sub-lista
+// Função auxiliar recursiva para destruir os nós de uma sub-lista
 static void destruir_nos(NO *no) {
     while (no != NULL) {
         NO *prox = no->prox;
 
-        //percorrendo os nós através do prox
-        //0: átomo
-        //1: sub-lista
-        if (no->tipo == 1) {//
-            //Se for sub-lista, destrói recursivamente os nós dela
+        // percorrendo os nós através do prox
+        // 0: átomo
+        // 1: sub-lista
+        if (no->tipo == 1) {
+            // Se for sub-lista, destrói recursivamente os nós dela
             destruir_nos(no->info.sublista);
         } else {
-            //Se for átomo, destrói o ITEM utilizando o TAD Item
+            // Se for átomo, destrói o ITEM utilizando o TAD Item
             item_destruir(&(no->info.atomo));
         }
         free(no);
@@ -48,23 +50,23 @@ static void destruir_nos(NO *no) {
     }
 }
 
-//Destrói toda a lista generalizada e liberta a memória
-void lgen_destruir(LISTA **l) {
+// Destrói toda a lista generalizada e liberta a memória
+void lgen_destruir(LISTA_GEN **l) {
     if (!l || !*l) return;
     destruir_nos((*l)->inicio);
     free(*l);
     *l = NULL;
 }
 
-//Função auxiliar recursiva para imprimir os nós
+// Função auxiliar recursiva para imprimir os nós
 static void imprimir_nos(NO *no) {
     printf("(");
     NO *p = no;
     while (p != NULL) {
         if (p->tipo == 1) {
-            imprimir_nos(p->info.sublista); //Chamada recursiva para sub-lista
+            imprimir_nos(p->info.sublista); // Chamada recursiva para sub-lista
         } else {
-            //Imprime o valor do átomo (adaptado para a designação do asteroide do nosso projeto)
+            // Imprime o valor do átomo (adaptado para a designação do asteroide do nosso projeto)
             printf("%s", item_obter_valor_string(p->info.atomo, "asteroid_designation"));
         }
         
@@ -76,8 +78,8 @@ static void imprimir_nos(NO *no) {
     printf(")");
 }
 
-// Sub-rotina para imprimir a lista generalizada (Exercício do Slide 15)[cite: 15]
-void lgen_imprimir(const LISTA *l) {
+// Sub-rotina para imprimir a lista generalizada (Exercício do Slide 15)
+void lgen_imprimir(const LISTA_GEN *l) {
     if (!l) {
         printf("()\n");
         return;
@@ -86,7 +88,7 @@ void lgen_imprimir(const LISTA *l) {
     printf("\n");
 }
 
-//Função auxiliar para calcular a profundidade recursivamente
+// Função auxiliar para calcular a profundidade recursivamente
 static int calcular_profundidade_nos(NO *no) {
     if (no == NULL) return 0;
     
@@ -97,7 +99,7 @@ static int calcular_profundidade_nos(NO *no) {
         if (p->tipo == 1) {
             prof_atual = 1 + calcular_profundidade_nos(p->info.sublista);
         } else {
-            prof_atual = 1; //Um átomo no nível atual conta como profundidade 1 em relação a si
+            prof_atual = 1; // Um átomo no nível atual conta como profundidade 1 em relação a si
         }
         if (prof_atual > max_prof) {
             max_prof = prof_atual;
@@ -107,8 +109,8 @@ static int calcular_profundidade_nos(NO *no) {
     return max_prof;
 }
 
-// Sub-rotina para determinar a profundidade máxima (Exercício do Slide 19)[cite: 19]
-int lgen_obter_profundidade(const LISTA *l) {
+// Sub-rotina para determinar a profundidade máxima (Exercício do Slide 19)
+int lgen_obter_profundidade(const LISTA_GEN *l) {
     if (!l || !l->inicio) return 0;
     return calcular_profundidade_nos(l->inicio);
-}
+} // <- Chave que faltava fechada aqui

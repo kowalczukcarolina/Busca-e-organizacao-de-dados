@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "item.h"
+#include "../include/tads/item.h"
 
-//Implementação da struct
+// Implementação da struct
+
+
 struct item_st {
     ReaderType type;
     AsteroidData asteroide;
 };
 
-//Dataset Asteroides NASA
+// Dataset Asteroides NASA
 ITEM *item_criar_asteroide(AsteroidData *data) {
     if (!data) return NULL;
-    ITEM *item = (ITEM *) malloc(sizeof(ITEM)); //alocando memória
+    ITEM *item = (ITEM *) malloc(sizeof(ITEM));
     if (item) {
         item->type = READER_NASA;
         item->asteroide = *data;
@@ -27,17 +29,17 @@ void item_destruir(ITEM **item) {
     }
 }
 
-//Retorna o tipo de leitor associado (reader)
+
+// Retorna o tipo de leitor associado (reader)
 ReaderType item_get_type(const ITEM *item) {
     return item ? item->type : READER_NASA;
 }
 
-//Retorna campos numéricos com base no nome da coluna solicitada na consulta
+// Retorna campos numéricos com base no nome da coluna solicitada na consulta
 double item_obter_valor_numerico(const ITEM *item, const char *campo) {
     if (!item) return 0.0;
-    const AsteroidData *a = &item->asteroide; //"a" aponta diretamente para o struct do asteroide dentro do item
+    const AsteroidData *a = &item->asteroide;
 
-    //strcmp: função para comparar strings, se duas strings forem idênticas ela devolve 0
     if (strcmp(campo, "distance_au") == 0) return a->distance_au;
     if (strcmp(campo, "velocity_km_s") == 0) return a->velocity_km_s;
     if (strcmp(campo, "absolute_magnitude") == 0) return a->absolute_magnitude;
@@ -54,7 +56,7 @@ double item_obter_valor_numerico(const ITEM *item, const char *campo) {
     return 0.0;
 }
 
-//Retorna campos textuais com base no nome da coluna solicitada
+// Retorna campos textuais com base no nome da coluna solicitada
 const char *item_obter_valor_string(const ITEM *item, const char *campo) {
     if (!item) return "";
     const AsteroidData *a = &item->asteroide;
@@ -68,32 +70,33 @@ const char *item_obter_valor_string(const ITEM *item, const char *campo) {
     return "";
 }
 
-//Função  para comparar os asteroides antes de adcionar na lista ordenada
-//Compara dois itens (a e b) com base num campo-chave numérico fornecido
-//Retornos da função:
-//Negativo: Se o primeiro item (a) for menor que o segundo (b)
-//Zero: Se os dois itens forem estritamente iguais
-//Positivo: Se o primeiro item (a) for maior que o segundo (b)
+// Funções de chave padronizadas para ordenação e busca
+int item_chave(const ITEM *item) {
+    if (!item) return 0;
+    return (int)item_obter_valor_numerico(item, "year");
+}
+
+int item_get_chave_ano(const ITEM *item) {
+    return item_chave(item);
+}
 
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave) {
-    if (!a || !b) return 0;//testando se algum deles é nulo
-    double val_a = item_obter_valor_numerico(a, campo_chave);//pegando valor de a
-    double val_b = item_obter_valor_numerico(b, campo_chave);//pegando valor de b
+    if (!a || !b) return 0;
+    double val_a = item_obter_valor_numerico(a, campo_chave);
+    double val_b = item_obter_valor_numerico(b, campo_chave);
 
     if (val_a < val_b) return -1;
     if (val_a > val_b) return 1;
 
-    //Desempate para comparação de strings caso os valores numéricos sejam idênticos
     return strcmp(item_obter_valor_string(a, campo_chave),
                   item_obter_valor_string(b, campo_chave));
 }
 
-//Imprime o registro no formato CSV mantendo estrutura do arquivo original
+// Funções de impressão unificadas
 void item_imprimir_linha_csv(const ITEM *item, FILE *stream) {
     if (!item || !stream) return;
     const AsteroidData *a = &item->asteroide;
 
-    //fprintf: envia o texto formatado para o stream escolhido em vez de ir obrigatoriamente para o terminal
     fprintf(stream, "%s;%s;%s;%d;%d;%.6f;%.2f;%.2f;%d;%d;%d;%.4f;%.4f;%s;%s;%d;%.6f;%.2f;%.2f;%.3f\n",
             a->asteroid_designation,
             a->asteroid_fullname,
@@ -104,7 +107,6 @@ void item_imprimir_linha_csv(const ITEM *item, FILE *stream) {
             a->velocity_km_s,
             a->absolute_magnitude,
             a->days_until_approach,
-            //condição ? valor_se_verdadeiro : valor_se_falso
             a->is_past_event ? 1 : 0,
             a->is_future_event ? 1 : 0,
             a->risk_score,
@@ -116,4 +118,14 @@ void item_imprimir_linha_csv(const ITEM *item, FILE *stream) {
             a->sentry_torino_scale,
             a->sentry_palermo_scale,
             a->sentry_diameter_km);
+}
+
+void item_imprimir(const ITEM *item) {
+    item_imprimir_linha_csv(item, stdout);
+}
+
+// Retorna a chave textual padrão (asteroid_designation)
+const char *item_get_chave(const ITEM *item) {
+    if (!item) return "";
+    return item_obter_valor_string(item, "asteroid_designation");
 }

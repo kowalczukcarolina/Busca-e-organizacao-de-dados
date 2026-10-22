@@ -4,7 +4,7 @@
 
 typedef struct no_ NO;
 
-struct no_ {
+static struct no_ {
     ITEM *item;
     NO *prox;
 };
@@ -77,7 +77,7 @@ void fila_apagar(FILA **fila) {
 
     while (!fila_vazia(*fila)) {
         item = fila_remover(*fila);
-        item_apagar(&item);
+        item_destruir(&item);
     }
 
     free(*fila);
@@ -113,7 +113,7 @@ void fila_imprimir(FILA *fila) {
     printf("inicio -> ");
     atual = fila->inicio;
     while (atual != NULL) {
-        printf("[%d] ", item_get_chave(atual->item));
+        item_imprimir_linha_csv(atual->item, stdout);
         atual = atual->prox;
     }
     printf("<- fim\n");

@@ -1,24 +1,24 @@
-#include "lista.h"
-
+#include "../include/tads/lista_cab.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
 
 typedef struct no_ NO;
 
-struct no_ {
+static struct no_ {
     ITEM *item;
     NO *proximo;
 };
 
-struct lista_ {
-    NO *cabeca;   /* no estrutural: nao representa um item da lista */
-    NO *fim;      /* ultimo no de dados; NULL quando a lista esta vazia */
+struct lista_cab {
+    NO *cabeca;   /* nó estrutural: não representa um item da lista */
+    NO *fim;      /* último nó de dados; NULL quando a lista está vazia */
     int tamanho;
 };
 
-LISTA *lista_criar_cab(void) {
-    LISTA *lista = malloc(sizeof(LISTA));
+LISTA_CAB *lista_criar_cab(void) {
+    LISTA_CAB *lista = malloc(sizeof(LISTA_CAB));
     if (lista == NULL)
         return NULL;
 
@@ -35,14 +35,14 @@ LISTA *lista_criar_cab(void) {
     return lista;
 }
 
-void lista_apagar_cab(LISTA **lista) {
+void lista_apagar_cab(LISTA_CAB **lista) {
     if (lista == NULL || *lista == NULL)
         return;
 
     NO *p = (*lista)->cabeca->proximo;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_apagar(&p->item);
+        item_destruir(&p->item); // Corrigido para item_destruir
         free(p);
         p = proximo;
     }
@@ -52,15 +52,15 @@ void lista_apagar_cab(LISTA **lista) {
     *lista = NULL;
 }
 
-bool lista_vazia_cab(const LISTA *lista) {
+bool lista_vazia_cab(const LISTA_CAB *lista) {
     return lista != NULL && lista->cabeca->proximo == NULL;
 }
 
-int lista_tamanho_cab(const LISTA *lista) {
+int lista_tamanho_cab(const LISTA_CAB *lista) {
     return lista != NULL ? lista->tamanho : 0;
 }
 
-bool lista_inserir_cab(LISTA *lista, ITEM *item) {
+bool lista_inserir_cab(LISTA_CAB *lista, ITEM *item) {
     if (lista == NULL || item == NULL)
         return false;
 
@@ -81,24 +81,24 @@ bool lista_inserir_cab(LISTA *lista, ITEM *item) {
     return true;
 }
 
-ITEM *lista_buscar_cab(LISTA *lista, int chave) {
+ITEM *lista_buscar_cab(const LISTA_CAB *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
-    for (NO *p = lista->cabeca->proximo; p != NULL; p = p->proximo)
-        if (item_chave(p->item) == chave)
+    for (const NO *p = lista->cabeca->proximo; p != NULL; p = p->proximo) {
+        if (strcmp(item_get_chave(p->item), chave) == 0)
             return p->item;
+    }
 
     return NULL;
 }
 
-ITEM *lista_remover_cab(LISTA *lista, int chave) {
+ITEM *lista_remover_cab(LISTA_CAB *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
-    /* Comecar no no-cabeca garante que p sempre seja o antecessor. */
     NO *p = lista->cabeca;
-    while (p->proximo != NULL && item_chave(p->proximo->item) != chave)
+    while (p->proximo != NULL && strcmp(item_get_chave(p->proximo->item), chave) != 0)
         p = p->proximo;
 
     if (p->proximo == NULL)
@@ -116,7 +116,7 @@ ITEM *lista_remover_cab(LISTA *lista, int chave) {
     return item;
 }
 
-void lista_imprimir_cab(const LISTA *lista) {
+void lista_imprimir_cab(const LISTA_CAB *lista) {
     if (lista == NULL) {
         puts("(lista inexistente)");
         return;

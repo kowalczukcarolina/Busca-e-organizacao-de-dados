@@ -1,11 +1,10 @@
 #include "../include/tads/pilha.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 
 typedef struct no NO;
 
-struct no {
+static struct no {
     ITEM *item;
     NO *anterior;
 };
@@ -36,7 +35,7 @@ void pilha_apagar(PILHA **pilha) {
     atual = (*pilha)->topo;
     while (atual != NULL) {
         NO *anterior = atual->anterior;
-        item_apagar(&atual->item);
+        item_destruir(&atual->item);
         free(atual);
         atual = anterior;
     }
@@ -111,7 +110,7 @@ void pilha_imprimir(PILHA *pilha) {
     printf("Topo -> ");
     atual = pilha->topo;
     while (atual != NULL) {
-        printf("%d ", item_get_chave(atual->item));
+        item_imprimir_linha_csv(atual->item, stdout);
         atual = atual->anterior;
     }
     printf("<- Base\n");
