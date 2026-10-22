@@ -20,7 +20,7 @@ struct lista_gen {
     int profundidade;
 };
 
-// Cria uma lista generalizada vazia
+//Cria uma lista generalizada vazia
 LISTA_GEN *lgen_criar(void) {
     LISTA_GEN *l = (LISTA_GEN *) malloc(sizeof(LISTA_GEN)); // alocando memória
     if (l) {
@@ -28,6 +28,67 @@ LISTA_GEN *lgen_criar(void) {
         l->profundidade = 0; // lista começa sem profundidade
     }
     return l;
+}
+
+//Auxiliar: Cria um nó do tipo Átomo (tipo = 0)
+static NO *criar_no_atomo(ITEM *item) {
+    NO *novo = (NO *) malloc(sizeof(NO));
+    if (!novo) return NULL;
+    novo->tipo = 0;
+    novo->info.atomo = item;
+    novo->prox = NULL;
+    return novo;
+}
+
+//Auxiliar: Cria um nó do tipo Sublista (tipo = 1)
+static NO *criar_no_sublista(NO *inicio_sublista) {
+    NO *novo = (NO *) malloc(sizeof(NO));
+    if (!novo) return NULL;
+    novo->tipo = 1;
+    novo->info.sublista = inicio_sublista;
+    novo->prox = NULL;
+    return novo;
+}
+
+//Insere um átomo (ITEM*) no final da lista generalizada atual
+bool lgen_inserir_atomo(LISTA_GEN *l, ITEM *item) {
+    if (!l || !item) return false;
+
+    NO *novo = criar_no_atomo(item);
+    if (!novo) return false;
+
+    if (l->inicio == NULL) {
+        l->inicio = novo;
+    } else {
+        NO *p = l->inicio;
+        while (p->prox != NULL) {
+            p = p->prox;
+        }
+        p->prox = novo;
+    }
+    return true;
+}
+
+//Insere uma sublista completa como um elemento/nó no final da lista principal
+bool lgen_inserir_sublista(LISTA_GEN *l, LISTA_GEN *sublista) {
+    if (!l || !sublista || !sublista->inicio) return false; //verificando se não são nulas
+
+    NO *novo = criar_no_sublista(sublista->inicio); //criando no de sublista
+    if (!novo) return false;
+
+    if (l->inicio == NULL) { //se a lista principal estiver vazia, insere como primeiro elemento
+        l->inicio = novo;
+    } else { //se a lista principal não esta vazia, percorre os nós irmão pelo "prox" até encontrar o ultimo elemento da lista
+        NO *p = l->inicio;
+        while (p->prox != NULL) {
+            p = p->prox;
+        }
+        p->prox = novo;
+    }
+
+    // Libera apenas o descritor da sublista, pois os nós internos foram transferidos
+    free(sublista);
+    return true;
 }
 
 // Função auxiliar recursiva para destruir os nós de uma sub-lista
