@@ -17,4 +17,7 @@ bool fila_vazia(FILA *fila);
 bool fila_cheia(FILA *fila);
 void fila_imprimir(FILA *fila);
 
+// Função adicionada para permitir percorrer os elementos por índice (0 = frente da fila)
+ITEM *fila_obter_item(FILA *fila, int index);
+
 #endif

@@ -104,7 +104,7 @@ void lista_apagar_enc(LISTA_ENC **lista) {
     NO *p = (*lista)->inicio;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_destruir(&p->item); // Corrigido para item_destruir
+        item_destruir(&p->item);
         free(p);
         p = proximo;
     }
@@ -205,4 +205,18 @@ void lista_imprimir_enc(const LISTA_ENC *lista) {
         printf(" -> ");
     }
     printf("NULL\n");
+}
+
+// Retorna o item na posição 'index' da lista encadeada
+ITEM *lista_obter_item_enc(const LISTA_ENC *lista, int index) {
+    if (lista == NULL || index < 0 || index >= lista->tamanho) {
+        return NULL;
+    }
+
+    const NO *atual = lista->inicio;
+    for (int i = 0; i < index && atual != NULL; i++) {
+        atual = atual->proximo;
+    }
+
+    return atual != NULL ? atual->item : NULL;
 }

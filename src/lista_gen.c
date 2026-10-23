@@ -5,14 +5,14 @@
 // Forward declaration para o nó (struct no_)
 typedef struct no_ NO;
 
-// Atómo: não contém outras listas lá dentro -> átomo é o item para o asteroide
+// Átomo: não contém outras listas lá dentro -> átomo é o item para o asteroide
 struct no_ {
     int tipo; // 0 para átomo, 1 para sub-lista
     union { // union info funciona como um if else de structs
         ITEM *atomo; // se tipo==0, aponta para um item (asteroide)
         NO *sublista; // se tipo == 1, aponta para o inicio de outra sublista
     } info;
-    NO *prox; // aponta para o proximo no do mesmo nível
+    NO *prox; // aponta para o proximo nó do mesmo nível
 };
 
 struct lista_gen {
@@ -139,7 +139,7 @@ static void imprimir_nos(NO *no) {
     printf(")");
 }
 
-// Sub-rotina para imprimir a lista generalizada (Exercício do Slide 15)
+// Sub-rotina para imprimir a lista generalizada
 void lgen_imprimir(const LISTA_GEN *l) {
     if (!l) {
         printf("()\n");
@@ -170,8 +170,52 @@ static int calcular_profundidade_nos(NO *no) {
     return max_prof;
 }
 
-// Sub-rotina para determinar a profundidade máxima (Exercício do Slide 19)
+// Sub-rotina para determinar a profundidade máxima
 int lgen_obter_profundidade(const LISTA_GEN *l) {
     if (!l || !l->inicio) return 0;
     return calcular_profundidade_nos(l->inicio);
-} // <- Chave que faltava fechada aqui
+}
+
+// Função auxiliar recursiva para contar todos os átomos armazenados na lista generalizada (incluindo sublistas)
+static int contar_atomos_nos(NO *no) {
+    int count = 0;
+    NO *p = no;
+    while (p != NULL) {
+        if (p->tipo == 1) {
+            count += contar_atomos_nos(p->info.sublista);
+        } else if (p->tipo == 0 && p->info.atomo != NULL) {
+            count++;
+        }
+        p = p->prox;
+    }
+    return count;
+}
+
+int lgen_tamanho(const LISTA_GEN *l) {
+    if (!l || !l->inicio) return 0;
+    return contar_atomos_nos(l->inicio);
+}
+
+// Função auxiliar recursiva para obter o átomo pelo índice global linearizado
+static ITEM *obter_atomo_por_indice_nos(NO *no, int *atual_idx, int alvo_idx) {
+    NO *p = no;
+    while (p != NULL) {
+        if (p->tipo == 1) {
+            ITEM *encontrado = obter_atomo_por_indice_nos(p->info.sublista, atual_idx, alvo_idx);
+            if (encontrado != NULL) return encontrado;
+        } else if (p->tipo == 0) {
+            if (*atual_idx == alvo_idx) {
+                return p->info.atomo;
+            }
+            (*atual_idx)++;
+        }
+        p = p->prox;
+    }
+    return NULL;
+}
+
+ITEM *lgen_obter_item(const LISTA_GEN *l, int index) {
+    if (!l || index < 0) return NULL;
+    int atual_idx = 0;
+    return obter_atomo_por_indice_nos(l->inicio, &atual_idx, index);
+}

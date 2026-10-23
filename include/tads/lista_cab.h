@@ -16,4 +16,7 @@ int lista_tamanho_cab(const LISTA_CAB *lista);
 bool lista_vazia_cab(const LISTA_CAB *lista);
 void lista_imprimir_cab(const LISTA_CAB *lista);
 
+// Função adicionada para permitir percorrer os elementos por índice (0 até tamanho - 1)
+ITEM *lista_obter_item_cab(const LISTA_CAB *lista, int index);
+
 #endif

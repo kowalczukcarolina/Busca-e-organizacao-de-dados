@@ -134,3 +134,21 @@ void pilha_inverter(PILHA *pilha) {
 
     pilha->topo = anterior;
 }
+
+// Retorna o item na posição 'index' (0 é o topo, tamanho - 1 é a base)
+ITEM *pilha_obter_item(PILHA *pilha, int index) {
+    if (pilha == NULL || index < 0 || index >= pilha->tamanho) {
+        return NULL;
+    }
+
+    NO *atual = pilha->topo;
+    for (int i = 0; i < index && atual != NULL; i++) {
+        atual = atual->anterior;
+    }
+
+    if (atual != NULL) {
+        return atual->item;
+    }
+
+    return NULL;
+}

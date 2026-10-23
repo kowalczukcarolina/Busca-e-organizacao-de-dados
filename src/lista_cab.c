@@ -42,7 +42,7 @@ void lista_apagar_cab(LISTA_CAB **lista) {
     NO *p = (*lista)->cabeca->proximo;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_destruir(&p->item); // Corrigido para item_destruir
+        item_destruir(&p->item);
         free(p);
         p = proximo;
     }
@@ -130,4 +130,18 @@ void lista_imprimir_cab(const LISTA_CAB *lista) {
         p = p->proximo;
     }
     printf("NULL  [tamanho=%d]\n", lista->tamanho);
+}
+
+// Retorna o item na posição 'index' da lista com nó cabeça (saltando a cabeça estrutural)
+ITEM *lista_obter_item_cab(const LISTA_CAB *lista, int index) {
+    if (lista == NULL || index < 0 || index >= lista->tamanho) {
+        return NULL;
+    }
+
+    const NO *atual = lista->cabeca->proximo;
+    for (int i = 0; i < index && atual != NULL; i++) {
+        atual = atual->proximo;
+    }
+
+    return atual != NULL ? atual->item : NULL;
 }

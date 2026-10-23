@@ -3,12 +3,11 @@
 #include <string.h>
 #include "../include/tads/item.h"
 
-// Implementação da struct
-
-
+// Implementação da struct opaca incluindo o campo similarity
 struct item_st {
     ReaderType type;
     AsteroidData asteroide;
+    double similarity; // Armazena o score de similaridade calculado pela query
 };
 
 // Dataset Asteroides NASA
@@ -18,6 +17,7 @@ ITEM *item_criar_asteroide(AsteroidData *data) {
     if (item) {
         item->type = READER_NASA;
         item->asteroide = *data;
+        item->similarity = 1.0; // Valor padrão de similaridade
     }
     return item;
 }
@@ -29,7 +29,6 @@ void item_destruir(ITEM **item) {
     }
 }
 
-
 // Retorna o tipo de leitor associado (reader)
 ReaderType item_get_type(const ITEM *item) {
     return item ? item->type : READER_NASA;
@@ -37,9 +36,10 @@ ReaderType item_get_type(const ITEM *item) {
 
 // Retorna campos numéricos com base no nome da coluna solicitada na consulta
 double item_obter_valor_numerico(const ITEM *item, const char *campo) {
-    if (!item) return 0.0;
+    if (!item || !campo) return 0.0;
     const AsteroidData *a = &item->asteroide;
 
+    if (strcmp(campo, "similarity") == 0) return item->similarity;
     if (strcmp(campo, "distance_au") == 0) return a->distance_au;
     if (strcmp(campo, "velocity_km_s") == 0) return a->velocity_km_s;
     if (strcmp(campo, "absolute_magnitude") == 0) return a->absolute_magnitude;
@@ -56,9 +56,21 @@ double item_obter_valor_numerico(const ITEM *item, const char *campo) {
     return 0.0;
 }
 
+// Permite atribuir dinamicamente valores numéricos ao ITEM (ex: similarity)
+bool item_atribuir_valor_numerico(ITEM *item, const char *campo, double valor) {
+    if (!item || !campo) return false;
+
+    if (strcmp(campo, "similarity") == 0) {
+        item->similarity = valor;
+        return true;
+    }
+
+    return false;
+}
+
 // Retorna campos textuais com base no nome da coluna solicitada
 const char *item_obter_valor_string(const ITEM *item, const char *campo) {
-    if (!item) return "";
+    if (!item || !campo) return "";
     const AsteroidData *a = &item->asteroide;
 
     if (strcmp(campo, "asteroid_designation") == 0) return a->asteroid_designation;

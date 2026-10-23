@@ -2,7 +2,7 @@
 #define LISTA_GEN_H
 
 #include "item.h"
-//Implementação do professor de lista generalizada
+#include <stdbool.h>
 
 //Declarações opacas corrigidas para LISTA_GEN
 typedef struct lista_gen LISTA_GEN;
@@ -18,5 +18,9 @@ bool lgen_inserir_sublista(LISTA_GEN *l, LISTA_GEN *sublista);
 //Operações de consulta e exibição
 void lgen_imprimir(const LISTA_GEN *l);
 int lgen_obter_profundidade(const LISTA_GEN *l);
+
+// Funções adicionadas para permitir percorrer os átomos por índice
+int lgen_tamanho(const LISTA_GEN *l);
+ITEM *lgen_obter_item(const LISTA_GEN *l, int index);
 
 #endif

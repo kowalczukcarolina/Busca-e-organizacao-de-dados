@@ -17,4 +17,7 @@ bool lista_vazia_enc(const LISTA_ENC *lista);
 bool lista_cheia_enc(const LISTA_ENC *lista);
 void lista_imprimir_enc(const LISTA_ENC *lista);
 
+// Função adicionada para permitir percorrer os elementos por índice (0 até tamanho - 1)
+ITEM *lista_obter_item_enc(const LISTA_ENC *lista, int index);
+
 #endif

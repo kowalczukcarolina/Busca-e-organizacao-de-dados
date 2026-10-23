@@ -20,4 +20,7 @@ bool lista_vazia_seq(const LISTA_SEQ *lista);
 bool lista_cheia_seq(const LISTA_SEQ *lista);
 void lista_imprimir_seq(const LISTA_SEQ *lista);
 
+// Função adicionada para permitir percorrer os elementos por índice (0 até tamanho - 1)
+ITEM *lista_obter_item_seq(const LISTA_SEQ *lista, int index);
+
 #endif

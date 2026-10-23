@@ -156,3 +156,11 @@ void lista_imprimir_seq(const LISTA_SEQ *lista) {
         item_imprimir(lista->itens[i]);
     }
 }
+
+// Retorna o item na posição 'index' do vetor interno
+ITEM *lista_obter_item_seq(const LISTA_SEQ *lista, int index) {
+    if (lista == NULL || index < 0 || index >= lista->fim) {
+        return NULL;
+    }
+    return lista->itens[index];
+}

@@ -2,7 +2,6 @@
 #define PILHA_H
 
 #include "item.h"
-
 #include <stdbool.h>
 
 typedef struct pilha PILHA;
@@ -17,5 +16,8 @@ bool pilha_empilhar(PILHA *pilha, ITEM *item);
 ITEM *pilha_desempilhar(PILHA *pilha);
 void pilha_imprimir(PILHA *pilha);
 void pilha_inverter(PILHA *pilha);
+
+// Função adicionada para permitir percorrer os elementos por índice (0 = topo)
+ITEM *pilha_obter_item(PILHA *pilha, int index);
 
 #endif

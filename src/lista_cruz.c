@@ -21,21 +21,6 @@ struct lista_cruzada {
     int total_itens;      // quantidade total de nós cruzados
 };
 
-/*static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
-    CABECA_EIXO *eixo = (CABECA_EIXO *) malloc(sizeof(CABECA_EIXO));
-    if (!eixo) return NULL;
-
-    eixo->chave = malloc(strlen(chave) + 1);
-    if (!eixo->chave) {
-        free(eixo);
-        return NULL;
-    }
-    strcpy(eixo->chave, chave);
-    eixo->inicio = NULL;
-    eixo->prox_eixo = NULL;
-    return eixo;
-}*/
-
 static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
     CABECA_EIXO *eixo = (CABECA_EIXO *) malloc(sizeof(CABECA_EIXO));
     if (!eixo) return NULL;
@@ -130,7 +115,7 @@ void lcruz_imprimir_por_linhas(const LISTA_CRUZADA *lc) {
 
         while (no_atual != NULL) {
             printf("  -> ");
-            item_imprimir(no_atual->item); // Usando a assinatura correta de item_imprimir(ITEM *)
+            item_imprimir(no_atual->item);
             no_atual = no_atual->prox_linha;
         }
         e_linha = e_linha->prox_eixo;
@@ -152,7 +137,7 @@ void lcruz_imprimir_por_colunas(const LISTA_CRUZADA *lc) {
 
         while (no_atual != NULL) {
             printf("  -> ");
-            item_imprimir(no_atual->item); // Usando a assinatura correta de item_imprimir(ITEM *)
+            item_imprimir(no_atual->item);
             no_atual = no_atual->prox_coluna;
         }
         e_coluna = e_coluna->prox_eixo;
@@ -171,7 +156,7 @@ void lcruz_destruir(LISTA_CRUZADA **lc) {
         while (no_atual != NULL) {
             NO_CRUZ *aux = no_atual;
             no_atual = no_atual->prox_linha;
-            free(aux); // Os itens são gerenciados externamente, liberamos apenas os nós de cruzamento
+            free(aux);
         }
         CABECA_EIXO *e_linha_aux = e_linha;
         e_linha = e_linha->prox_eixo;
@@ -190,4 +175,32 @@ void lcruz_destruir(LISTA_CRUZADA **lc) {
 
     free(l);
     *lc = NULL;
+}
+
+// Retorna o total de itens na lista cruzada
+int lcruz_tamanho(const LISTA_CRUZADA *lc) {
+    return lc != NULL ? lc->total_itens : 0;
+}
+
+// Retorna o item na posição 'index' percorrendo os nós através das linhas
+ITEM *lcruz_obter_item(const LISTA_CRUZADA *lc, int index) {
+    if (!lc || index < 0 || index >= lc->total_itens) {
+        return NULL;
+    }
+
+    int atual_idx = 0;
+    CABECA_EIXO *e_linha = lc->linhas;
+    while (e_linha != NULL) {
+        NO_CRUZ *no_atual = e_linha->inicio;
+        while (no_atual != NULL) {
+            if (atual_idx == index) {
+                return no_atual->item;
+            }
+            atual_idx++;
+            no_atual = no_atual->prox_linha;
+        }
+        e_linha = e_linha->prox_eixo;
+    }
+
+    return NULL;
 }

@@ -4,13 +4,13 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-//Identificador do leitor em uso (--reader)
+// Identificador do leitor em uso (--reader)
 typedef enum {
     READER_NASA,
     READER_CHAMADOS_TI
 } ReaderType;
 
-//Dataset Asteroides NASA
+// Dataset Asteroides NASA
 typedef struct {
     char asteroid_designation[64];
     char asteroid_fullname[128];
@@ -34,9 +34,9 @@ typedef struct {
     double sentry_diameter_km;
 } AsteroidData;
 
-//TAD ITEM
+// TAD ITEM
 
-//Declaração opaca do item
+// Declaração opaca do item
 typedef struct item_st ITEM;
 
 // Construtores e Destrutores
@@ -45,11 +45,12 @@ void item_destruir(ITEM **item);
 
 // Métodos de Acesso Genéricos (Interface do TAD)
 ReaderType item_get_type(const ITEM *item);
-const char *item_get_chave(const ITEM *item); // <-- Adicionada aqui
+const char *item_get_chave(const ITEM *item);
 
 // Métodos de Avaliação de Filtro e Similaridade
 double item_obter_valor_numerico(const ITEM *item, const char *campo);
 const char *item_obter_valor_string(const ITEM *item, const char *campo);
+bool item_atribuir_valor_numerico(ITEM *item, const char *campo, double valor);
 
 // Métodos de Ordenação e Impressão
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave);

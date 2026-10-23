@@ -118,3 +118,21 @@ void fila_imprimir(FILA *fila) {
     }
     printf("<- fim\n");
 }
+
+// Retorna o item na posição 'index' (0 é a frente da fila, tamanho - 1 é o fim)
+ITEM *fila_obter_item(FILA *fila, int index) {
+    if (fila == NULL || index < 0 || index >= fila->tamanho) {
+        return NULL;
+    }
+
+    NO *atual = fila->inicio;
+    for (int i = 0; i < index && atual != NULL; i++) {
+        atual = atual->prox;
+    }
+
+    if (atual != NULL) {
+        return atual->item;
+    }
+
+    return NULL;
+}
