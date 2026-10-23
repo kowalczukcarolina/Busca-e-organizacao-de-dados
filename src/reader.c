@@ -12,6 +12,43 @@
 #include "../include/tads/lista_gen.h"
 #include "../include/tads/lista_cruz.h"
 
+// Função auxiliar para extrair o próximo campo CSV, respeitando aspas duplas e vírgulas internas
+static char *extrair_campo_csv(char **linha_ptr) {
+    if (!linha_ptr || !*linha_ptr || **linha_ptr == '\0') return NULL;
+
+    char *p = *linha_ptr;
+    char *inicio = p;
+    bool dentro_aspas = false;
+
+    while (*p != '\0') {
+        if (*p == '"') {
+            dentro_aspas = !dentro_aspas;
+        } else if (*p == ',' && !dentro_aspas) {
+            *p = '\0';
+            *linha_ptr = p + 1;
+            // Remover aspas externas se existirem
+            if (*inicio == '"') {
+                inicio++;
+                size_t len = strlen(inicio);
+                if (len > 0 && inicio[len - 1] == '"') {
+                    inicio[len - 1] = '\0';
+                }
+            }
+            return inicio;
+        }
+        p++;
+    }
+    *linha_ptr = NULL;
+    if (*inicio == '"') {
+        inicio++;
+        size_t len = strlen(inicio);
+        if (len > 0 && inicio[len - 1] == '"') {
+            inicio[len - 1] = '\0';
+        }
+    }
+    return inicio;
+}
+
 bool carregar_base_nasa(const char *caminho_arquivo, void *estrutura_base, const char *tipo_base, int limite) {
     FILE *file = fopen(caminho_arquivo, "r");
     if (!file) {
@@ -19,7 +56,7 @@ bool carregar_base_nasa(const char *caminho_arquivo, void *estrutura_base, const
         return false;
     }
 
-    char linha[1024];
+    char linha[2048];
     
     // Ignorar a primeira linha (cabeçalho do CSV)
     if (!fgets(linha, sizeof(linha), file)) {
@@ -35,43 +72,62 @@ bool carregar_base_nasa(const char *caminho_arquivo, void *estrutura_base, const
         }
 
         linha[strcspn(linha, "\r\n")] = 0;
+        if (strlen(linha) == 0) continue;
+
+        char *ptr = linha;
+
+        char *f_desig = extrair_campo_csv(&ptr);
+        char *f_fullname = extrair_campo_csv(&ptr);
+        char *f_date = extrair_campo_csv(&ptr);
+        char *f_year = extrair_campo_csv(&ptr);
+        char *f_month = extrair_campo_csv(&ptr);
+        char *f_dist = extrair_campo_csv(&ptr);
+        char *f_vel = extrair_campo_csv(&ptr);
+        char *f_mag = extrair_campo_csv(&ptr);
+        char *f_days = extrair_campo_csv(&ptr);
+        char *f_past = extrair_campo_csv(&ptr);
+        char *f_future = extrair_campo_csv(&ptr);
+        char *f_risk = extrair_campo_csv(&ptr);
+        char *f_panic_lvl = extrair_campo_csv(&ptr);
+        char *f_threat = extrair_campo_csv(&ptr);
+        char *f_verdict = extrair_campo_csv(&ptr);
+        char *f_sentry = extrair_campo_csv(&ptr);
+        char *f_prob = extrair_campo_csv(&ptr);
+        char *f_torino = extrair_campo_csv(&ptr);
+        char *f_palermo = extrair_campo_csv(&ptr);
+        char *f_diam = extrair_campo_csv(&ptr);
+
+        if (!f_desig) continue;
 
         AsteroidData data;
         memset(&data, 0, sizeof(AsteroidData));
 
-        // Variáveis temporárias para campos booleanos para evitar conflito de ponteiros no sscanf
-        int tmp_is_past, tmp_is_future, tmp_on_sentry;
+        strncpy(data.asteroid_designation, f_desig ? f_desig : "", sizeof(data.asteroid_designation) - 1);
+        strncpy(data.asteroid_fullname, f_fullname ? f_fullname : "", sizeof(data.asteroid_fullname) - 1);
+        strncpy(data.close_approach_date, f_date ? f_date : "", sizeof(data.close_approach_date) - 1);
+        
+        data.year = f_year ? atoi(f_year) : 0;
+        data.month = f_month ? atoi(f_month) : 0;
+        data.distance_au = f_dist ? atof(f_dist) : 0.0;
+        data.velocity_km_s = f_vel ? atof(f_vel) : 0.0;
+        data.absolute_magnitude = f_mag ? atof(f_mag) : 0.0;
+        data.days_until_approach = f_days ? atoi(f_days) : 0;
 
-        int campos_lidos = sscanf(linha, "%49[^;];%99[^;];%19[^;];%d;%d;%lf;%lf;%lf;%d;%d;%d;%lf;%lf;%49[^;];%49[^;];%d;%lf;%lf;%lf;%lf",
-            data.asteroid_designation,
-            data.asteroid_fullname,
-            data.close_approach_date,
-            &data.year,
-            &data.month,
-            &data.distance_au,
-            &data.velocity_km_s,
-            &data.absolute_magnitude,
-            &data.days_until_approach,
-            &tmp_is_past,
-            &tmp_is_future,
-            &data.risk_score,
-            &data.panic_level,
-            data.threat_category,
-            data.panic_verdict,
-            &tmp_on_sentry,
-            &data.sentry_impact_prob,
-            &data.sentry_torino_scale,
-            &data.sentry_palermo_scale,
-            &data.sentry_diameter_km
-        );
+        data.is_past_event = (f_past && (strcasecmp(f_past, "true") == 0 || strcmp(f_past, "1") == 0));
+        data.is_future_event = (f_future && (strcasecmp(f_future, "true") == 0 || strcmp(f_future, "1") == 0));
+        
+        data.risk_score = f_risk ? atof(f_risk) : 0.0;
+        data.panic_level = f_panic_lvl ? atof(f_panic_lvl) : 0.0;
 
-        if (campos_lidos < 5) {
-            continue; 
-        }
+        strncpy(data.threat_category, f_threat ? f_threat : "", sizeof(data.threat_category) - 1);
+        strncpy(data.panic_verdict, f_verdict ? f_verdict : "", sizeof(data.panic_verdict) - 1);
 
-        data.is_past_event = (tmp_is_past != 0);
-        data.is_future_event = (tmp_is_future != 0);
-        data.on_sentry_list = (tmp_on_sentry != 0);
+        data.on_sentry_list = (f_sentry && (strcasecmp(f_sentry, "true") == 0 || strcmp(f_sentry, "1") == 0));
+        
+        data.sentry_impact_prob = (f_prob && f_prob[0] != '\0') ? atof(f_prob) : 0.0;
+        data.sentry_torino_scale = (f_torino && f_torino[0] != '\0') ? atof(f_torino) : 0.0;
+        data.sentry_palermo_scale = (f_palermo && f_palermo[0] != '\0') ? atof(f_palermo) : 0.0;
+        data.sentry_diameter_km = (f_diam && f_diam[0] != '\0') ? atof(f_diam) : 0.0;
 
         ITEM *novo_item = item_criar_asteroide(&data);
         if (!novo_item) continue;
