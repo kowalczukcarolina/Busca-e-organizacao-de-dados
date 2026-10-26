@@ -6,7 +6,7 @@
 
 typedef struct no_ NO;
 
-static struct no_ {
+struct no_ {
     ITEM *item;
     NO *proximo;
 };
@@ -35,14 +35,15 @@ LISTA_CAB *lista_criar_cab(void) {
     return lista;
 }
 
-void lista_apagar_cab(LISTA_CAB **lista) {
+void lista_apagar_cab(LISTA_CAB **lista, bool destruir_itens) {
     if (lista == NULL || *lista == NULL)
         return;
 
     NO *p = (*lista)->cabeca->proximo;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_destruir(&p->item);
+        if (destruir_itens)
+            item_destruir(&p->item);
         free(p);
         p = proximo;
     }
@@ -53,7 +54,7 @@ void lista_apagar_cab(LISTA_CAB **lista) {
 }
 
 bool lista_vazia_cab(const LISTA_CAB *lista) {
-    return lista != NULL && lista->cabeca->proximo == NULL;
+    return lista == NULL || lista->cabeca->proximo == NULL;
 }
 
 int lista_tamanho_cab(const LISTA_CAB *lista) {
@@ -132,16 +133,13 @@ void lista_imprimir_cab(const LISTA_CAB *lista) {
     printf("NULL  [tamanho=%d]\n", lista->tamanho);
 }
 
-// Retorna o item na posição 'index' da lista com nó cabeça (saltando a cabeça estrutural)
-ITEM *lista_obter_item_cab(const LISTA_CAB *lista, int index) {
-    if (lista == NULL || index < 0 || index >= lista->tamanho) {
-        return NULL;
-    }
+// Percorre os nós de dados, começando em cabeca->proximo (a cabeça nunca é visitada)
+void lista_percorrer_cab(const LISTA_CAB *lista, ITEM_VISITOR f, void *ctx) {
+    if (lista == NULL || f == NULL)
+        return;
 
-    const NO *atual = lista->cabeca->proximo;
-    for (int i = 0; i < index && atual != NULL; i++) {
-        atual = atual->proximo;
+    for (const NO *p = lista->cabeca->proximo; p != NULL; p = p->proximo) {
+        if (!f(p->item, ctx))
+            return;
     }
-
-    return atual != NULL ? atual->item : NULL;
 }

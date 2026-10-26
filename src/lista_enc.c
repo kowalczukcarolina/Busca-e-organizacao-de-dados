@@ -6,7 +6,7 @@
 
 typedef struct no_ NO;
 
-static struct no_ {
+struct no_ {
     ITEM *item;
     NO *proximo;
 };
@@ -16,6 +16,8 @@ struct lista_enc {
     NO *fim;
     int tamanho;
     bool ordenada;
+    char campo[64];   /* "" = ordena pela chave padrão (item_get_chave), crescente */
+    bool desc;
 };
 
 static NO *no_criar(ITEM *item) {
@@ -25,6 +27,14 @@ static NO *no_criar(ITEM *item) {
         novo->proximo = NULL;
     }
     return novo;
+}
+
+/* Comparador da lista ordenada: respeita o campo/direção definidos pelo ORDER. */
+static int comparar_enc(const LISTA_ENC *l, const ITEM *a, const ITEM *b) {
+    if (l->campo[0] == '\0')
+        return strcmp(item_get_chave(a), item_get_chave(b));
+    int c = item_comparar(a, b, l->campo);
+    return l->desc ? -c : c;
 }
 
 static bool inserir_fim_enc(LISTA_ENC *lista, ITEM *item) {
@@ -42,16 +52,16 @@ static bool inserir_fim_enc(LISTA_ENC *lista, ITEM *item) {
     return true;
 }
 
+/* A ordem é mantida na inserção. Insere DEPOIS dos iguais (ordem estável). */
 static bool inserir_ordenado_enc(LISTA_ENC *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
         return false;
 
-    const char *chave = item_get_chave(item);
     NO *anterior = NULL;
     NO *atual = lista->inicio;
 
-    while (atual != NULL && strcmp(item_get_chave(atual->item), chave) < 0) {
+    while (atual != NULL && comparar_enc(lista, atual->item, item) <= 0) {
         anterior = atual;
         atual = atual->proximo;
     }
@@ -62,7 +72,7 @@ static bool inserir_ordenado_enc(LISTA_ENC *lista, ITEM *item) {
     else
         anterior->proximo = novo;
 
-    if (atual == NULL || lista->tamanho == 0)
+    if (atual == NULL)
         lista->fim = novo;
 
     lista->tamanho++;
@@ -94,17 +104,27 @@ LISTA_ENC *lista_criar_enc(bool ordenada) {
     lista->fim = NULL;
     lista->tamanho = 0;
     lista->ordenada = ordenada;
+    lista->campo[0] = '\0';
+    lista->desc = false;
     return lista;
 }
 
-void lista_apagar_enc(LISTA_ENC **lista) {
+void lista_definir_ordem_enc(LISTA_ENC *lista, const char *campo, bool desc) {
+    if (lista == NULL || campo == NULL || strlen(campo) >= sizeof lista->campo)
+        return;
+    strcpy(lista->campo, campo);
+    lista->desc = desc;
+}
+
+void lista_apagar_enc(LISTA_ENC **lista, bool destruir_itens) {
     if (lista == NULL || *lista == NULL)
         return;
 
     NO *p = (*lista)->inicio;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        item_destruir(&p->item);
+        if (destruir_itens)
+            item_destruir(&p->item);
         free(p);
         p = proximo;
     }
@@ -126,12 +146,15 @@ ITEM *lista_busca_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
+    /* o corte antecipado só vale quando a ordem é a da chave padrão */
+    bool corte = lista->ordenada && lista->campo[0] == '\0';
+
     for (const NO *p = lista->inicio; p != NULL; p = p->proximo) {
         const char *atual = item_get_chave(p->item);
         int comp = strcmp(atual, chave);
         if (comp == 0)
             return p->item;
-        if (lista->ordenada && comp > 0)
+        if (corte && comp > 0)
             return NULL;
     }
     return NULL;
@@ -141,13 +164,15 @@ ITEM *lista_busca_recursiva_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
-    return busca_no_recursiva_enc(lista->inicio, chave, lista->ordenada);
+    return busca_no_recursiva_enc(lista->inicio, chave,
+                                  lista->ordenada && lista->campo[0] == '\0');
 }
 
 ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave) {
     if (lista == NULL || lista->inicio == NULL)
         return NULL;
 
+    bool corte = lista->ordenada && lista->campo[0] == '\0';
     NO *anterior = NULL;
     NO *atual = lista->inicio;
 
@@ -155,7 +180,7 @@ ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave) {
         int comp = strcmp(item_get_chave(atual->item), chave);
         if (comp == 0)
             break;
-        if (lista->ordenada && comp > 0)
+        if (corte && comp > 0)
             return NULL;
         anterior = atual;
         atual = atual->proximo;
@@ -207,16 +232,12 @@ void lista_imprimir_enc(const LISTA_ENC *lista) {
     printf("NULL\n");
 }
 
-// Retorna o item na posição 'index' da lista encadeada
-ITEM *lista_obter_item_enc(const LISTA_ENC *lista, int index) {
-    if (lista == NULL || index < 0 || index >= lista->tamanho) {
-        return NULL;
-    }
+void lista_percorrer_enc(const LISTA_ENC *lista, ITEM_VISITOR f, void *ctx) {
+    if (lista == NULL || f == NULL)
+        return;
 
-    const NO *atual = lista->inicio;
-    for (int i = 0; i < index && atual != NULL; i++) {
-        atual = atual->proximo;
+    for (const NO *p = lista->inicio; p != NULL; p = p->proximo) {
+        if (!f(p->item, ctx))
+            return;
     }
-
-    return atual != NULL ? atual->item : NULL;
 }

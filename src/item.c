@@ -3,38 +3,55 @@
 #include <string.h>
 #include "../include/tads/item.h"
 
-// Implementação da struct opaca incluindo o campo similarity
+// Implementação da struct opaca
 struct item_st {
     ReaderType type;
     AsteroidData asteroide;
-    double similarity; // Armazena o score de similaridade calculado pela query
+    double similarity;  // score de similaridade calculado pela query
+    char *linha_bruta;  // linha original do CSV, reimpressa fielmente no --output
 };
 
+static char *copiar_texto(const char *s) {
+    size_t n = strlen(s);
+    char *c = malloc(n + 1);
+    if (c) memcpy(c, s, n + 1);
+    return c;
+}
+
 // Dataset Asteroides NASA
-ITEM *item_criar_asteroide(AsteroidData *data) {
+ITEM *item_criar_asteroide(const AsteroidData *data, const char *linha_bruta) {
     if (!data) return NULL;
-    ITEM *item = (ITEM *) malloc(sizeof(ITEM));
-    if (item) {
-        item->type = READER_NASA;
-        item->asteroide = *data;
-        item->similarity = 1.0; // Valor padrão de similaridade
+    ITEM *item = malloc(sizeof(ITEM));
+    if (!item) return NULL;
+
+    item->type = READER_NASA;
+    item->asteroide = *data;
+    item->similarity = 1.0; // valor padrão
+    item->linha_bruta = copiar_texto(linha_bruta ? linha_bruta : "");
+    if (!item->linha_bruta) {
+        free(item);
+        return NULL;
     }
     return item;
 }
 
 void item_destruir(ITEM **item) {
     if (item && *item) {
+        free((*item)->linha_bruta);
         free(*item);
         *item = NULL;
     }
 }
 
-// Retorna o tipo de leitor associado (reader)
 ReaderType item_get_type(const ITEM *item) {
     return item ? item->type : READER_NASA;
 }
 
-// Retorna campos numéricos com base no nome da coluna solicitada na consulta
+const char *item_linha_bruta(const ITEM *item) {
+    return item ? item->linha_bruta : "";
+}
+
+// Retorna campos numéricos (e booleanos como 0/1) com base no nome da coluna
 double item_obter_valor_numerico(const ITEM *item, const char *campo) {
     if (!item || !campo) return 0.0;
     const AsteroidData *a = &item->asteroide;
@@ -46,6 +63,9 @@ double item_obter_valor_numerico(const ITEM *item, const char *campo) {
     if (strcmp(campo, "year") == 0) return (double)a->year;
     if (strcmp(campo, "month") == 0) return (double)a->month;
     if (strcmp(campo, "days_until_approach") == 0) return (double)a->days_until_approach;
+    if (strcmp(campo, "is_past_event") == 0) return a->is_past_event ? 1.0 : 0.0;
+    if (strcmp(campo, "is_future_event") == 0) return a->is_future_event ? 1.0 : 0.0;
+    if (strcmp(campo, "on_sentry_list") == 0) return a->on_sentry_list ? 1.0 : 0.0;
     if (strcmp(campo, "risk_score") == 0) return a->risk_score;
     if (strcmp(campo, "panic_level") == 0) return a->panic_level;
     if (strcmp(campo, "sentry_impact_prob") == 0) return a->sentry_impact_prob;
@@ -82,14 +102,47 @@ const char *item_obter_valor_string(const ITEM *item, const char *campo) {
     return "";
 }
 
-// Funções de chave padronizadas para ordenação e busca
-int item_chave(const ITEM *item) {
-    if (!item) return 0;
-    return (int)item_obter_valor_numerico(item, "year");
+static const char *const CAMPOS_TEXTO[] = {
+    "asteroid_designation", "asteroid_fullname", "close_approach_date",
+    "threat_category", "panic_verdict"
+};
+
+static const char *const CAMPOS_NUM[] = {
+    "year", "month", "distance_au", "velocity_km_s", "absolute_magnitude",
+    "days_until_approach", "is_past_event", "is_future_event", "risk_score",
+    "panic_level", "on_sentry_list", "sentry_impact_prob", "sentry_torino_scale",
+    "sentry_palermo_scale", "sentry_diameter_km", "similarity"
+};
+
+static bool esta_em(const char *const *v, size_t n, const char *c) {
+    for (size_t i = 0; i < n; i++)
+        if (strcmp(v[i], c) == 0) return true;
+    return false;
 }
 
-int item_get_chave_ano(const ITEM *item) {
-    return item_chave(item);
+#define N_TEXTO (sizeof CAMPOS_TEXTO / sizeof *CAMPOS_TEXTO)
+#define N_NUM   (sizeof CAMPOS_NUM / sizeof *CAMPOS_NUM)
+
+bool item_campo_valido(const char *campo) {
+    if (!campo) return false;
+    return esta_em(CAMPOS_TEXTO, N_TEXTO, campo) || esta_em(CAMPOS_NUM, N_NUM, campo);
+}
+
+// Converte qualquer campo para texto (usado por GROUP e CROSS: year vira "2025")
+bool item_obter_valor_texto(const ITEM *item, const char *campo, char *buf, size_t tam) {
+    if (!buf || tam == 0) return false;
+    buf[0] = '\0';
+    if (!item || !campo) return false;
+
+    if (esta_em(CAMPOS_TEXTO, N_TEXTO, campo)) {
+        snprintf(buf, tam, "%s", item_obter_valor_string(item, campo));
+        return true;
+    }
+    if (esta_em(CAMPOS_NUM, N_NUM, campo)) {
+        snprintf(buf, tam, "%.15g", item_obter_valor_numerico(item, campo));
+        return true;
+    }
+    return false;
 }
 
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave) {
@@ -104,32 +157,10 @@ int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave) {
                   item_obter_valor_string(b, campo_chave));
 }
 
-// Funções de impressão unificadas
+// Reimprime a linha exatamente como veio no CSV de entrada (mesmo delimitador e formatação)
 void item_imprimir_linha_csv(const ITEM *item, FILE *stream) {
     if (!item || !stream) return;
-    const AsteroidData *a = &item->asteroide;
-
-    fprintf(stream, "%s;%s;%s;%d;%d;%.6f;%.2f;%.2f;%d;%d;%d;%.4f;%.4f;%s;%s;%d;%.6f;%.2f;%.2f;%.3f\n",
-            a->asteroid_designation,
-            a->asteroid_fullname,
-            a->close_approach_date,
-            a->year,
-            a->month,
-            a->distance_au,
-            a->velocity_km_s,
-            a->absolute_magnitude,
-            a->days_until_approach,
-            a->is_past_event ? 1 : 0,
-            a->is_future_event ? 1 : 0,
-            a->risk_score,
-            a->panic_level,
-            a->threat_category,
-            a->panic_verdict,
-            a->on_sentry_list ? 1 : 0,
-            a->sentry_impact_prob,
-            a->sentry_torino_scale,
-            a->sentry_palermo_scale,
-            a->sentry_diameter_km);
+    fprintf(stream, "%s\n", item->linha_bruta ? item->linha_bruta : "");
 }
 
 void item_imprimir(const ITEM *item) {

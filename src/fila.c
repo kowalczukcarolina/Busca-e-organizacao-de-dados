@@ -4,7 +4,7 @@
 
 typedef struct no_ NO;
 
-static struct no_ {
+struct no_ {
     ITEM *item;
     NO *prox;
 };
@@ -69,7 +69,7 @@ ITEM *fila_remover(FILA *fila) {
     return item;
 }
 
-void fila_apagar(FILA **fila) {
+void fila_apagar(FILA **fila, bool destruir_itens) {
     ITEM *item;
 
     if (fila == NULL || *fila == NULL)
@@ -77,7 +77,8 @@ void fila_apagar(FILA **fila) {
 
     while (!fila_vazia(*fila)) {
         item = fila_remover(*fila);
-        item_destruir(&item);
+        if (destruir_itens)
+            item_destruir(&item);
     }
 
     free(*fila);
@@ -119,20 +120,13 @@ void fila_imprimir(FILA *fila) {
     printf("<- fim\n");
 }
 
-// Retorna o item na posição 'index' (0 é a frente da fila, tamanho - 1 é o fim)
-ITEM *fila_obter_item(FILA *fila, int index) {
-    if (fila == NULL || index < 0 || index >= fila->tamanho) {
-        return NULL;
-    }
+// Percorre da frente (primeiro inserido) até o fim
+void fila_percorrer(FILA *fila, ITEM_VISITOR f, void *ctx) {
+    if (fila == NULL || f == NULL)
+        return;
 
-    NO *atual = fila->inicio;
-    for (int i = 0; i < index && atual != NULL; i++) {
-        atual = atual->prox;
+    for (NO *a = fila->inicio; a != NULL; a = a->prox) {
+        if (!f(a->item, ctx))
+            return;
     }
-
-    if (atual != NULL) {
-        return atual->item;
-    }
-
-    return NULL;
 }

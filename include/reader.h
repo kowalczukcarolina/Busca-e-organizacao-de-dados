@@ -2,9 +2,14 @@
 #define READER_H
 
 #include <stdbool.h>
-#include "tads/item.h"
+#include "estrutura.h"
+#include "query.h"
 
-// Função responsável por carregar o dataset para qualquer estrutura escolhida (--base)
-bool carregar_base_nasa(const char *caminho_arquivo, void *estrutura_base, const char *tipo_base, int limite);
+// Carrega o CSV da NASA para a estrutura --base. "q" (pode ser NULL) fornece GROUP/CROSS
+// para lista_gen e lista_cruz. limite = 0 carrega tudo.
+bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUERY *q, int limite);
+
+// Cabeçalho original do CSV de entrada (usado idêntico no --output).
+const char *reader_cabecalho(void);
 
 #endif /* READER_H */

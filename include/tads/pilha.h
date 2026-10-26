@@ -7,7 +7,8 @@
 typedef struct pilha PILHA;
 
 PILHA *pilha_criar(void);
-void pilha_apagar(PILHA **pilha);
+// destruir_itens = false: apenas libera os nós (os itens pertencem a outra estrutura)
+void pilha_apagar(PILHA **pilha, bool destruir_itens);
 bool pilha_vazia(PILHA *pilha);
 bool pilha_cheia(PILHA *pilha);
 int pilha_tamanho(PILHA *pilha);
@@ -17,7 +18,7 @@ ITEM *pilha_desempilhar(PILHA *pilha);
 void pilha_imprimir(PILHA *pilha);
 void pilha_inverter(PILHA *pilha);
 
-// Função adicionada para permitir percorrer os elementos por índice (0 = topo)
-ITEM *pilha_obter_item(PILHA *pilha, int index);
+// Percorre do topo até a base, em O(n) total. Para quando o visitante devolve false.
+void pilha_percorrer(PILHA *pilha, ITEM_VISITOR f, void *ctx);
 
 #endif

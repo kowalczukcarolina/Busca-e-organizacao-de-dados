@@ -1,7 +1,5 @@
-FILTER|distance_au|<=|1.0
-SIM|velocity_km_s|15.0|10.0|1.0
-SIM|risk_score|0.70|0.30|2.0
-ACCEPT|0.00
-ORDER|similarity|DESC
-GROUP|threat_category|year
-CROSS|threat_category|year
+FILTER|on_sentry_list|==|true
+FILTER|threat_category|!=|Safe
+ORDER|risk_score|DESC
+GROUP|year
+CROSS|year|threat_category

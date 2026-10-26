@@ -4,7 +4,7 @@
 
 typedef struct no NO;
 
-static struct no {
+struct no {
     ITEM *item;
     NO *anterior;
 };
@@ -25,7 +25,7 @@ PILHA *pilha_criar(void) {
     return pilha;
 }
 
-void pilha_apagar(PILHA **pilha) {
+void pilha_apagar(PILHA **pilha, bool destruir_itens) {
     NO *atual;
 
     if (pilha == NULL || *pilha == NULL) {
@@ -35,7 +35,8 @@ void pilha_apagar(PILHA **pilha) {
     atual = (*pilha)->topo;
     while (atual != NULL) {
         NO *anterior = atual->anterior;
-        item_destruir(&atual->item);
+        if (destruir_itens)
+            item_destruir(&atual->item);
         free(atual);
         atual = anterior;
     }
@@ -45,7 +46,7 @@ void pilha_apagar(PILHA **pilha) {
 }
 
 bool pilha_vazia(PILHA *pilha) {
-    return pilha != NULL && pilha->topo == NULL;
+    return pilha == NULL || pilha->topo == NULL;
 }
 
 bool pilha_cheia(PILHA *pilha) {
@@ -54,7 +55,7 @@ bool pilha_cheia(PILHA *pilha) {
 }
 
 int pilha_tamanho(PILHA *pilha) {
-    return pilha != NULL ? pilha->tamanho : -1;
+    return pilha != NULL ? pilha->tamanho : 0;
 }
 
 ITEM *pilha_topo(PILHA *pilha) {
@@ -135,20 +136,13 @@ void pilha_inverter(PILHA *pilha) {
     pilha->topo = anterior;
 }
 
-// Retorna o item na posição 'index' (0 é o topo, tamanho - 1 é a base)
-ITEM *pilha_obter_item(PILHA *pilha, int index) {
-    if (pilha == NULL || index < 0 || index >= pilha->tamanho) {
-        return NULL;
-    }
+// Percorre do topo (último inserido) até a base
+void pilha_percorrer(PILHA *pilha, ITEM_VISITOR f, void *ctx) {
+    if (pilha == NULL || f == NULL)
+        return;
 
-    NO *atual = pilha->topo;
-    for (int i = 0; i < index && atual != NULL; i++) {
-        atual = atual->anterior;
+    for (NO *a = pilha->topo; a != NULL; a = a->anterior) {
+        if (!f(a->item, ctx))
+            return;
     }
-
-    if (atual != NULL) {
-        return atual->item;
-    }
-
-    return NULL;
 }
