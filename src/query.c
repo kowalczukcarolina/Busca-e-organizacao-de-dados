@@ -137,6 +137,9 @@ static bool cmd_filter(QUERY *q, char *tok[], int n, int linha) {
     if (!parse_operador(tok[2], &f->op))      return erro(linha, "operador invalido (use == != < <= > >=)");
     if (!copiar(f->valor_txt, TAM_VALOR, tok[3])) return erro(linha, "valor vazio ou muito longo");
 
+    /* valor em UTF-8, igual aos textos guardados nos itens (o CSV de chamados vem em cp1252) */
+    item_normalizar_utf8(tok[3], f->valor_txt, TAM_VALOR);
+
     f->numerico = parse_numero_ou_bool(tok[3], &f->valor_num);
     q->n_filtros++;
     return true;
@@ -290,7 +293,20 @@ bool query_avaliar(const QUERY *q, const ITEM *item, double *similaridade) {
         const FILTRO *f = &q->filtros[i];
         int cmp;
 
-        if (f->numerico) {
+        /* O tipo é decidido pelo CAMPO, não pelo valor: antes, asteroid_designation == 433
+         * virava comparação numérica contra 0 e nunca casava. */
+        if (item_campo_eh_texto(item, f->campo)) {
+            const char *s = item_obter_valor_string(item, f->campo);
+            double x, chave_item = item_obter_valor_numerico(item, f->campo);
+            double chave_val = item_data_para_chave(f->valor_txt);
+
+            if (chave_item != 0.0 && chave_val != 0.0)          /* datas: ordem cronológica */
+                cmp = (chave_item < chave_val) ? -1 : (chave_item > chave_val ? 1 : 0);
+            else if (f->numerico && parse_double(s, &x))        /* texto numérico (ex.: SLA) */
+                cmp = (x < f->valor_num) ? -1 : (x > f->valor_num ? 1 : 0);
+            else
+                cmp = strcmp(s, f->valor_txt);
+        } else if (f->numerico) {
             double x = item_obter_valor_numerico(item, f->campo);
             cmp = (x < f->valor_num) ? -1 : (x > f->valor_num ? 1 : 0);
         } else {

@@ -64,6 +64,12 @@ bool item_atribuir_valor_numerico(ITEM *item, const char *campo, double valor);
 const char *item_obter_valor_string(const ITEM *item, const char *campo);
 bool item_obter_valor_texto(const ITEM *item, const char *campo, char *buf, size_t tam);
 bool item_campo_valido(const char *campo);
+// true se o campo é textual (comparado como string em FILTER/ORDER); false se numérico
+bool item_campo_eh_texto(const ITEM *item, const char *campo);
+// "DD/MM/AAAA HH:MM" (ou "AAAA-MM-DD HH:MM") -> AAAAMMDDHHMM; 0 se não for data
+double item_data_para_chave(const char *s);
+// Copia src em dest convertendo cp1252 -> UTF-8 quando src não for UTF-8 válido
+void item_normalizar_utf8(const char *src, char *dest, size_t tam);
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave);
 const char *item_get_chave(const ITEM *item);
 

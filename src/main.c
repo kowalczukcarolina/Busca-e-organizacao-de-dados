@@ -9,10 +9,6 @@
 #include "../include/reader.h"
 #include "../include/query.h"
 
-// Protótipo do leitor de chamados (Parte 2)
-bool carregar_base_chamados(const char *caminho_arquivo, ESTRUTURA *base, const QUERY *q, int limite);
-const char *chamados_reader_cabecalho(void);
-
 static double agora_ms(void) {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
@@ -69,6 +65,7 @@ int main(int argc, char *argv[]) {
     double t0 = 0.0, load_ms = 0.0, search_ms = 0.0, write_ms = 0.0;
     int input_records = 0, output_records = 0;
     CTX_BUSCA cb = { NULL, NULL, 0, 0, 0.0 };
+    bool carga_ok = false;
 
     for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "--reader") == 0 && i + 1 < argc)      reader_tipo = argv[++i];
@@ -107,7 +104,6 @@ int main(int argc, char *argv[]) {
 
     // 1) Carga da base conforme o reader escolhido
     t0 = agora_ms();
-    bool carga_ok = false;
     if (strcmp(reader_tipo, "nasa") == 0) {
         carga_ok = carregar_base_nasa(input_path, base, query, limit);
     } else if (strcmp(reader_tipo, "chamados") == 0) {
