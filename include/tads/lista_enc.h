@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include "item.h"
 
+
 typedef struct lista_enc LISTA_ENC;
 
 LISTA_ENC *lista_criar_enc(bool ordenada);

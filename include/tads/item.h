@@ -2,16 +2,14 @@
 #define ITEM_H
 
 #include <stdbool.h>
-#include <stddef.h>
 #include <stdio.h>
 
-// Identificador do leitor em uso (--reader)
 typedef enum {
     READER_NASA,
-    READER_CHAMADOS_TI
+    READER_CHAMADOS
 } ReaderType;
 
-// Dataset Asteroides NASA
+// Struct para os dados de asteroides (Parte 1)
 typedef struct {
     char asteroid_designation[64];
     char asteroid_fullname[128];
@@ -35,37 +33,41 @@ typedef struct {
     double sentry_diameter_km;
 } AsteroidData;
 
-// TAD ITEM
+// Struct para os dados de chamados de TI (Parte 2)
+typedef struct {
+    int solicitacao;               // ID do chamado
+    char atividade[256];           // Descrição da atividade
+    char data_hora_abertura[32];   // Data e hora de abertura
+    char sla[32];                  // SLA estipulado
+    char data_hora_fechamento[32]; // Data e hora de fechamento
+    char grupo[128];               // Grupo responsável
+    char situacao[64];             // Situação do chamado
+    char unidade[128];             // Ministério/Unidade solicitante
+    int ano_abertura;              // Ano extraído para fins de agrupamento/cruzamento
+} ChamadoData;
 
-// Declaração opaca do item
 typedef struct item_st ITEM;
 
-// Callback de percurso das estruturas: devolva true para continuar, false para parar.
 typedef bool (*ITEM_VISITOR)(ITEM *item, void *ctx);
 
-// Construtores e Destrutores
-// linha_bruta: linha original do CSV (sem \r\n); é reimpressa fielmente na saída.
+// Construtores específicos
 ITEM *item_criar_asteroide(const AsteroidData *data, const char *linha_bruta);
-void item_destruir(ITEM **item);
+ITEM *item_criar_chamado(const ChamadoData *data, const char *linha_bruta);
 
-// Métodos de Acesso Genéricos (Interface do TAD)
+void item_destruir(ITEM **item);
 ReaderType item_get_type(const ITEM *item);
-const char *item_get_chave(const ITEM *item);
 const char *item_linha_bruta(const ITEM *item);
 
-// Métodos de Avaliação de Filtro e Similaridade
+// Métodos genéricos de acesso a atributos para FILTER, SIM, ORDER, GROUP, CROSS
 double item_obter_valor_numerico(const ITEM *item, const char *campo);
-const char *item_obter_valor_string(const ITEM *item, const char *campo);
 bool item_atribuir_valor_numerico(ITEM *item, const char *campo, double valor);
-
-// true se "campo" é um campo conhecido (texto ou numérico)
-bool item_campo_valido(const char *campo);
-// Converte QUALQUER campo (texto ou numérico) para texto. false se o campo não existe.
+const char *item_obter_valor_string(const ITEM *item, const char *campo);
 bool item_obter_valor_texto(const ITEM *item, const char *campo, char *buf, size_t tam);
-
-// Métodos de Ordenação e Impressão
+bool item_campo_valido(const char *campo);
 int item_comparar(const ITEM *a, const ITEM *b, const char *campo_chave);
+const char *item_get_chave(const ITEM *item);
+
 void item_imprimir_linha_csv(const ITEM *item, FILE *stream);
 void item_imprimir(const ITEM *item);
 
-#endif // ITEM_H
+#endif

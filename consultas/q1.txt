@@ -1,5 +1,19 @@
-FILTER|on_sentry_list|==|true
-FILTER|threat_category|!=|Safe
-ORDER|risk_score|DESC
-GROUP|year
-CROSS|year|threat_category
+# Critérios de Filtro para Asteroides Próximos e Relevantes
+FILTER|distance_au|<=|0.05
+FILTER|risk_score|>=|0.2
+
+# Critérios de Similaridade (SIM: campo|alvo|tolerancia|peso)
+SIM|velocity_km_s|5.0|3.0|1.5
+SIM|absolute_magnitude|22.0|5.0|1.0
+
+# Limiar mínimo de aceitação da similaridade
+ACCEPT|0.40
+
+# Ordenação para a lista ordenada ou resultados
+ORDER|similarity|DESC
+
+# Agrupamento para lista generalizada
+GROUP|threat_category|year
+
+# Cruzamento para lista cruzada
+CROSS|threat_category|year

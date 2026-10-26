@@ -9,13 +9,16 @@
 #include "../include/reader.h"
 #include "../include/query.h"
 
+// Protótipo do leitor de chamados (Parte 2)
+bool carregar_base_chamados(const char *caminho_arquivo, ESTRUTURA *base, const QUERY *q, int limite);
+const char *chamados_reader_cabecalho(void);
+
 static double agora_ms(void) {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
     return (double)ts.tv_sec * 1000.0 + (double)ts.tv_nsec / 1e6;
 }
 
-/* Contexto do percurso da busca: avalia cada item da base e insere os aceitos no resultado */
 typedef struct {
     const QUERY *q;
     ESTRUTURA *res;
@@ -33,7 +36,6 @@ static bool visita_busca(ITEM *item, void *arg) {
 
     c->matched++;
     if (c->res) {
-        /* a similaridade precisa estar no item ANTES da inserção (lista_ord ordena por ela) */
         item_atribuir_valor_numerico(item, "similarity", sim);
         double t0 = agora_ms();
         if (est_inserir(c->res, item, c->q))
@@ -43,10 +45,9 @@ static bool visita_busca(ITEM *item, void *arg) {
     return true;
 }
 
-/* Contexto da escrita do --output: respeita o --top-k pela ordem de acesso da estrutura */
 typedef struct {
     FILE *f;
-    int restante; /* -1 = sem limite */
+    int restante;
     int escritos;
 } CTX_SAIDA;
 
@@ -81,12 +82,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (!reader_tipo || !input_path || !tipo_base) {
-        fprintf(stderr, "Uso: %s --reader nasa --input arq.csv --base lista_enc --result lista_ord "
-                        "--query q.txt --output saida.csv --top-k 100 --limit 10000\n", argv[0]);
-        goto fim;
-    }
-    if (strcmp(reader_tipo, "nasa") != 0) {
-        fprintf(stderr, "Leitor '%s' nao suportado.\n", reader_tipo);
+        fprintf(stderr, "Uso: %s --reader [nasa|chamados] --input arq.csv --base [estrutura] ...\n", argv[0]);
         goto fim;
     }
 
@@ -107,27 +103,36 @@ int main(int argc, char *argv[]) {
         if (!query) goto fim;
     }
 
-    /* ORDER da consulta define a ordem da lista_ord (sem query: similarity DESC) */
     if (res) est_configurar_ordem(res, query_order_campo(query), query_order_desc(query));
 
-    /* 1) Carga da base */
+    // 1) Carga da base conforme o reader escolhido
     t0 = agora_ms();
-    if (!carregar_base_nasa(input_path, base, query, limit)) {
+    bool carga_ok = false;
+    if (strcmp(reader_tipo, "nasa") == 0) {
+        carga_ok = carregar_base_nasa(input_path, base, query, limit);
+    } else if (strcmp(reader_tipo, "chamados") == 0) {
+        carga_ok = carregar_base_chamados(input_path, base, query, limit);
+    } else {
+        fprintf(stderr, "Leitor '%s' nao suportado.\n", reader_tipo);
+        goto fim;
+    }
+
+    if (!carga_ok) {
         fprintf(stderr, "Erro durante o carregamento dos dados.\n");
         goto fim;
     }
     load_ms = agora_ms() - t0;
     input_records = est_tamanho(base);
 
-    /* 2) Busca: percorre a base uma única vez (O(n) total) */
+    // 2) Busca
     cb.q = query;
     cb.res = res;
     t0 = agora_ms();
     est_percorrer(base, visita_busca, &cb);
-    search_ms = agora_ms() - t0 - cb.insert_ms; /* a inserção no resultado é medida à parte */
+    search_ms = agora_ms() - t0 - cb.insert_ms;
     if (search_ms < 0.0) search_ms = 0.0;
 
-    /* 3) Escrita do --output respeitando o --top-k */
+    // 3) Escrita do output
     t0 = agora_ms();
     if (res) {
         int total = est_tamanho(res);
@@ -138,7 +143,9 @@ int main(int argc, char *argv[]) {
                 perror("Erro ao abrir --output");
                 goto fim;
             }
-            fprintf(fout, "%s\n", reader_cabecalho()); /* cabeçalho idêntico ao da entrada */
+            const char *cabecalho = (strcmp(reader_tipo, "nasa") == 0) ? reader_cabecalho() : chamados_reader_cabecalho();
+            fprintf(fout, "%s\n", cabecalho);
+            
             CTX_SAIDA cs = { fout, top_k > 0 ? top_k : -1, 0 };
             est_percorrer(res, visita_saida, &cs);
             output_records = cs.escritos;
@@ -147,7 +154,7 @@ int main(int argc, char *argv[]) {
     }
     write_ms = agora_ms() - t0;
 
-    /* 4) Métricas na saída padrão */
+    // 4) Métricas
     printf("STATUS=OK\n");
     printf("INPUT_RECORDS=%d\n", input_records);
     printf("MATCHED_RECORDS=%d\n", cb.matched);
@@ -159,7 +166,6 @@ int main(int argc, char *argv[]) {
     status = 0;
 
 fim:
-    /* Os itens são compartilhados: o resultado NUNCA os destrói, a base é a dona */
     est_apagar(&res, false);
     est_apagar(&base, true);
     query_apagar(&query);

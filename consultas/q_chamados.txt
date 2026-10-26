@@ -1,0 +1,14 @@
+# Filtra chamados pela situação "Fechada" (que engloba 100% da base)
+FILTER|situacao|==|Fechada
+
+# Filtra opcionalmente por uma unidade que possui centenas de registros válidos
+FILTER|unidade|==|Ministério das Mulheres
+
+# Ordenação decrescente pelo número da solicitação
+ORDER|solicitacao|DESC
+
+# Agrupamento hierárquico usando a lista generalizada
+GROUP|grupo|situacao
+
+# Cruzamento de eixos usando a lista cruzada
+CROSS|unidade|situacao
