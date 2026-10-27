@@ -14,27 +14,27 @@ a estrutura que armazenará os resultados da busca. Na primeira implementação,
 |Julia Barbosa Nogueira|17901347|[GitHub Julia Nogueira](https://github.com/juliab2nogueira)|
 |Victor Hugo Adão de Oliveira|17969072|[GitHub Victor Adão](https://github.com/VihAdao)|
 
-## Como Funciona
+## Como funciona
 
 O programa opera através de uma interface de linha de comando (CLI) que processa datasets em formato CSV utilizando Tipos Abstratos de Dados (TADs) implementados em linguagem C. O fluxo de funcionamento divide-se em quatro etapas principais:
 
-### 1. Leitura dos Dados com "--reader" e "--input"
+### 1. Leitura dos fados com "--reader" e "--input"
 * O programa identifica o tipo de leitor especificado via parâmetro ("nasa" ou "chamados")
-* Lê o ficheiro CSV de entrada, lidando com quebras de linha internas em campos delimitados por aspas e convertendo a codificação dos textos para UTF-8
-* Cada linha válida do dataset é convertida internamente num ITEM estruturado
+* Lê o ficheiro CSV de entrada
+* Cada linha válida do dataset é convertida internamente num ITEM
 
-### 2. Armazenamento na Base "--base"
+### 2. Armazenamento na base "--base"
 * Todos os registos lidos são inseridos na estrutura de dados primária escolhida pelo utilizador (ex: "fila", "lista_seq", etc.)
 * Essa estrutura serve como o repositório principal de dados em memória para as operações seguintes
 
-### 3. Filtragem e Avaliação de Consultas "--query"
-* Caso seja fornecido um ficheiro de regras de consulta (".txt"), o programa avalia cada registo da base utilizando critérios como:
+### 3. Filtro e avaliação de consultas "--query"
+* Caso seja fornecido um arquivo de regras de consulta (".txt"), o programa avalia cada registo da base utilizando critérios como:
   * **FILTER**: Condições obrigatórias de seleção baseadas em campos específicos
   * **SIM**: Cálculo de similaridade numérica ponderada
   * **ACCEPT**: Limiar mínimo aceitável de similaridade
 * Os registos que satisfazem os critérios são selecionados e recebem o valor de similaridade calculado
 
-### 4. Resultados e Exportação "--result" e "--output"
+### 4. Resultados e exportação "--result" e "--output"
 * Os registos filtrados são inseridos numa estrutura de resultado secundária (que pode ser ordenada com "--order", agrupada com "--group" ou cruzada com "--cross")
 * Por fim, o programa percorre esta estrutura de resultados e exporta os dados formatados para o ficheiro de saída especificado ("--output"), respeitando limites opcionais como "--top-k"
 
