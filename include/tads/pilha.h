@@ -5,14 +5,18 @@
 #include <stdbool.h>
 
 typedef struct pilha PILHA;
-
+//Construtores e destrutores
 PILHA *pilha_criar(void);
 // destruir_itens = false: apenas libera os nós (os itens pertencem a outra estrutura)
 void pilha_apagar(PILHA **pilha, bool destruir_itens);
+
+//Consultas
 bool pilha_vazia(PILHA *pilha);
 bool pilha_cheia(PILHA *pilha);
 int pilha_tamanho(PILHA *pilha);
 ITEM *pilha_topo(PILHA *pilha);
+
+//Operações
 bool pilha_empilhar(PILHA *pilha, ITEM *item);
 ITEM *pilha_desempilhar(PILHA *pilha);
 void pilha_imprimir(PILHA *pilha);
