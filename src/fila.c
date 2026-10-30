@@ -6,15 +6,17 @@ typedef struct no_ NO;
 
 struct no_ {
     ITEM *item;
-    NO *prox;
+    NO *prox; //ponteiro para o próximo nó da fila
 };
 
+//Fila tem lógica FIFO: First In, First Out
 struct fila_ {
-    NO *inicio;
-    NO *fim;
-    int tamanho;
+    NO *inicio; //ponteiro para o início da fila
+    NO *fim;    //ponteiro para o fim da fila
+    int tamanho;//contador da quant de itens dentro da fila
 };
 
+//Construtor
 FILA *fila_criar(void) {
     FILA *fila = malloc(sizeof(FILA));
     if (fila != NULL) {
@@ -25,6 +27,7 @@ FILA *fila_criar(void) {
     return fila;
 }
 
+//O item é inserido sempre no fim
 bool fila_inserir(FILA *fila, ITEM *item) {
     NO *novo;
 
@@ -50,6 +53,7 @@ bool fila_inserir(FILA *fila, ITEM *item) {
     return true;
 }
 
+//O item é removido sempre do início
 ITEM *fila_remover(FILA *fila) {
     NO *removido;
     ITEM *item;
@@ -69,6 +73,7 @@ ITEM *fila_remover(FILA *fila) {
     return item;
 }
 
+//Apagar fila e liberar memória
 void fila_apagar(FILA **fila, bool destruir_itens) {
     ITEM *item;
 
@@ -85,12 +90,14 @@ void fila_apagar(FILA **fila, bool destruir_itens) {
     *fila = NULL;
 }
 
+//Ver quem é o primeiro da fila
 ITEM *fila_frente(FILA *fila) {
     if (fila == NULL || fila_vazia(fila))
         return NULL;
     return fila->inicio->item;
 }
 
+/*----Consultas--------*/
 int fila_tamanho(FILA *fila) {
     return fila != NULL ? fila->tamanho : 0;
 }
@@ -103,6 +110,7 @@ bool fila_cheia(FILA *fila) {
     return fila == NULL;
 }
 
+//Impressão
 void fila_imprimir(FILA *fila) {
     NO *atual;
 
