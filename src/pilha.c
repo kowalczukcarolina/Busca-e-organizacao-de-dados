@@ -6,14 +6,15 @@ typedef struct no NO;
 
 struct no {
     ITEM *item;
-    NO *anterior;
+    NO *anterior; //ponteiro para o elemento abaixo/anterior
 };
 
 struct pilha {
-    NO *topo;
-    int tamanho;
+    NO *topo; //ponteiro para o elemento do topo
+    int tamanho; //contador para quantidade de elementos
 };
 
+//Construtor
 PILHA *pilha_criar(void) {
     PILHA *pilha = malloc(sizeof(PILHA));
 
@@ -25,6 +26,7 @@ PILHA *pilha_criar(void) {
     return pilha;
 }
 
+//Apagar filha e liberar memória
 void pilha_apagar(PILHA **pilha, bool destruir_itens) {
     NO *atual;
 
@@ -45,6 +47,7 @@ void pilha_apagar(PILHA **pilha, bool destruir_itens) {
     *pilha = NULL;
 }
 
+/*------Consultas-----*/
 bool pilha_vazia(PILHA *pilha) {
     return pilha == NULL || pilha->topo == NULL;
 }
@@ -66,6 +69,7 @@ ITEM *pilha_topo(PILHA *pilha) {
     return pilha->topo->item;
 }
 
+/*-------Operações----------*/
 bool pilha_empilhar(PILHA *pilha, ITEM *item) {
     NO *novo;
 
