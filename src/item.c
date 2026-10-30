@@ -5,15 +5,18 @@
 
 struct item_st {
     ReaderType type;
-    union {
+    //O item é asteroide ou chamado, nunca os dois ao mesmo tempo
+    union { //union sobrepõe o espaço de armazenamento
         AsteroidData asteroide;
         ChamadoData chamado;
     } dados;
-    double similarity;
+    double similarity; //para comparar a similaridade dentro da consulta
     char *linha_bruta;
-    char chave[64];   /* cópia própria: evita buffer estático compartilhado entre itens */
+    char chave[64]; //cópia própria: evita buffer estático compartilhado entre itens
 };
 
+//Lista de campos válidos
+//"static": torna a lista privada; "const": não deixa alterar; "*const": protege o próprio ponteiro dentro da lista
 static const char *const CAMPOS_TEXTO_NASA[] = {
     "asteroid_designation", "asteroid_fullname", "close_approach_date",
     "threat_category", "panic_verdict", NULL
@@ -32,12 +35,14 @@ static const char *const CAMPOS_NUM_CHAMADOS[] = {
     "solicitacao", "ano_abertura", "mes_abertura", "dia_abertura", "ano_fechamento", NULL
 };
 
+//Função para validação de campos
 static bool em_lista(const char *const *lista, const char *campo) {
     for (int i = 0; lista[i]; i++)
         if (strcmp(lista[i], campo) == 0) return true;
     return false;
 }
 
+//Função para copiar string de forma segura (strcpy pode causar overflow porque não verifica o espaço disponível)
 static char *copiar_texto(const char *s) {
     if (!s) s = "";
     size_t n = strlen(s);
@@ -48,7 +53,7 @@ static char *copiar_texto(const char *s) {
 
 /* ---------- datas ---------- */
 
-/* Lê "DD/MM/AAAA[ HH:MM]" ou "AAAA-MM-DD[ HH:MM]". */
+// Lê "DD/MM/AAAA[ HH:MM]" ou "AAAA-MM-DD[ HH:MM]"
 static bool ler_data(const char *s, int *d, int *m, int *y, int *hh, int *mi) {
     *hh = 0; *mi = 0;
     if (!s || !s[0]) return false;
@@ -150,6 +155,7 @@ ITEM *item_criar_chamado(const ChamadoData *data, const char *linha_bruta) {
     return item;
 }
 
+//Liberação de memória
 void item_destruir(ITEM **item) {
     if (item && *item) {
         free((*item)->linha_bruta);
