@@ -1,0 +1,8 @@
+# Filtra chamados do Ministério das Mulheres ou MDHC
+FILTER|unidade|==|Ministério das Mulheres
+
+# Ordena de forma ascendente pelo número da solicitação
+ORDER|solicitacao|ASC
+
+# Agrupa por grupo de atendimento e atividade
+GROUP|grupo|atividade

@@ -1,0 +1,4 @@
+# Critérios de Consulta 3: Foco em Agrupamento e Magnitude
+FILTER|is_future_event|==|false
+ORDER|absolute_magnitude|ASC
+GROUP|threat_category|panic_level

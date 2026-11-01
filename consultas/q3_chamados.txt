@@ -1,0 +1,21 @@
+# Filtros obrigatórios (todos precisam ser satisfeitos)
+FILTER|situacao|==|Fechada
+FILTER|unidade|==|Ministério das Mulheres
+FILTER|ano_abertura|>=|2023
+FILTER|ano_fechamento|>=|2023
+ 
+# (campo|alvo|tolerancia|peso)
+SIM|ano_abertura|2025|2|1.0
+SIM|ano_fechamento|2025|2|1.0
+ 
+# Limiar minimo da similaridade total
+ACCEPT|0.40
+ 
+# Ordenação (usada com --result lista_ord): mais similares primeiro
+ORDER|similarity|DESC
+ 
+# Agrupamento hierárquico (usado com lista_gen): unidade > grupo > ano de abertura
+GROUP|unidade|grupo|ano_abertura
+ 
+# Cruzamento (usado com lista_cruz): grupo x ano de abertura
+CROSS|grupo|ano_abertura
