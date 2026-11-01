@@ -10,13 +10,14 @@
 #define TAM_LINHA  8192
 #define MAX_COLS   64
 
-/* Campos do dataset da NASA, na ordem em que aparecem no CSV original */
+//Campos do dataset da NASA, na ordem em que aparecem no CSV original 
 enum {
     F_DESIG, F_FULLNAME, F_DATE, F_YEAR, F_MONTH, F_DIST, F_VEL, F_MAG, F_DAYS,
     F_PAST, F_FUTURE, F_RISK, F_PANIC_LVL, F_THREAT, F_VERDICT, F_SENTRY,
     F_PROB, F_TORINO, F_PALERMO, F_DIAM, F_TOTAL
 };
 
+// nomes dos campos esperados no cabeçalho do arquivo csv
 static const char *const NOMES_CAMPOS[F_TOTAL] = {
     "asteroid_designation", "asteroid_fullname", "close_approach_date", "year", "month",
     "distance_au", "velocity_km_s", "absolute_magnitude", "days_until_approach",
@@ -25,15 +26,16 @@ static const char *const NOMES_CAMPOS[F_TOTAL] = {
     "sentry_palermo_scale", "sentry_diameter_km"
 };
 
+// armazenamento global do cabeçalho lido e do delimitador do arquivo
 static char g_cabecalho[TAM_LINHA] = "";
 static char g_delim = ',';
 
+// retorna a string contendo o cabeçalho original para salvar no arquivo de saída
 const char *reader_cabecalho(void) {
     return g_cabecalho;
 }
 
-// Extrai o próximo campo CSV respeitando aspas duplas e delimitadores internos.
-// Modifica a linha (troca o delimitador por '\0').
+// extrai o próximo campo CSV respeitando aspas duplas/delimitadores internos e modifica a linha (troca o delimitador por '\0').
 static char *extrair_campo_csv(char **linha_ptr, char delim) {
     if (!linha_ptr || !*linha_ptr) return NULL;
 
@@ -51,10 +53,10 @@ static char *extrair_campo_csv(char **linha_ptr, char delim) {
         }
         p++;
     }
-    *linha_ptr = NULL; /* último campo da linha */
+    *linha_ptr = NULL; //ultimo campo da linha
 
 fim:
-    // Remove aspas externas, se existirem
+    // remove as aspas que cercam o valor retornado
     if (*inicio == '"') {
         inicio++;
         size_t len = strlen(inicio);
@@ -64,6 +66,7 @@ fim:
     return inicio;
 }
 
+// converte valores textuais para o booleano correspondente
 static bool eh_verdadeiro(const char *s) {
     if (!s) return false;
     if (strcmp(s, "1") == 0) return true;
@@ -73,8 +76,7 @@ static bool eh_verdadeiro(const char *s) {
     return true;
 }
 
-// Converte texto em double. Campo vazio/ausente vira 0 sem interromper a leitura.
-// Com delimitador ';' aceita vírgula decimal.
+// Converte texto em double. Campo vazio/ausente vira 0 sem interromper a leitura. Com delimitador ';' aceita vírgula decimal.
 static double para_double(const char *s) {
     if (!s || s[0] == '\0') return 0.0;
     if (g_delim != ';') return atof(s);
@@ -89,15 +91,17 @@ static double para_double(const char *s) {
     return atof(tmp);
 }
 
+// converte texto para número inteiro utilizando a função de ponto flutuante
 static int para_int(const char *s) {
     return (s && s[0] != '\0') ? (int)para_double(s) : 0;
 }
 
+// realiza a cópia segura de strings evitando estouro de buffer
 static void copiar_campo(char *dest, size_t tam, const char *src) {
     snprintf(dest, tam, "%s", src ? src : "");
 }
 
-// Mapeia as colunas do cabeçalho para os campos conhecidos. Retorna quantos foram encontrados.
+// mapeia as colunas do cabeçalho para os campos conhecidos. Retorna quantos foram encontrados.
 static int mapear_colunas(char *cabecalho_copia, int mapa[F_TOTAL]) {
     for (int i = 0; i < F_TOTAL; i++) mapa[i] = -1;
 
@@ -118,6 +122,7 @@ static int mapear_colunas(char *cabecalho_copia, int mapa[F_TOTAL]) {
     return encontrados;
 }
 
+// lê o arquivo csv da nasa e carrega os registros na estrutura base
 bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUERY *q, int limite) {
     if (!base) return false;
 
@@ -139,10 +144,10 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
 
     char *cab = linha;
     if ((unsigned char)cab[0] == 0xEF && (unsigned char)cab[1] == 0xBB && (unsigned char)cab[2] == 0xBF)
-        cab += 3; /* ignora BOM UTF-8 */
+        cab += 3; // descarta marcação utf-8 bom
     snprintf(g_cabecalho, sizeof g_cabecalho, "%s", cab);
 
-    // Delimitador detectado pelo cabeçalho (o dataset tem 20 colunas)
+    // delimitador detectado pelo cabeçalho (o dataset tem 20 colunas)
     int n_pv = 0, n_vg = 0;
     for (const char *c = g_cabecalho; *c; c++) {
         if (*c == ';') n_pv++;
@@ -150,7 +155,7 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
     }
     g_delim = (n_pv > n_vg) ? ';' : ',';
 
-    // Mapeia colunas pelo nome; se o cabeçalho não bater, assume a ordem do dataset original
+    // mapeia colunas pelo nome; se o cabeçalho não bater, assume a ordem do dataset original
     int mapa[F_TOTAL];
     char cab_copia[TAM_LINHA];
     snprintf(cab_copia, sizeof cab_copia, "%s", g_cabecalho);
@@ -159,7 +164,7 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
     }
 
     int registros_lidos = 0;
-
+    // faz o processamento linha a linha do arquivo
     while (fgets(linha, sizeof(linha), file) != NULL) {
         if (limite > 0 && registros_lidos >= limite)
             break;
@@ -171,7 +176,7 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
         char original[TAM_LINHA];
         snprintf(original, sizeof original, "%s", linha);
 
-        // Divide em colunas
+        // separa os campos da linha corrente em ponteiros de texto
         char *valores[MAX_COLS];
         int n_cols = 0;
         char *ptr = linha;
@@ -185,6 +190,7 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
         const char *f_desig = CAMPO(F_DESIG);
         if (!f_desig || f_desig[0] == '\0') continue;
 
+        // preenche a struct interna com os dados lidos da linha
         AsteroidData data;
         memset(&data, 0, sizeof(AsteroidData));
 
@@ -211,7 +217,8 @@ bool carregar_base_nasa(const char *caminho_arquivo, ESTRUTURA *base, const QUER
         data.sentry_diameter_km = para_double(CAMPO(F_DIAM));
 
 #undef CAMPO
-
+        
+        // aloca o item abstrato e insere o ponteiro na estrutura base do trabalho
         ITEM *novo_item = item_criar_asteroide(&data, original);
         if (!novo_item) continue;
 
