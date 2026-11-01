@@ -18,7 +18,7 @@ a estrutura que armazenará os resultados da busca. Na primeira implementação,
 
 O programa opera através de uma interface de linha de comando (CLI) que processa datasets em formato CSV utilizando Tipos Abstratos de Dados (TADs) implementados em linguagem C. O fluxo de funcionamento divide-se em quatro etapas principais:
 
-### 1. Leitura dos fados com "--reader" e "--input"
+### 1. Leitura dos dados com "--reader" e "--input"
 * O programa identifica o tipo de leitor especificado via parâmetro ("nasa" ou "chamados")
 * Lê o ficheiro CSV de entrada
 * Cada linha válida do dataset é convertida internamente num ITEM
@@ -29,9 +29,13 @@ O programa opera através de uma interface de linha de comando (CLI) que process
 
 ### 3. Filtro e avaliação de consultas "--query"
 * Caso seja fornecido um arquivo de regras de consulta (".txt"), o programa avalia cada registo da base utilizando critérios como:
-  * **FILTER**: Condições obrigatórias de seleção baseadas em campos específicos
-  * **SIM**: Cálculo de similaridade numérica ponderada
-  * **ACCEPT**: Limiar mínimo aceitável de similaridade
+  * FILTER: condição obrigatória para o registro ser aceito;
+  * SIM: critério numérico de similaridade, no formato campo|alvo|tolerancia|peso;
+  * ACCEPT: limiar mínimo para a similaridade total;
+  * ORDER: chave usada pela lista ordenada;
+  * GROUP: campos usados pela lista generalizada;
+  * CROSS: campos usados pela lista cruzada.
+
 * Os registos que satisfazem os critérios são selecionados e recebem o valor de similaridade calculado
 
 ### 4. Resultados e exportação "--result" e "--output"
@@ -70,15 +74,3 @@ O programa opera através de uma interface de linha de comando (CLI) que process
 |–output | arquivo que receberá os registros encontrados |
 |–top-k | máximo de registros exportados; 0 significa todos |
 | –limit | máximo de registros carregados; 0 significa toda a base |
-
-## Consulta e saída 
-A consulta é fornecida em arquivo texto.
-
-Os comandos têm as seguintes funções:
-
-* FILTER: condição obrigatória para o registro ser aceito;
-* SIM: critério numérico de similaridade, no formato campo|alvo|tolerancia|peso;
-* ACCEPT: limiar mínimo para a similaridade total;
-* ORDER: chave usada pela lista ordenada;
-* GROUP: campos usados pela lista generalizada;
-* CROSS: campos usados pela lista cruzada.
