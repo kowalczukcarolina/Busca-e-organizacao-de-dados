@@ -15,14 +15,16 @@
 
 typedef enum { OP_EQ, OP_NE, OP_LT, OP_LE, OP_GT, OP_GE } OPERADOR;
 
+// estrutura que armazena uma condição individual de filtragem obrigatória:
 typedef struct {
     char campo[TAM_CAMPO];
     OPERADOR op;
-    bool numerico;           /* true: valor é número ou true/false */
+    bool numerico;// true: valor é número ou true/false
     double valor_num;
     char valor_txt[TAM_VALOR];
 } FILTRO;
 
+// estrutura que define um parâmetro individual para o cálculo de similaridade:
 typedef struct {
     char campo[TAM_CAMPO];
     double alvo;
@@ -30,29 +32,34 @@ typedef struct {
     double peso;
 } CRITERIO_SIM;
 
+// Estrutura que armazena todas as regras e instruções lidas do arquivo de consulta (.txt):
 struct query {
+    //filtros obrigatórios (filter);
     FILTRO filtros[MAX_FILTROS];
     int n_filtros;
 
+    //crtérios de similaridade (SIM):
     CRITERIO_SIM sims[MAX_SIMS];
     int n_sims;
 
+    //limiar de aceitação (ACCEPT):
     bool tem_accept;
     double accept;
 
+    //ordenação (ORDER):
     char order_campo[TAM_CAMPO];
     bool order_desc;
 
+    //agrupamento hierarquico (GROUP):
     char group[MAX_EIXOS][TAM_CAMPO];
     int n_group;
 
+    //cruzamento de eixos (CROSS):
     char cross[MAX_EIXOS][TAM_CAMPO];
     int n_cross;
 };
 
-/* ------------------------------------------------------------------ */
-/* Utilitários de texto                                               */
-/* ------------------------------------------------------------------ */
+// Utilitários de texto:
 
 static char *trim(char *s) {
     while (isspace((unsigned char)*s)) s++;
@@ -71,7 +78,7 @@ static bool igual_ci(const char *a, const char *b) {
     return *a == '\0' && *b == '\0';
 }
 
-/* Copia src para dest se couber e não for vazio. */
+//Copia src para dest se couber e não for vazio.
 static bool copiar(char *dest, size_t tam, const char *src) {
     size_t n = strlen(src);
     if (n == 0 || n >= tam) return false;
@@ -79,8 +86,7 @@ static bool copiar(char *dest, size_t tam, const char *src) {
     return true;
 }
 
-/* Divide a linha por '|' preservando campos vazios. Retorna nº de campos
- * ou -1 se exceder max. Modifica a linha (troca '|' por '\0'). */
+// Divide a linha por '|' preservando campos vazios. Retorna nº de campos ou -1 se exceder max. Modifica a linha (troca '|' por '\0'). 
 static int dividir(char *linha, char *campos[], int max) {
     int n = 0;
     campos[n++] = linha;
@@ -101,7 +107,7 @@ static bool parse_double(const char *s, double *out) {
     return *fim == '\0';
 }
 
-/* Número ou booleano (true/false -> 1/0). */
+// Número ou booleano (true/false -> 1/0).
 static bool parse_numero_ou_bool(const char *s, double *out) {
     if (igual_ci(s, "true"))  { *out = 1.0; return true; }
     if (igual_ci(s, "false")) { *out = 0.0; return true; }
@@ -124,18 +130,21 @@ static bool erro(int linha, const char *msg) {
     return false;
 }
 
-/* ------------------------------------------------------------------ */
-/* Tratamento de cada comando                                         */
-/* ------------------------------------------------------------------ */
+// Tratamento de cada comando:                                    
 
 static bool cmd_filter(QUERY *q, char *tok[], int n, int linha) {
-    if (n != 4) return erro(linha, "uso: FILTER|campo|op|valor");
-    if (q->n_filtros >= MAX_FILTROS) return erro(linha, "filtros demais");
+    if (n != 4) 
+        return erro(linha, "uso: FILTER|campo|op|valor");
+    if (q->n_filtros >= MAX_FILTROS) 
+        return erro(linha, "filtros demais");
 
     FILTRO *f = &q->filtros[q->n_filtros];
-    if (!copiar(f->campo, TAM_CAMPO, tok[1])) return erro(linha, "campo vazio ou muito longo");
-    if (!parse_operador(tok[2], &f->op))      return erro(linha, "operador invalido (use == != < <= > >=)");
-    if (!copiar(f->valor_txt, TAM_VALOR, tok[3])) return erro(linha, "valor vazio ou muito longo");
+    if (!copiar(f->campo, TAM_CAMPO, tok[1])) 
+        return erro(linha, "campo vazio ou muito longo");
+    if (!parse_operador(tok[2], &f->op))      
+        return erro(linha, "operador invalido (use == != < <= > >=)");
+    if (!copiar(f->valor_txt, TAM_VALOR, tok[3])) 
+        return erro(linha, "valor vazio ou muito longo");
 
     /* valor em UTF-8, igual aos textos guardados nos itens (o CSV de chamados vem em cp1252) */
     item_normalizar_utf8(tok[3], f->valor_txt, TAM_VALOR);
@@ -207,9 +216,7 @@ static bool processar_comando(QUERY *q, char *tok[], int n, int linha) {
     return false;
 }
 
-/* ------------------------------------------------------------------ */
-/* API pública                                                        */
-/* ------------------------------------------------------------------ */
+// API pública:
 
 QUERY *query_carregar(const char *caminho) {
     if (!caminho) return NULL;
@@ -241,7 +248,7 @@ QUERY *query_carregar(const char *caminho) {
         }
 
         char *s = linha;
-        /* ignora BOM UTF-8 no início do arquivo */
+        // ignora BOM UTF-8 no início do arquivo
         if (num == 1 && (unsigned char)s[0] == 0xEF && (unsigned char)s[1] == 0xBB && (unsigned char)s[2] == 0xBF)
             s += 3;
 
@@ -288,21 +295,20 @@ static bool aplicar_operador(OPERADOR op, int cmp) {
 bool query_avaliar(const QUERY *q, const ITEM *item, double *similaridade) {
     if (!q || !item) return false;
 
-    /* 1) FILTER: todos precisam ser satisfeitos */
+    //  1) FILTER: todos precisam ser satisfeitos 
     for (int i = 0; i < q->n_filtros; i++) {
         const FILTRO *f = &q->filtros[i];
         int cmp;
 
-        /* O tipo é decidido pelo CAMPO, não pelo valor: antes, asteroid_designation == 433
-         * virava comparação numérica contra 0 e nunca casava. */
+        //O tipo é decidido pelo CAMPO, não pelo valor: antes, asteroid_designation == 433 virava comparação numérica contra 0 e nunca casava.
         if (item_campo_eh_texto(item, f->campo)) {
             const char *s = item_obter_valor_string(item, f->campo);
             double x, chave_item = item_obter_valor_numerico(item, f->campo);
             double chave_val = item_data_para_chave(f->valor_txt);
 
-            if (chave_item != 0.0 && chave_val != 0.0)          /* datas: ordem cronológica */
+            if (chave_item != 0.0 && chave_val != 0.0)     /* datas: ordem cronológica */
                 cmp = (chave_item < chave_val) ? -1 : (chave_item > chave_val ? 1 : 0);
-            else if (f->numerico && parse_double(s, &x))        /* texto numérico (ex.: SLA) */
+            else if (f->numerico && parse_double(s, &x))    /* texto numérico (ex.: SLA) */
                 cmp = (x < f->valor_num) ? -1 : (x > f->valor_num ? 1 : 0);
             else
                 cmp = strcmp(s, f->valor_txt);
@@ -316,7 +322,7 @@ bool query_avaliar(const QUERY *q, const ITEM *item, double *similaridade) {
         if (!aplicar_operador(f->op, cmp)) return false;
     }
 
-    /* 2) SIM: média ponderada de s(x,q,t) = max(0, 1 - |x-q|/t) */
+    // 2) SIM: média ponderada de s(x,q,t) = max(0, 1 - |x-q|/t) 
     double sim = 1.0;
     if (q->n_sims > 0) {
         double soma = 0.0, soma_pesos = 0.0;
@@ -334,7 +340,7 @@ bool query_avaliar(const QUERY *q, const ITEM *item, double *similaridade) {
         sim = soma / soma_pesos;
     }
 
-    /* 3) ACCEPT: limiar mínimo da similaridade total */
+    // 3) ACCEPT: limiar mínimo da similaridade total 
     if (q->tem_accept && sim + EPS < q->accept) return false;
 
     if (similaridade) *similaridade = sim;
