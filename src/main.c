@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) {
         goto fim;
     }
     if (tipo_resultado) {
-        res = est_criar(tipo_resultado) //criando estrutura do resultado --result; 
+        res = est_criar(tipo_resultado); //criando estrutura do resultado --result; 
         if (!res) {
             fprintf(stderr, "Estrutura de resultado invalida: %s\n", tipo_resultado);
             goto fim;

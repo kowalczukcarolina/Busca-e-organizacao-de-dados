@@ -1,0 +1,6 @@
+# Critérios de Consulta 2: Foco em Monitoramento e Velocidade
+FILTER|threat_category|==|MONITOR
+FILTER|is_future_event|==|false
+SIM|velocity_km_s|5.0|2.0|1.0
+ACCEPT|0.50
+ORDER|similarity|DESC

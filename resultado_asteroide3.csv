@@ -1,0 +1,11 @@
+asteroid_designation,asteroid_fullname,close_approach_date,year,month,distance_au,velocity_km_s,absolute_magnitude,days_until_approach,is_past_event,is_future_event,risk_score,panic_level,threat_category,panic_verdict,on_sentry_list,sentry_impact_prob,sentry_torino_scale,sentry_palermo_scale,sentry_diameter_km
+2020 AY1,       (2020 AY1),2020-01-01 00:54:00,2020,1,0.0211637904862387,5.62142224642355,25.3,-2119,True,False,0.3842715678519177,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2019 YK,       (2019 YK),2020-01-01 02:06:00,2020,1,0.0361009647238789,7.35926278450408,24.1,-2119,True,False,0.3626201873124309,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2013 EC20,       (2013 EC20),2020-01-01 03:23:00,2020,1,0.162018693203057,2.79370137646343,29.0,-2119,True,False,0.1891807254818081,2,SAFE,You're fine. Go touch grass.,True,4.7237e-07,0.0,-8.94,0.0054
+2020 AM1,       (2020 AM1),2020-01-01 07:18:00,2020,1,0.159657033568606,4.1529384618897,24.7,-2119,True,False,0.10033565920336104,1,SAFE,You're fine. Go touch grass.,False,,,,
+2020 AP3,       (2020 AP3),2020-01-01 11:13:00,2020,1,0.0167404854088158,5.19125028298636,26.6,-2118,True,False,0.39108273111024916,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2011 YE40,       (2011 YE40),2020-01-01 11:55:00,2020,1,0.0618324065022896,12.7802869640367,25.2,-2118,True,False,0.33680818528255574,3,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2019 WE5,       (2019 WE5),2020-01-01 14:55:00,2020,1,0.134597429635896,5.00282518879345,23.3,-2118,True,False,0.15447649836987548,2,SAFE,You're fine. Go touch grass.,False,,,,
+2020 JU,       (2020 JU),2020-01-01 21:04:00,2020,1,0.131085656909666,6.64505908577007,20.83,-2118,True,False,0.1692707419214256,2,SAFE,You're fine. Go touch grass.,False,,,,
+2020 AN2,       (2020 AN2),2020-01-01 21:18:00,2020,1,0.0202143163095242,15.3528157321644,26.5,-2118,True,False,0.43221725213934714,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2011 HS60,       (2011 HS60),2020-01-01 21:59:00,2020,1,0.198877977649627,17.7744325057715,21.34,-2118,True,False,0.08634731474064498,1,SAFE,You're fine. Go touch grass.,False,,,,
