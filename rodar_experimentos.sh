@@ -1,91 +1,51 @@
 #!/bin/bash
-
-# Compila o projeto antes de iniciar os testes
-make clean && make
-
-if [ ! -f ./trabalho ]; then
-    echo "Erro: O executável './trabalho' não foi encontrado."
-    exit 1
-fi
-
-# Configurações do teste
+# Uso: ./benchmark.sh
+INPUT="asteroids_dataset.csv"
+QUERY="q1_consultas.txt"
 READER="nasa"
-INPUT="dados/asteroids.csv"
-QUERY="consultas/q1.txt"
-OUTPUT="resultado_temp.csv"
-EXECUCOES=3  # Quantidade de vezes que cada configuração será executada para tirar a média
+RUNS=3
+OUT="resultados_experimentos.csv"
 
-# Definição das estruturas a testar: "BASE RESULTADO"
-COMBINACOES=(
-    "pilha pilha"
-    "fila fila"
-    "lista_seq lista_seq"
-    "lista_enc lista_enc"
-)
+# pares "limit:topk"
+CONFIGS=("1000:10" "5000:50" "10000:100" "25000:500" "50000:1000" "0:0")
 
-# Testes de tamanho (N limit e K top-k)
-LIMITS=(1000 5000 10000 25000 50000 0)
-TOPKS=(10 50 100 500 1000 0)
+# pares base:result a testar
+PARES=("pilha:pilha" "fila:fila" "lista_seq:lista_seq" "lista_enc:lista_enc" \
+       "lista_cabeca:lista_cabeca" "lista_ord:lista_ord" \
+       "lista_gen:lista_gen" "lista_cruz:lista_cruz")
 
-echo "=========================================================================="
-echo "INICIANDO BATERIA DE EXPERIMENTOS ($EXECUCOES EXECUÇÕES POR CONFIGURAÇÃO)"
-echo "=========================================================================="
+echo "N,base,result,k,achados,carga,busca,insercao_res,saida,total" > "$OUT"
 
-for combo in "${COMBINACOES[@]}"; do
-    set -- $combo
-    BASE=$1
-    RESULT=$2
+for par in "${PARES[@]}"; do
+  BASE="${par%%:*}"; RES="${par##*:}"
+  for cfg in "${CONFIGS[@]}"; do
+    LIMIT="${cfg%%:*}"; K="${cfg##*:}"
+    soma_l=0; soma_b=0; soma_i=0; soma_w=0; achados=0
 
-    echo ""
-    echo "=========================================================================="
-    echo " TESTANDO: --base $BASE | --result $RESULT"
-    echo "=========================================================================="
-    printf "%-8s | %-8s | %-8s | %-10s | %-10s | %-10s | %-10s\n" "N" "k" "CARGA(ms)" "BUSCA(ms)" "INSERÇÃO(ms)" "SAÍDA(ms)" "TOTAL(ms)"
-    echo "--------------------------------------------------------------------------"
+    for ((r=1; r<=RUNS; r++)); do
+      saida=$(./trabalho --reader "$READER" --input "$INPUT" \
+              --base "$BASE" --result "$RES" --query "$QUERY" \
+              --output /tmp/out.csv --top-k "$K" --limit "$LIMIT")
 
-    for i in "${!LIMITS[@]}"; do
-        LIMIT=${LIMITS[$i]}
-        TOPK=${TOPKS[$i]}
+      l=$(echo "$saida" | grep '^LOAD_MS='          | cut -d= -f2)
+      b=$(echo "$saida" | grep '^SEARCH_MS='        | cut -d= -f2)
+      i=$(echo "$saida" | grep '^RESULT_INSERT_MS=' | cut -d= -f2)
+      w=$(echo "$saida" | grep '^WRITE_MS='         | cut -d= -f2)
+      achados=$(echo "$saida" | grep '^MATCHED_RECORDS=' | cut -d= -f2)
 
-        soma_load=0
-        soma_search=0
-        soma_insert=0
-        soma_write=0
-
-        for ((e=1; e<=EXECUCOES; e++)); do
-            # Executa o trabalho e captura a saída
-            SAIDA=$(./trabalho --reader $READER --input $INPUT --base $BASE --result $RESULT --query $QUERY --output $OUTPUT --top-k $TOPK --limit $LIMIT)
-
-            # Extrai os tempos impressos pela tua main em milissegundos
-            load=$(echo "$SAIDA" | grep "LOAD_MS=" | cut -d'=' -f2)
-            search=$(echo "$SAIDA" | grep "SEARCH_MS=" | cut -d'=' -f2)
-            insert=$(echo "$SAIDA" | grep "RESULT_INSERT_MS=" | cut -d'=' -f2)
-            write=$(echo "$SAIDA" | grep "WRITE_MS=" | cut -d'=' -f2)
-
-            # Acumula os tempos usando o bc para contas com casas decimais
-            soma_load=$(echo "$soma_load + $load" | bc)
-            soma_search=$(echo "$soma_search + $search" | bc)
-            soma_insert=$(echo "$soma_insert + $insert" | bc)
-            soma_write=$(echo "$soma_write + $write" | bc)
-        done
-
-        # Calcula a média das N execuções
-        med_load=$(echo "scale=2; $soma_load / $EXECUCOES" | bc)
-        med_search=$(echo "scale=2; $soma_search / $EXECUCOES" | bc)
-        med_insert=$(echo "scale=2; $soma_insert / $EXECUCOES" | bc)
-        med_write=$(echo "scale=2; $soma_write / $EXECUCOES" | bc)
-        med_total=$(echo "scale=2; $med_load + $med_search + $med_insert + $med_write" | bc)
-
-        # Formata N e K para exibição amigável
-        N_STR=$LIMIT
-        K_STR=$TOPK
-        [ "$LIMIT" -eq 0 ] && N_STR="Toda"
-        [ "$TOPK" -eq 0 ] && K_STR="Todos"
-
-        printf "%-8s | %-8s | %-10s | %-10s | %-12s | %-10s | %-10s\n" "$N_STR" "$K_STR" "$med_load" "$med_search" "$med_insert" "$med_write" "$med_total"
+      soma_l=$(echo "$soma_l + $l" | bc -l)
+      soma_b=$(echo "$soma_b + $b" | bc -l)
+      soma_i=$(echo "$soma_i + $i" | bc -l)
+      soma_w=$(echo "$soma_w + $w" | bc -l)
     done
-done
 
-rm -f $OUTPUT
-echo ""
-echo "Experimentos concluídos com sucesso!"
+    ml=$(echo "scale=3; $soma_l/$RUNS" | bc -l)
+    mb=$(echo "scale=3; $soma_b/$RUNS" | bc -l)
+    mi=$(echo "scale=3; $soma_i/$RUNS" | bc -l)
+    mw=$(echo "scale=3; $soma_w/$RUNS" | bc -l)
+    total=$(echo "scale=3; $ml+$mb+$mi+$mw" | bc -l)
+
+    echo "$LIMIT,$BASE,$RES,$K,$achados,$ml,$mb,$mi,$mw,$total" >> "$OUT"
+    echo "OK: $BASE+$RES N=$LIMIT k=$K total=${total}ms"
+  done
+done
