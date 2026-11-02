@@ -1,4 +1,4 @@
-#include "../include/tads/lista_cab.h"
+#include "../include/lista_cab.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
