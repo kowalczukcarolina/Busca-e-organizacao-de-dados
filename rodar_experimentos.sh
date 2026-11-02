@@ -1,6 +1,6 @@
 #!/bin/bash
 # Uso: ./rodar_experimentos.sh
-INPUT="asteroids_dataset.csv"
+INPUT="asteroid_dataset.csv"
 QUERY="consultas/q1_asteroides.txt"
 READER="nasa"
 RUNS=3
