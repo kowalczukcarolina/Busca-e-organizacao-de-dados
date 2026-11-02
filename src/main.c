@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <time.h>
-#include "../include/tads/item.h"
+#include "../include/item.h"
 #include "../include/estrutura.h"
 #include "../include/reader.h"
 #include "../include/query.h"
