@@ -2,7 +2,7 @@
 #define QUERY_H
 
 #include <stdbool.h>
-#include "tads/item.h"
+#include "item.h"
 
 //TAD QUERY: representa uma consulta lida de arquivo texto:
 typedef struct query QUERY;

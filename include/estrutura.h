@@ -2,7 +2,7 @@
 #define ESTRUTURA_H
 
 #include <stdbool.h>
-#include "tads/item.h"
+#include "item.h"
 #include "query.h"
 
 /*
