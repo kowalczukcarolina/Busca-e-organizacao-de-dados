@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../include/estrutura.h"
-#include "../include/tads/pilha.h"
-#include "../include/tads/fila.h"
-#include "../include/tads/lista_seq.h"
-#include "../include/tads/lista_enc.h"
-#include "../include/tads/lista_cab.h"
-#include "../include/tads/lista_gen.h"
-#include "../include/tads/lista_cruz.h"
+#include "../include/pilha.h"
+#include "../include/fila.h"
+#include "../include/lista_seq.h"
+#include "../include/lista_enc.h"
+#include "../include/lista_cab.h"
+#include "../include/lista_gen.h"
+#include "../include/lista_cruz.h"
 
 #define MAX_NIVEIS 8
 #define TAM_CHAVE  64

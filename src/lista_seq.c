@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "../include/tads/lista_seq.h"
+#include "../include/lista_seq.h"
 
 struct lista_seq {
     ITEM **itens;   //ponteiro duplo para vetor dinâmico de ponteiros

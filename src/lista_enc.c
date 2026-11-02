@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include "../include/tads/lista_enc.h"
+#include "../include/lista_enc.h"
 
 typedef struct no_ NO;
 

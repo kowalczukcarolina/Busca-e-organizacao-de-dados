@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "../include/reader.h"
 #include "../include/estrutura.h"
-#include "../include/tads/item.h"
+#include "../include/item.h"
 
 #define TAM_LINHA  8192
 #define MAX_COLS   64

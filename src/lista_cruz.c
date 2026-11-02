@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/tads/lista_cruz.h"
+#include "../include/lista_cruz.h"
 
 /*
  * Lista cruzada: cada item possui UM único nó, ligado simultaneamente a uma lista de linha

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/tads/item.h"
+#include "../include/item.h"
 
 struct item_st {
     ReaderType type;

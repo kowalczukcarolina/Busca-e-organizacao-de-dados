@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../include/tads/lista_gen.h"
+#include "../include/lista_gen.h"
 
 typedef struct no_ NO;
 
