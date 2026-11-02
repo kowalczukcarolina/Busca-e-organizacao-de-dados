@@ -1,7 +1,7 @@
 #!/bin/bash
-# Uso: ./benchmark.sh
+# Uso: ./rodar_experimentos.sh
 INPUT="asteroids_dataset.csv"
-QUERY="q1_consultas.txt"
+QUERY="consultas/q1_asteroides.txt"
 READER="nasa"
 RUNS=3
 OUT="resultados_experimentos.csv"
