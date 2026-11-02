@@ -3,7 +3,7 @@
 INPUT="asteroid_dataset.csv"
 QUERY="consultas/q1_asteroides.txt"
 READER="nasa"
-RUNS=3
+RUNS=5
 OUT="resultados_experimentos.csv"
 
 # pares "limit:topk"
