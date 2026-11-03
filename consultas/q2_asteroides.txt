@@ -1,6 +1,13 @@
-# Critérios de Consulta 2: Foco em Monitoramento e Velocidade
-FILTER|threat_category|==|MONITOR
-FILTER|is_future_event|==|false
-SIM|velocity_km_s|5.0|2.0|1.0
-ACCEPT|0.50
-ORDER|similarity|DESC
+# Consulta 2: asteroides de eventos passados, com categoria diferente de SAFE, distância < 0.1 UA,
+# magnitude > 20 e aproximação a partir de 01/02/2020. Ordena por data da aproximação, da mais antiga à mais recente.
+
+
+#FILTER com todos os tipos de campo e ORDER em campo de texto
+FILTER|is_past_event|==|true
+FILTER|threat_category|!=|SAFE
+FILTER|distance_au|<|0.1
+FILTER|absolute_magnitude|>|20
+FILTER|close_approach_date|>=|2020-02-01
+ 
+# Ordem cronologica pela data (texto ISO)
+ORDER|close_approach_date|ASC

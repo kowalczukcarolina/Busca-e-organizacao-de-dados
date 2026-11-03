@@ -1,11 +1,6 @@
 asteroid_designation,asteroid_fullname,close_approach_date,year,month,distance_au,velocity_km_s,absolute_magnitude,days_until_approach,is_past_event,is_future_event,risk_score,panic_level,threat_category,panic_verdict,on_sentry_list,sentry_impact_prob,sentry_torino_scale,sentry_palermo_scale,sentry_diameter_km
-2020 DC,       (2020 DC),2020-02-20 16:21:00,2020,2,0.0150704336882125,4.99221865263023,26.73,-2068,True,False,0.39348107313291936,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 GK,       (2020 GK),2020-03-29 13:21:00,2020,3,0.0098089709890271,4.99084276577201,26.8,-2030,True,False,0.4039975220690044,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 BH9,       (2020 BH9),2020-02-14 21:31:00,2020,2,0.054980447056931,4.96061013781373,26.9,-2074,True,False,0.3135112248337924,3,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 DW3,       (2020 DW3),2020-03-01 21:41:00,2020,3,0.0130799252136387,5.04805029092032,28.4,-2058,True,False,0.39772628546634803,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-613400,613400 (2006 FH36),2020-03-30 05:05:00,2020,3,0.0288913248327571,5.06077694206262,23.03,-2030,True,False,0.36616360389885033,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2018 JH2,       (2018 JH2),2020-03-24 08:54:00,2020,3,0.0822211748240437,4.9344385674912,23.29,-2036,True,False,0.2589057557935647,3,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2025 EC2,       (2025 EC2),2020-04-02 05:33:00,2020,4,0.0333559181129597,4.93277119876664,26.61,-2027,True,False,0.35662869463499725,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 FO4,       (2020 FO4),2020-03-09 20:09:00,2020,3,0.0217048139491872,5.07007292333889,27.0,-2050,True,False,0.38058065845510164,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 DO4,       (2020 DO4),2020-02-20 10:47:00,2020,2,0.0238283370435022,4.91767745773212,27.5,-2068,True,False,0.3756124980639781,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
-2020 DM2,       (2020 DM2),2020-02-28 13:32:00,2020,2,0.0151060251331838,4.87658736205826,27.2,-2060,True,False,0.39286274917468283,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2020 CD1,       (2020 CD1),2020-02-01 03:02:00,2020,2,0.0194284731144329,16.2602994552887,26.1,-2088,True,False,0.43808294916334467,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+755140,755140 (2017 AE5),2020-02-01 08:18:00,2020,2,0.03490137302683,9.04470348079401,22.18,-2088,True,False,0.3729944985985417,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2020 CW,       (2020 CW),2020-02-01 12:50:00,2020,2,0.0001049638639395,21.2837453781035,32.56,-2087,True,False,0.600499890211624,6,CONCERN,Time to learn survival skills?,True,2.2318e-06,0.0,-8.79,0.0011
+2020 BN12,       (2020 BN12),2020-02-01 16:44:00,2020,2,0.0088011702337991,6.95653455381359,25.9,-2087,True,False,0.41531433434832,4,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,
+2020 BU2,       (2020 BU2),2020-02-01 21:46:00,2020,2,0.0737223118733446,14.2556271696455,24.2,-2087,True,False,0.32000927054411316,3,MONITOR,"Worth a tweet, not worth a bunker.",False,,,,

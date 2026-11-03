@@ -1,4 +1,7 @@
-# Critérios de Filtro para Asteroides Próximos e Relevantes
+# Consulta 1: asteroides que passam muito perto (distância <= 0.05 UA) e com risco >= 0.2.
+# Pontua a semelhança com um alvo de velocidade (5 km/s) e magnitude (22), descarta quem tiver similaridade < 0.40 e ordena do mais ao menos similar.
+
+
 FILTER|distance_au|<=|0.05
 FILTER|risk_score|>=|0.2
 

@@ -1,4 +1,12 @@
-# Critérios de Consulta 3: Foco em Agrupamento e Magnitude
+# Consulta 3: asteroides de eventos não futuros com nível de pânico >= 1.
+# Agrupa por categoria > mês > nível de pânico (lista_gen) e cruza categoria x nível de pânico (lista_cruz).
+
+# Consulta 3 (asteroides): GROUP (3 niveis) e CROSS, com campos numericos e de texto
 FILTER|is_future_event|==|false
-ORDER|absolute_magnitude|ASC
-GROUP|threat_category|panic_level
+FILTER|panic_level|>=|1
+ 
+# lista_gen: categoria > mes > nivel de panico
+GROUP|threat_category|month|panic_level
+ 
+# lista_cruz: linha = categoria, coluna = nivel de panico
+CROSS|threat_category|panic_level
