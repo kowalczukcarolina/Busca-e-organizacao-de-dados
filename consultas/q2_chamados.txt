@@ -1,8 +1,18 @@
-# Filtra chamados do Ministério das Mulheres ou MDHC
-FILTER|unidade|==|Ministério das Mulheres
-
-# Ordena de forma ascendente pelo número da solicitação
-ORDER|solicitacao|ASC
-
-# Agrupa por grupo de atendimento e atividade
-GROUP|grupo|atividade
+# Consulta 2: chamados abertos em 2026 de qualquer unidade exceto o Ministério das Mulheres, com solicitação entre 250000 e 267999. Pontua a proximidade da solicitação 260000 (peso 2) e do dia 15 do mês (peso 1)
+# Descarta similaridade < 0.50 e ordena do mais ao menos similar
+ 
+# Filtros obrigatórios: texto (!=), numéricos (>=, <) e ano (==)
+FILTER|unidade|!=|Ministério das Mulheres
+FILTER|solicitacao|>=|250000
+FILTER|solicitacao|<|268000
+FILTER|ano_abertura|==|2026
+ 
+# Similaridade (campo|alvo|tolerancia|peso)
+SIM|solicitacao|260000|10000|2.0
+SIM|dia_abertura|15|10|1.0
+ 
+# Limiar mínimo da similaridade total
+ACCEPT|0.50
+ 
+# Ordenação para a lista ordenada
+ORDER|similarity|DESC

@@ -1,21 +1,14 @@
-# Filtros obrigatórios (todos precisam ser satisfeitos)
-FILTER|situacao|==|Fechada
-FILTER|unidade|==|Ministério das Mulheres
-FILTER|ano_abertura|>=|2023
-FILTER|ano_fechamento|>=|2023
+# Consulta 3: chamados abertos em 2026, sem outros critérios. Com lista_ord, ordena pela data/hora de abertura, do mais antigo ao mais recente
+# Com lista_gen, agrupa por unidade > grupo de atendimento > dia de abertura. 
+# Com lista_cruz, cruza unidade (linha) x dia de abertura (coluna).
  
-# (campo|alvo|tolerancia|peso)
-SIM|ano_abertura|2025|2|1.0
-SIM|ano_fechamento|2025|2|1.0
+FILTER|ano_abertura|==|2026
  
-# Limiar minimo da similaridade total
-ACCEPT|0.40
+# Ordenação cronológica (campo de data)
+ORDER|data_hora_abertura|ASC
  
-# Ordenação (usada com --result lista_ord): mais similares primeiro
-ORDER|similarity|DESC
+# Agrupamento em 3 níveis para a lista generalizada
+GROUP|unidade|grupo|dia_abertura
  
-# Agrupamento hierárquico (usado com lista_gen): unidade > grupo > ano de abertura
-GROUP|unidade|grupo|ano_abertura
- 
-# Cruzamento (usado com lista_cruz): grupo x ano de abertura
-CROSS|grupo|ano_abertura
+# Cruzamento para a lista cruzada
+CROSS|unidade|dia_abertura

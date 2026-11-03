@@ -1,11 +1,6 @@
 Solicitação;Atividade;Data/Hora Abertura;SLA;Data/Hora Fechamento;Grupo;Situação;Unidade
-225029;Acionar garantia de equipamento;02/10/2025 15:51;08h00m;19/01/2026 16:51;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
-256882;Solicitar ou revogar acesso a pasta corporativa;31/12/2025 10:46;04h00m;02/01/2026 16:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
-257152;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 09:07;04h00m;05/01/2026 10:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
-257292;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 10:25;04h00m;05/01/2026 10:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
-257455;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 11:58;04h00m;05/01/2026 12:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
-257562;Mapear ou remover impressora - Automação;05/01/2026 14:25;08h00m;06/01/2026 09:55;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
-257583;Instalar ou desinstalar computador;05/01/2026 14:38;08h00m;05/01/2026 14:40;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
-257587;Instalar ou desinstalar computador;05/01/2026 14:41;08h00m;05/01/2026 14:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
-257593;Solicitar acesso a impressora (Adicionar impressora no perfil de usuário);05/01/2026 14:48;08h00m;05/01/2026 15:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
-257622;Atualização Cadastral;05/01/2026 15:03;56h00m;05/01/2026 15:04;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério das Mulheres
+259997;Instalar ou desinstalar computador;12/01/2026 08:29;08h00m;14/01/2026 14:35;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260043;Verificar erro em computador;12/01/2026 09:18;02h00m;12/01/2026 10:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260049;Configurar computador;12/01/2026 09:27;08h00m;12/01/2026 10:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260056;Configurar computador;12/01/2026 09:29;08h00m;12/01/2026 10:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260086;Configurar computador;12/01/2026 09:40;08h00m;12/01/2026 11:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
