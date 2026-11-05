@@ -11,15 +11,19 @@
 #include "../include/lista_cruz.h"
 
 #define MAX_NIVEIS 8
-#define TAM_CHAVE  256
-
+#define TAM_CHAVE  64
+/*Por que usamos um estruturas .c --> Ele centraliza diferentes estruturas (pilhas, filas e listas) possibilitando um uso mais generico das TADs
+isso simplifica o código principal, permitindo alternar ou adicionar estruturas dinamicamente sem alterar a lógica.*/
+// Enumeração para identificar o tipo de estrutura de dados encapsulada
 typedef enum { T_PILHA, T_FILA, T_SEQ, T_ORD, T_ENC, T_CAB, T_GEN, T_CRUZ } TIPO;
 
+// struct genérica que unifica diferentes tipos de estruturas de dados
 struct estrutura {
-    TIPO tipo;
-    void *ptr;
+    TIPO tipo; // tipo da estrutura 
+    void *ptr; // ponteiro para a estrutura de dados específica 
 };
 
+//função auxiliar para converter o nome da estrutura para o tipo correspondente
 static bool parse_tipo(const char *s, TIPO *t) {
     if (strcmp(s, "pilha") == 0)          *t = T_PILHA;
     else if (strcmp(s, "fila") == 0)      *t = T_FILA;
@@ -33,6 +37,7 @@ static bool parse_tipo(const char *s, TIPO *t) {
     return true;
 }
 
+// Função para criar uma nova estrutura de dados com base no nome fornecido
 ESTRUTURA *est_criar(const char *nome) {
     TIPO t;
     if (!nome || !parse_tipo(nome, &t)) return NULL;
@@ -59,11 +64,13 @@ ESTRUTURA *est_criar(const char *nome) {
     return e;
 }
 
+//configura a ordem de uma lista ordenada (lista_ord) dentro da estrutura, especificando o campo e a direção (crescente ou decrescente)
 void est_configurar_ordem(ESTRUTURA *e, const char *campo, bool desc) {
     if (e && e->tipo == T_ORD)
         lista_definir_ordem_seq(e->ptr, campo, desc);
 }
 
+// Função para inserir um item na estrutura de dados, podendo especificar uma query para operações de agrupamento ou cruzamento
 bool est_inserir(ESTRUTURA *e, ITEM *item, const QUERY *q) {
     if (!e || !item) return false;
 
@@ -103,6 +110,7 @@ bool est_inserir(ESTRUTURA *e, ITEM *item, const QUERY *q) {
     return false;
 }
 
+//consulta o tamanho da estrutura, retornando o número de itens presentes nela
 int est_tamanho(ESTRUTURA *e) {
     if (!e) return 0;
     switch (e->tipo) {
@@ -118,6 +126,7 @@ int est_tamanho(ESTRUTURA *e) {
     return 0;
 }
 
+// Função para percorrer todos os itens da estrutura de dados
 void est_percorrer(ESTRUTURA *e, ITEM_VISITOR f, void *ctx) {
     if (!e || !f) return;
     switch (e->tipo) {
@@ -132,6 +141,7 @@ void est_percorrer(ESTRUTURA *e, ITEM_VISITOR f, void *ctx) {
     }
 }
 
+// Função para apagar a estrutura de dados, liberando memória e opcionalmente destruindo os itens contidos nela
 void est_apagar(ESTRUTURA **e, bool destruir_itens) {
     if (!e || !*e) return;
 

@@ -106,6 +106,7 @@ static bool lista_inserir_posicao_seq(LISTA_SEQ *lista, int pos, ITEM *item) {
     return true;
 }
 
+//Construtor -- cria uma lista sequencial vazia, com capacidade inicial definida e flag de ordenação
 LISTA_SEQ *lista_criar_seq(bool ordenada) {
     LISTA_SEQ *lista = malloc(sizeof(LISTA_SEQ));
     if (lista == NULL)
@@ -134,7 +135,7 @@ void lista_definir_ordem_seq(LISTA_SEQ *lista, const char *campo, bool desc) {
     lista->desc = desc;
 }
 
-//Liberação de memória
+//Liberação de memória e apaga lista
 void lista_apagar_seq(LISTA_SEQ **lista, bool destruir_itens) {
     if (lista == NULL || *lista == NULL)
         return;
