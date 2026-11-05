@@ -3,21 +3,17 @@
 #include <string.h>
 #include "../include/lista_cruz.h"
 
-/*
- * Lista cruzada: cada item possui UM único nó, ligado simultaneamente a uma lista de linha
- * (ex.: threat_category) e a uma lista de coluna (ex.: year). Sem duplicar o registro.
- */
 struct no_cruzado {
-    ITEM *item;           // ponteiro para o elemento original (compartilhado)
+    ITEM *item;           // ponteiro para o elemento original 
     NO_CRUZ *prox_linha;  // próximo elemento na mesma linha
     NO_CRUZ *prox_coluna; // próximo elemento na mesma coluna
 };
 
 struct cabeca_eixo {
-    char *chave;            // nome da categoria (linha) ou ano (coluna)
+    char *chave;            // nome da linha ou coluna
     NO_CRUZ *inicio;        // primeiro nó do grupo
-    NO_CRUZ *fim;           // último nó do grupo (inserção O(1), mantém a ordem de chegada)
-    CABECA_EIXO *prox_eixo; // próximo grupo do mesmo eixo
+    NO_CRUZ *fim;           // ultimo nó do grupo
+    CABECA_EIXO *prox_eixo; // Próximo grupo do mesmo eixo
 };
 
 struct lista_cruzada {
@@ -26,6 +22,8 @@ struct lista_cruzada {
     int total_itens;      // quantidade total de nós cruzados
 };
 
+//Construtor
+//Funções auxiliares para criar e gerenciar cabeças de eixo
 static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
     CABECA_EIXO *eixo = malloc(sizeof(CABECA_EIXO));
     if (!eixo) return NULL;
@@ -43,6 +41,7 @@ static CABECA_EIXO *criar_cabeca_eixo(const char *chave) {
     return eixo;
 }
 
+// Função auxiliar para obter ou criar uma cabeça de eixo (linha ou coluna)
 static CABECA_EIXO *obter_ou_criar_eixo(CABECA_EIXO **lista_eixos, const char *chave) {
     if (!lista_eixos || !chave) return NULL;
 
@@ -66,7 +65,7 @@ static CABECA_EIXO *obter_ou_criar_eixo(CABECA_EIXO **lista_eixos, const char *c
 
     return novo_eixo;
 }
-
+// Função para criar uma lista cruzada - construtor que usa as funções auxiliares criadas acima para enfim criar a lista cruzada
 LISTA_CRUZADA *lcruz_criar(void) {
     LISTA_CRUZADA *lc = malloc(sizeof(LISTA_CRUZADA));
     if (!lc) return NULL;
@@ -77,6 +76,7 @@ LISTA_CRUZADA *lcruz_criar(void) {
     return lc;
 }
 
+// função para inserir um item na lista cruzada, especificando a chave da linha e da coluna
 int lcruz_inserir(LISTA_CRUZADA *lc, ITEM *item, const char *chave_linha, const char *chave_coluna) {
     if (!lc || !item || !chave_linha || !chave_coluna) return 0;
 
@@ -106,6 +106,7 @@ int lcruz_inserir(LISTA_CRUZADA *lc, ITEM *item, const char *chave_linha, const 
     return 1;
 }
 
+// percorre e imprime todos os elementos da lista cruzada organizados por suas linhas
 void lcruz_imprimir_por_linhas(const LISTA_CRUZADA *lc) {
     if (!lc || !lc->linhas) {
         printf("Lista cruzada vazia.\n");
@@ -122,6 +123,7 @@ void lcruz_imprimir_por_linhas(const LISTA_CRUZADA *lc) {
     }
 }
 
+//percorre e imprime todos os elementos da lista cruzada organizados por suas colunas
 void lcruz_imprimir_por_colunas(const LISTA_CRUZADA *lc) {
     if (!lc || !lc->colunas) {
         printf("Lista cruzada vazia.\n");
@@ -138,12 +140,13 @@ void lcruz_imprimir_por_colunas(const LISTA_CRUZADA *lc) {
     }
 }
 
+// Libera toda a memória alocada para a lista cruzada, incluindo os itens
 void lcruz_destruir(LISTA_CRUZADA **lc, bool destruir_itens) {
     if (!lc || !*lc) return;
 
     LISTA_CRUZADA *l = *lc;
 
-    // Cada nó pertence a exatamente uma linha: liberar pelas linhas libera cada nó (e item) uma vez
+    // Cada nó pertence a exatamente uma linha, liberar pelas linhas libera cada nó (e item) uma vez
     CABECA_EIXO *e_linha = l->linhas;
     while (e_linha != NULL) {
         NO_CRUZ *no_atual = e_linha->inicio;
@@ -160,7 +163,7 @@ void lcruz_destruir(LISTA_CRUZADA **lc, bool destruir_itens) {
         free(e_linha_aux);
     }
 
-    // Os nós das colunas já foram liberados acima: só as cabeças restam
+    // Os nós das colunas já foram liberados só fica as cabeças para liberar
     CABECA_EIXO *e_coluna = l->colunas;
     while (e_coluna != NULL) {
         CABECA_EIXO *e_coluna_aux = e_coluna;
@@ -173,11 +176,12 @@ void lcruz_destruir(LISTA_CRUZADA **lc, bool destruir_itens) {
     *lc = NULL;
 }
 
+//consulta o tamanho da lista cruzada
 int lcruz_tamanho(const LISTA_CRUZADA *lc) {
     return lc != NULL ? lc->total_itens : 0;
 }
 
-// Percurso pelas linhas (agrupado por categoria)
+//percorre pelas linhas (agrupado por categoria)
 void lcruz_percorrer(const LISTA_CRUZADA *lc, ITEM_VISITOR f, void *ctx) {
     if (!lc || !f) return;
 
@@ -189,7 +193,7 @@ void lcruz_percorrer(const LISTA_CRUZADA *lc, ITEM_VISITOR f, void *ctx) {
     }
 }
 
-// Percurso pelas colunas (agrupado por ano)
+//percorre pelas colunas (agrupado por ano)
 void lcruz_percorrer_colunas(const LISTA_CRUZADA *lc, ITEM_VISITOR f, void *ctx) {
     if (!lc || !f) return;
 

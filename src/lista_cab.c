@@ -8,15 +8,16 @@ typedef struct no_ NO;
 
 struct no_ {
     ITEM *item;
-    NO *proximo;
+    NO *proximo;  //no para  proximo item da fila
 };
 
 struct lista_cab {
-    NO *cabeca;   /* nó estrutural: não representa um item da lista */
-    NO *fim;      /* último nó de dados; NULL quando a lista está vazia */
+    NO *cabeca;   // nó estrutural -- não representa um item da lista
+    NO *fim;      // último nó de dados é NULL quando a lista está vazia
     int tamanho;
 };
 
+//Construtor -- cria a lista e o nó cabeça (sem item)
 LISTA_CAB *lista_criar_cab(void) {
     LISTA_CAB *lista = malloc(sizeof(LISTA_CAB));
     if (lista == NULL)
@@ -35,6 +36,7 @@ LISTA_CAB *lista_criar_cab(void) {
     return lista;
 }
 
+//Apaga lista_cab e liberar memória
 void lista_apagar_cab(LISTA_CAB **lista, bool destruir_itens) {
     if (lista == NULL || *lista == NULL)
         return;
@@ -53,6 +55,7 @@ void lista_apagar_cab(LISTA_CAB **lista, bool destruir_itens) {
     *lista = NULL;
 }
 
+//Consultas se a lista esta vazia e tamanho da lista
 bool lista_vazia_cab(const LISTA_CAB *lista) {
     return lista == NULL || lista->cabeca->proximo == NULL;
 }
@@ -61,6 +64,7 @@ int lista_tamanho_cab(const LISTA_CAB *lista) {
     return lista != NULL ? lista->tamanho : 0;
 }
 
+// Insere no fim da lista (após o último nó de dados)
 bool lista_inserir_cab(LISTA_CAB *lista, ITEM *item) {
     if (lista == NULL || item == NULL)
         return false;
@@ -82,6 +86,7 @@ bool lista_inserir_cab(LISTA_CAB *lista, ITEM *item) {
     return true;
 }
 
+// Busca o item com a chave especificada na lista. Retorna NULL se não encontrado.
 ITEM *lista_buscar_cab(const LISTA_CAB *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
@@ -94,6 +99,7 @@ ITEM *lista_buscar_cab(const LISTA_CAB *lista, const char *chave) {
     return NULL;
 }
 
+// Remove o item com a chave especificada da lista. Retorna o item removido ou NULL se não encontrado.
 ITEM *lista_remover_cab(LISTA_CAB *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
@@ -117,6 +123,7 @@ ITEM *lista_remover_cab(LISTA_CAB *lista, const char *chave) {
     return item;
 }
 
+// Percorre os nós, começando em cabeca->proximo (a cabeça nunca é colocada)
 void lista_imprimir_cab(const LISTA_CAB *lista) {
     if (lista == NULL) {
         puts("(lista inexistente)");
@@ -133,7 +140,7 @@ void lista_imprimir_cab(const LISTA_CAB *lista) {
     printf("NULL  [tamanho=%d]\n", lista->tamanho);
 }
 
-// Percorre os nós de dados, começando em cabeca->proximo (a cabeça nunca é visitada)
+// Percorre os nós, começando em cabeca->proximo (a cabeça nunca é colocada)
 void lista_percorrer_cab(const LISTA_CAB *lista, ITEM_VISITOR f, void *ctx) {
     if (lista == NULL || f == NULL)
         return;
