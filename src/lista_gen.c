@@ -5,18 +5,14 @@
 
 typedef struct no_ NO;
 
-/*
- * Nó da lista generalizada: ou um átomo (ITEM) ou uma sublista rotulada (grupo).
- * Cada nível guarda inicio/fim, então a inserção no fim de qualquer nível é O(1).
- */
 struct no_ {
-    int tipo; /* 0 = átomo, 1 = sublista */
+    int tipo; // 0 = átomo, 1 = sublista
     union {
         ITEM *atomo;
         struct {
-            char *chave; /* rótulo do grupo (ex.: "Safe" ou "2025") */
-            NO *inicio;  /* primeiro nó do grupo */
-            NO *fim;     /* último nó do grupo */
+            char *chave; //rótulo do grupo
+            NO *inicio;  //primeiro nó do grupo 
+            NO *fim;     //último nó do grupo */
         } sub;
     } info;
     NO *prox; /* próximo nó do mesmo nível */
