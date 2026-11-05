@@ -11,7 +11,7 @@
 #include "../include/lista_cruz.h"
 
 #define MAX_NIVEIS 8
-#define TAM_CHAVE  64
+#define TAM_CHAVE  256
 /*Por que usamos um estruturas .c --> Ele centraliza diferentes estruturas (pilhas, filas e listas) possibilitando um uso mais generico das TADs
 isso simplifica o código principal, permitindo alternar ou adicionar estruturas dinamicamente sem alterar a lógica.*/
 // Enumeração para identificar o tipo de estrutura de dados encapsulada
