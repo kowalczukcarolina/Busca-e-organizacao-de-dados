@@ -8,18 +8,19 @@ typedef struct no_ NO;
 
 struct no_ {
     ITEM *item;
-    NO *proximo;
+    NO *proximo; //ponteiro para o próximo item da lista encadeada
 };
 
 struct lista_enc {
-    NO *inicio;
-    NO *fim;
-    int tamanho;
-    bool ordenada;
-    char campo[64];   /* "" = ordena pela chave padrão (item_get_chave), crescente */
-    bool desc;
+    NO *inicio;  // ponteiro para o primeiro nó da lista
+    NO *fim;     // ponteiro para o último nó da lista
+    int tamanho;   // quantidade atual de elementos na lista
+    bool ordenada; // flag que indica se a lista deve se manter ordenada
+    char campo[64];// campo usado para ordenação ("" = ordena pela chave padrão)
+    bool desc;     // flag para ordenação decrescente (true) ou crescente (false)
 };
 
+// Função auxiliar para criar um novo nó com o item dado como parâmetro. Retorna NULL se não houver memória suficiente
 static NO *no_criar(ITEM *item) {
     NO *novo = malloc(sizeof(NO));
     if (novo != NULL) {
@@ -29,7 +30,7 @@ static NO *no_criar(ITEM *item) {
     return novo;
 }
 
-/* Comparador da lista ordenada: respeita o campo/direção definidos pelo ORDER. */
+//Comparador da lista ordenada: respeita o campo/direção definidos pelo ORDER
 static int comparar_enc(const LISTA_ENC *l, const ITEM *a, const ITEM *b) {
     if (l->campo[0] == '\0')
         return strcmp(item_get_chave(a), item_get_chave(b));
@@ -37,6 +38,7 @@ static int comparar_enc(const LISTA_ENC *l, const ITEM *a, const ITEM *b) {
     return l->desc ? -c : c;
 }
 
+// Insere no fim da lista encadeada (sem ordenação)
 static bool inserir_fim_enc(LISTA_ENC *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
@@ -52,7 +54,7 @@ static bool inserir_fim_enc(LISTA_ENC *lista, ITEM *item) {
     return true;
 }
 
-/* A ordem é mantida na inserção. Insere DEPOIS dos iguais (ordem estável). */
+//A ordem é mantida na inserção. Insere DEPOIS dos iguais (ordem estável)
 static bool inserir_ordenado_enc(LISTA_ENC *lista, ITEM *item) {
     NO *novo = no_criar(item);
     if (novo == NULL)
@@ -79,6 +81,7 @@ static bool inserir_ordenado_enc(LISTA_ENC *lista, ITEM *item) {
     return true;
 }
 
+// Função auxiliar para busca recursiva de um item na lista encadeada. Retorna o item se encontrado, ou NULL caso contrário
 static ITEM *busca_no_recursiva_enc(const NO *no, const char *chave, bool ordenada) {
     if (no == NULL)
         return NULL;
@@ -95,6 +98,7 @@ static ITEM *busca_no_recursiva_enc(const NO *no, const char *chave, bool ordena
     return busca_no_recursiva_enc(no->proximo, chave, ordenada);
 }
 
+//construtor -- cria uma lista encadeada vazia, com a flag de ordenação definida pelo parâmetro
 LISTA_ENC *lista_criar_enc(bool ordenada) {
     LISTA_ENC *lista = malloc(sizeof(LISTA_ENC));
     if (lista == NULL)
@@ -109,6 +113,7 @@ LISTA_ENC *lista_criar_enc(bool ordenada) {
     return lista;
 }
 
+// função para definir o campo e a direção de ordenação da lista encadeada
 void lista_definir_ordem_enc(LISTA_ENC *lista, const char *campo, bool desc) {
     if (lista == NULL || campo == NULL || strlen(campo) >= sizeof lista->campo)
         return;
@@ -116,6 +121,7 @@ void lista_definir_ordem_enc(LISTA_ENC *lista, const char *campo, bool desc) {
     lista->desc = desc;
 }
 
+// Função para apagar a lista encadeada e liberar a memória alocada
 void lista_apagar_enc(LISTA_ENC **lista, bool destruir_itens) {
     if (lista == NULL || *lista == NULL)
         return;
@@ -123,7 +129,7 @@ void lista_apagar_enc(LISTA_ENC **lista, bool destruir_itens) {
     NO *p = (*lista)->inicio;
     while (p != NULL) {
         NO *proximo = p->proximo;
-        if (destruir_itens)
+        if (destruir_itens) // Libera o item se destruir_itens for TRUE
             item_destruir(&p->item);
         free(p);
         p = proximo;
@@ -133,6 +139,7 @@ void lista_apagar_enc(LISTA_ENC **lista, bool destruir_itens) {
     *lista = NULL;
 }
 
+// Função para inserir um item na lista encadeada(respeitando a ordenação caso o bool for verdade)
 bool lista_inserir_enc(LISTA_ENC *lista, ITEM *item) {
     if (lista == NULL || item == NULL)
         return false;
@@ -142,11 +149,12 @@ bool lista_inserir_enc(LISTA_ENC *lista, ITEM *item) {
         : inserir_fim_enc(lista, item);
 }
 
+// Função para buscar um item na lista encadeada retorna o item se encontrado, ou NULL caso contrário
 ITEM *lista_busca_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
 
-    /* o corte antecipado só vale quando a ordem é a da chave padrão */
+    //serve para otimizar a busca em listas ordenadas, evitando percorrer elementos desnecessariamente para a execução do algoritmo de busca(Se o elemento atual é maior do que o que estamos procurando, todos os próximos elementos da lista serão ainda maiores.)
     bool corte = lista->ordenada && lista->campo[0] == '\0';
 
     for (const NO *p = lista->inicio; p != NULL; p = p->proximo) {
@@ -160,6 +168,7 @@ ITEM *lista_busca_enc(const LISTA_ENC *lista, const char *chave) {
     return NULL;
 }
 
+// Função para buscar um item na lista encadeada de forma recursiva retorna o item se encontrado, ou NULL caso contrário
 ITEM *lista_busca_recursiva_enc(const LISTA_ENC *lista, const char *chave) {
     if (lista == NULL)
         return NULL;
@@ -168,6 +177,8 @@ ITEM *lista_busca_recursiva_enc(const LISTA_ENC *lista, const char *chave) {
                                   lista->ordenada && lista->campo[0] == '\0');
 }
 
+
+// Função para remover um item da lista encadeada com a chave especificada retorna o item removido, ou NULL caso não encontrado
 ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave) {
     if (lista == NULL || lista->inicio == NULL)
         return NULL;
@@ -205,25 +216,29 @@ ITEM *lista_remover_enc(LISTA_ENC *lista, const char *chave) {
     return item;
 }
 
+//consulta tamanho
 int lista_tamanho_enc(const LISTA_ENC *lista) {
     return lista != NULL ? lista->tamanho : 0;
 }
-
+//consulta se a lista está vazia
 bool lista_vazia_enc(const LISTA_ENC *lista) {
     return lista == NULL || lista->inicio == NULL;
 }
 
+//consulta se a lista está cheia (sempre retorna false, pois a lista encadeada não tem limite de tamanho)
 bool lista_cheia_enc(const LISTA_ENC *lista) {
     (void)lista;
     return false;
 }
 
+//imprime a lista encadeada
 void lista_imprimir_enc(const LISTA_ENC *lista) {
     if (lista == NULL) {
         printf("<lista inexistente>\n");
         return;
     }
 
+    //formato de impressão: inicio -> item1 -> item2 -> ... -> NULL
     printf("inicio -> ");
     for (const NO *p = lista->inicio; p != NULL; p = p->proximo) {
         item_imprimir(p->item);
@@ -232,6 +247,7 @@ void lista_imprimir_enc(const LISTA_ENC *lista) {
     printf("NULL\n");
 }
 
+//percorre a lista encadeada
 void lista_percorrer_enc(const LISTA_ENC *lista, ITEM_VISITOR f, void *ctx) {
     if (lista == NULL || f == NULL)
         return;
