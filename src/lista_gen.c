@@ -6,24 +6,25 @@
 typedef struct no_ NO;
 
 struct no_ {
-    int tipo; // 0 = átomo, 1 = sublista
-    union {
+    int tipo; // 0 = átomo 1 = sublista
+    union { //aloca espaço suficiente apenas para o maior dos seus campos, pois o nó nunca será um átomo e uma sublista ao mesmo tempo
         ITEM *atomo;
         struct {
             char *chave; //rótulo do grupo
             NO *inicio;  //primeiro nó do grupo 
-            NO *fim;     //último nó do grupo */
+            NO *fim;     //último nó do grupo 
         } sub;
     } info;
     NO *prox; /* próximo nó do mesmo nível */
 };
 
 struct lista_gen {
-    NO *inicio;
-    NO *fim;
-    int total; /* total de átomos em todos os níveis */
+    NO *inicio; //ponteiro para o inicio
+    NO *fim; //ponteiro para o fim 
+    int total; // total de átomos em todos os níveis 
 };
 
+// Função auxiliar para anexar um nó ao final de uma lista
 static void anexar(NO **inicio, NO **fim, NO *no) {
     if (*fim != NULL)
         (*fim)->prox = no;
@@ -32,6 +33,7 @@ static void anexar(NO **inicio, NO **fim, NO *no) {
     *fim = no;
 }
 
+// Função auxiliar para criar um nó do tipo átomo
 static NO *criar_no_atomo(ITEM *item) {
     NO *n = malloc(sizeof(NO));
     if (!n) return NULL;
@@ -41,6 +43,7 @@ static NO *criar_no_atomo(ITEM *item) {
     return n;
 }
 
+// função auxiliar para criar um nó do tipo sublista
 static NO *criar_no_sublista(const char *chave) {
     NO *n = malloc(sizeof(NO));
     if (!n) return NULL;
@@ -57,7 +60,7 @@ static NO *criar_no_sublista(const char *chave) {
     return n;
 }
 
-/* Procura, no nível dado, a sublista com a chave informada. */
+//Procura no nível fornecido como parametro, a sublista com a chave informada.
 static NO *achar_sublista(NO *inicio, const char *chave) {
     for (NO *p = inicio; p != NULL; p = p->prox) {
         if (p->tipo == 1 && strcmp(p->info.sub.chave, chave) == 0)
@@ -66,6 +69,7 @@ static NO *achar_sublista(NO *inicio, const char *chave) {
     return NULL;
 }
 
+//Construtor -- cria a lista generalizada vazia, com ponteiros para o início e fim nulos e total de átomos igual a zero
 LISTA_GEN *lgen_criar(void) {
     LISTA_GEN *l = malloc(sizeof(LISTA_GEN));
     if (l) {
@@ -76,6 +80,7 @@ LISTA_GEN *lgen_criar(void) {
     return l;
 }
 
+//Função para inserir um item na lista generalizada como átomo
 bool lgen_inserir_atomo(LISTA_GEN *l, ITEM *item) {
     if (!l || !item) return false;
 
@@ -87,6 +92,7 @@ bool lgen_inserir_atomo(LISTA_GEN *l, ITEM *item) {
     return true;
 }
 
+// Função para inserir um item na lista generalizada em uma sublista especificada por uma sequência de chaves
 bool lgen_inserir_agrupado(LISTA_GEN *l, ITEM *item, const char *chaves[], int n) {
     if (!l || !item || n < 0) return false;
 
@@ -112,6 +118,7 @@ bool lgen_inserir_agrupado(LISTA_GEN *l, ITEM *item, const char *chaves[], int n
     return true;
 }
 
+// Função para inserir uma sublista na lista generalizada, especificando a chave da sublista
 bool lgen_inserir_sublista(LISTA_GEN *l, LISTA_GEN *sublista, const char *chave) {
     if (!l || !sublista || !sublista->inicio) return false;
 
@@ -123,11 +130,12 @@ bool lgen_inserir_sublista(LISTA_GEN *l, LISTA_GEN *sublista, const char *chave)
     anexar(&l->inicio, &l->fim, no);
     l->total += sublista->total;
 
-    /* os nós internos foram transferidos: libera só o descritor */
+    //os nós internos foram transferidos: libera só o descritor
     free(sublista);
     return true;
 }
 
+// Função auxiliar para destruir os nós de uma lista generalizada, liberando memória de forma recursiva
 static void destruir_nos(NO *no, bool destruir_itens) {
     while (no != NULL) {
         NO *prox = no->prox;
@@ -143,6 +151,7 @@ static void destruir_nos(NO *no, bool destruir_itens) {
     }
 }
 
+// Função para destruir a lista generalizada, liberando toda a memória alocada, incluindo os itens caso seja pedido
 void lgen_destruir(LISTA_GEN **l, bool destruir_itens) {
     if (!l || !*l) return;
     destruir_nos((*l)->inicio, destruir_itens);
@@ -150,7 +159,7 @@ void lgen_destruir(LISTA_GEN **l, bool destruir_itens) {
     *l = NULL;
 }
 
-/* Imprime ex.: (Safe(2024(A, B), 2025(C)), Risky(2025(D))) */
+// Função auxiliar para percorrer os nós de uma lista generalizada e imprimir recursivamente a estrutura de uma Lista Generalizada
 static void imprimir_nos(const NO *no) {
     printf("(");
     for (const NO *p = no; p != NULL; p = p->prox) {
@@ -167,6 +176,7 @@ static void imprimir_nos(const NO *no) {
     printf(")");
 }
 
+// Função para imprimir a estrutura da lista generalizada
 void lgen_imprimir(const LISTA_GEN *l) {
     if (!l) {
         printf("()\n");
@@ -176,6 +186,7 @@ void lgen_imprimir(const LISTA_GEN *l) {
     printf("\n");
 }
 
+// Função auxiliar para calcular a profundidade máxima da lista generalizada de forma recursiva
 static int calcular_profundidade_nos(const NO *no) {
     int max_prof = 0;
     for (const NO *p = no; p != NULL; p = p->prox) {
@@ -188,15 +199,18 @@ static int calcular_profundidade_nos(const NO *no) {
     return max_prof;
 }
 
+//consulta -- profundidade maxima da lista generalizada
 int lgen_obter_profundidade(const LISTA_GEN *l) {
     if (!l || !l->inicio) return 0;
     return calcular_profundidade_nos(l->inicio);
 }
 
+//consulta -- tamanho da lista generalizada
 int lgen_tamanho(const LISTA_GEN *l) {
     return l ? l->total : 0;
 }
 
+// Função auxiliar para percorrer os nós de uma lista generalizada 
 static bool percorrer_nos(const NO *no, ITEM_VISITOR f, void *ctx) {
     for (const NO *p = no; p != NULL; p = p->prox) {
         if (p->tipo == 1) {
@@ -209,6 +223,7 @@ static bool percorrer_nos(const NO *no, ITEM_VISITOR f, void *ctx) {
     return true;
 }
 
+// Função para percorrer todos os itens da lista generalizada
 void lgen_percorrer(const LISTA_GEN *l, ITEM_VISITOR f, void *ctx) {
     if (l && f)
         percorrer_nos(l->inicio, f, ctx);

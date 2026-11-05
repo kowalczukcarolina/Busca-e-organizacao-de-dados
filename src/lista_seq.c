@@ -106,6 +106,7 @@ static bool lista_inserir_posicao_seq(LISTA_SEQ *lista, int pos, ITEM *item) {
     return true;
 }
 
+//Construtor -- cria uma lista sequencial vazia, com capacidade inicial definida e flag de ordenação
 LISTA_SEQ *lista_criar_seq(bool ordenada) {
     LISTA_SEQ *lista = malloc(sizeof(LISTA_SEQ));
     if (lista == NULL)
