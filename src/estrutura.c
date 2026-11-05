@@ -11,7 +11,7 @@
 #include "../include/lista_cruz.h"
 
 #define MAX_NIVEIS 8
-#define TAM_CHAVE  64
+#define TAM_CHAVE  256
 
 typedef enum { T_PILHA, T_FILA, T_SEQ, T_ORD, T_ENC, T_CAB, T_GEN, T_CRUZ } TIPO;
 

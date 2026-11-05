@@ -1,0 +1,984 @@
+Solicitação;Atividade;Data/Hora Abertura;SLA;Data/Hora Fechamento;Grupo;Situação;Unidade
+256932;Remanejar computador;02/01/2026 09:08;08h00m;02/01/2026 16:19;Executores: 2º Nível - Distrito Federal - Região 4;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257054;Configurar computador;02/01/2026 15:36;08h00m;02/01/2026 21:06;Executores: 2º Nível - Distrito Federal - Região 4;Fechada;Ministério dos Direitos Humanos e da Cidadania
+256961;Servidor Windows - Analisar ambiente;02/01/2026 10:17;16h00m;02/01/2026 11:43;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258264;Criar pasta corporativa;06/01/2026 15:30;16h00m;14/01/2026 12:32;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259258;Aplicações - Alterar configuração de ambiente;08/01/2026 13:46;16h00m;12/01/2026 15:29;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259694;Solicitar ou revogar acesso a pasta corporativa;09/01/2026 11:37;04h00m;27/01/2026 15:58;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260728;Verificar erro na plataforma Microsoft 365;12/01/2026 17:42;02h00m;14/01/2026 10:07;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261276;Configurar computador;13/01/2026 14:02;08h00m;14/01/2026 08:51;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262682;Active Directory - Criar, alterar ou remover GPO;15/01/2026 13:56;16h00m;15/01/2026 15:04;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263221;Servidor Windows - Analisar erros ou falhas;16/01/2026 12:01;16h00m;20/01/2026 11:40;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265308;Active Directory - Criar, alterar ou remover GPO;21/01/2026 16:42;16h00m;22/01/2026 14:24;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265495;DNS – Criar, alterar ou excluir registro na zona;22/01/2026 09:49;08h00m;23/01/2026 15:31;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265900;Solicitar ou revogar acesso a pasta corporativa;22/01/2026 16:57;04h00m;27/01/2026 16:20;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268215;Solicitar ou revogar acesso a pasta corporativa;28/01/2026 15:14;04h00m;29/01/2026 10:10;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268219;Solicitar ou revogar acesso a pasta corporativa;28/01/2026 15:16;04h00m;29/01/2026 10:00;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268220;Solicitar ou revogar acesso a pasta corporativa;28/01/2026 15:18;04h00m;29/01/2026 09:57;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério dos Direitos Humanos e da Cidadania
+256980;Instalar ou desinstalar computador;02/01/2026 11:06;08h00m;06/01/2026 17:29;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257293;Instalar ou desinstalar computador;05/01/2026 10:26;08h00m;06/01/2026 17:31;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257571;Verificar indisponibilidade de conexão de Internet;05/01/2026 14:29;04h00m;06/01/2026 17:36;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257618;Verificar indisponibilidade de conexão de Internet;05/01/2026 14:59;04h00m;06/01/2026 17:35;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257674;Verificar indisponibilidade de conexão de Internet;05/01/2026 15:53;04h00m;06/01/2026 17:34;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257835;Verificar indisponibilidade de conexão de Internet;06/01/2026 09:08;04h00m;06/01/2026 17:33;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257892;Configurar computador;06/01/2026 09:49;08h00m;06/01/2026 17:30;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258574;Configurar computador;07/01/2026 10:50;08h00m;09/01/2026 15:02;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258769;Instalar ou desinstalar computador;07/01/2026 14:27;08h00m;07/01/2026 14:37;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259057;Solicitar ou Instalar insumos;08/01/2026 10:05;08h00m;15/01/2026 18:46;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259120;Instalar ou desinstalar computador;08/01/2026 10:50;08h00m;14/01/2026 18:06;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259375;Instalar ou desinstalar computador;08/01/2026 15:38;08h00m;08/01/2026 16:02;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259544;Configurar computador;09/01/2026 09:16;08h00m;15/01/2026 15:25;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259997;Instalar ou desinstalar computador;12/01/2026 08:29;08h00m;14/01/2026 14:35;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261023;Instalar ou desinstalar computador;13/01/2026 10:57;08h00m;15/01/2026 14:43;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261025;Configurar computador;13/01/2026 11:00;08h00m;15/01/2026 16:04;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261800;Configurar computador;14/01/2026 10:40;08h00m;20/01/2026 14:58;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262027;Instalar ou desinstalar computador;14/01/2026 14:42;08h00m;15/01/2026 17:01;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262410;Verificar erro em computador;15/01/2026 10:32;02h00m;15/01/2026 16:09;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262486;Verificar indisponibilidade de conexão de Internet;15/01/2026 11:11;04h00m;15/01/2026 16:10;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262539;Mapear ou remover impressora - Automação;15/01/2026 11:42;08h00m;15/01/2026 12:07;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263874;Instalar ou desinstalar computador;19/01/2026 12:51;08h00m;20/01/2026 14:57;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264569;Configurar computador;20/01/2026 14:59;08h00m;26/01/2026 12:44;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264658;Verificar erro em computador;20/01/2026 16:10;02h00m;20/01/2026 18:11;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264718;Verificar erro em computador;20/01/2026 17:21;02h00m;20/01/2026 18:06;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264868;Instalar ou desinstalar computador;21/01/2026 09:53;08h00m;21/01/2026 14:30;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265103;Remanejar computador;21/01/2026 12:43;08h00m;21/01/2026 17:55;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265231;Solicitar ou revogar acesso a pasta corporativa;21/01/2026 15:28;04h00m;22/01/2026 14:19;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265592;Mapear ou remover impressora - Automação;22/01/2026 11:01;08h00m;22/01/2026 11:43;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265818;Verificar erro em computador;22/01/2026 15:32;02h00m;26/01/2026 12:39;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266496;Verificar indisponibilidade de conexão de Internet;26/01/2026 09:24;04h00m;26/01/2026 12:47;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267116;Instalar ou desinstalar computador;27/01/2026 08:51;08h00m;27/01/2026 18:09;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267433;Instalar ou desinstalar computador;27/01/2026 12:00;08h00m;27/01/2026 17:13;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268307;Verificar erro em computador;28/01/2026 17:06;02h00m;29/01/2026 16:30;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268557;Configurar computador;29/01/2026 11:02;08h00m;29/01/2026 16:29;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268910;Verificar erro em computador;29/01/2026 16:24;02h00m;30/01/2026 15:47;Executores: 2º Nível - Distrito Federal - Região 7;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257001;Instalar ou desinstalar computador;02/01/2026 12:56;08h00m;02/01/2026 16:32;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257129;Instalar ou desinstalar computador;05/01/2026 08:37;08h00m;07/01/2026 13:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257186;Verificar indisponibilidade de conexão de Internet;05/01/2026 09:35;04h00m;05/01/2026 12:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257260;Configurar computador;05/01/2026 10:07;08h00m;14/01/2026 12:59;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257316;Elaborar laudo técnico de equipamento;05/01/2026 10:37;08h00m;06/01/2026 12:39;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257324;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;05/01/2026 10:40;04h00m;06/01/2026 18:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257355;Instalar ou desinstalar computador;05/01/2026 10:59;08h00m;06/01/2026 11:32;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257371;Elaborar laudo técnico de equipamento;05/01/2026 11:08;08h00m;06/01/2026 09:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257392;Formatar computador;05/01/2026 11:21;08h00m;05/01/2026 15:30;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257396;Elaborar laudo técnico de equipamento;05/01/2026 11:23;08h00m;06/01/2026 12:40;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257424;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;05/01/2026 11:39;04h00m;05/01/2026 14:09;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257453;Mapear ou remover impressora - Automação;05/01/2026 11:57;08h00m;08/01/2026 17:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257597;Verificar indisponibilidade de conexão de Internet;05/01/2026 14:50;04h00m;05/01/2026 15:25;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257691;Mapear ou remover impressora - Automação;05/01/2026 16:08;08h00m;06/01/2026 11:30;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257726;Remanejar computador;05/01/2026 16:43;08h00m;05/01/2026 17:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257764;Verificar erro em computador;05/01/2026 17:44;02h00m;05/01/2026 18:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257819;Instalar ou desinstalar computador;06/01/2026 08:51;08h00m;06/01/2026 18:34;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257894;Configurar computador;06/01/2026 09:49;08h00m;09/01/2026 09:43;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257901;Verificar erro em computador;06/01/2026 09:55;02h00m;06/01/2026 10:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257918;Configurar computador;06/01/2026 10:05;08h00m;09/01/2026 09:12;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257927;Configurar computador;06/01/2026 10:09;08h00m;09/01/2026 08:11;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257943;Configurar computador;06/01/2026 10:15;08h00m;09/01/2026 10:21;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258018;Verificar erro em computador;06/01/2026 11:04;02h00m;08/01/2026 11:26;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258040;Instalar ou desinstalar computador;06/01/2026 11:15;08h00m;06/01/2026 18:27;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258073;Elaborar laudo técnico de equipamento;06/01/2026 11:38;08h00m;06/01/2026 12:41;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258082;Criar caixa de e-mail compartilhada;06/01/2026 11:41;08h00m;15/01/2026 16:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258146;Instalar ou desinstalar computador;06/01/2026 13:40;08h00m;07/01/2026 15:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258489;Verificar indisponibilidade de conexão de Internet;07/01/2026 10:05;04h00m;07/01/2026 11:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258572;Instalar ou Atualizar Softwares e Aplicativos - Licenciados;07/01/2026 10:49;04h00m;07/01/2026 14:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258766;Verificar erro em computador;07/01/2026 14:21;02h00m;14/01/2026 12:57;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258850;Configurar software e aplicativos;07/01/2026 15:23;04h00m;07/01/2026 18:23;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258990;Mapear impressora no computador;08/01/2026 08:48;08h00m;08/01/2026 11:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259007;Verificar indisponibilidade de conexão de Internet;08/01/2026 09:15;04h00m;09/01/2026 08:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259040;Instalar ou desinstalar computador;08/01/2026 09:45;08h00m;08/01/2026 16:29;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259048;Verificar erro em Softwares e Aplicativos;08/01/2026 09:59;02h00m;14/01/2026 12:35;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259049;Verificar lentidão em sistema;08/01/2026 09:59;16h00m;15/01/2026 09:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259066;Instalar Softwares e Aplicativos;08/01/2026 10:12;04h00m;08/01/2026 13:14;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259192;Mapear impressora no computador;08/01/2026 11:40;08h00m;08/01/2026 16:35;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259272;Formatar computador;08/01/2026 14:07;08h00m;08/01/2026 16:07;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259342;Verificar erro em computador;08/01/2026 15:12;02h00m;14/01/2026 10:45;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259547;Instalar ou desinstalar Periféricos;09/01/2026 09:19;08h00m;09/01/2026 18:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259551;Instalar ou desinstalar computador;09/01/2026 09:26;08h00m;09/01/2026 16:34;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259562;Formatar computador;09/01/2026 09:41;08h00m;09/01/2026 16:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259621;Mapear impressora no computador;09/01/2026 10:29;08h00m;19/01/2026 11:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259635;Mapear impressora no computador;09/01/2026 10:36;08h00m;19/01/2026 11:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259671;Verificar erro em computador;09/01/2026 11:14;02h00m;09/01/2026 16:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259831;Verificar erro na plataforma Microsoft 365;09/01/2026 14:46;02h00m;15/01/2026 11:14;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259893;Mapear ou remover impressora - Automação;09/01/2026 15:34;08h00m;14/01/2026 12:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259905;Verificar erro em computador;09/01/2026 15:48;02h00m;09/01/2026 16:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259968;Verificar erro em computador;09/01/2026 17:41;02h00m;15/01/2026 10:43;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260043;Verificar erro em computador;12/01/2026 09:18;02h00m;12/01/2026 10:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260049;Configurar computador;12/01/2026 09:27;08h00m;12/01/2026 10:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260056;Configurar computador;12/01/2026 09:29;08h00m;12/01/2026 10:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260086;Configurar computador;12/01/2026 09:40;08h00m;12/01/2026 11:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260112;Verificar erro em computador;12/01/2026 09:55;02h00m;12/01/2026 11:32;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260179;Verificar erro em Softwares e Aplicativos;12/01/2026 10:28;02h00m;14/01/2026 12:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260271;Configurar computador;12/01/2026 11:17;08h00m;13/01/2026 10:17;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260492;Configurar computador;12/01/2026 14:32;08h00m;13/01/2026 10:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260915;Redirecionar e-mail;13/01/2026 10:00;04h00m;13/01/2026 14:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260931;Verificar erro em computador;13/01/2026 10:11;02h00m;13/01/2026 14:45;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260940;Instalar ou desinstalar computador;13/01/2026 10:18;08h00m;13/01/2026 11:58;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260959;Configurar computador;13/01/2026 10:26;08h00m;13/01/2026 15:10;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260987;Verificar erro no serviço de e-mail;13/01/2026 10:40;04h00m;21/01/2026 17:38;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260991;Verificar erro em computador;13/01/2026 10:44;02h00m;13/01/2026 11:58;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261068;Mapear Pasta de rede no computador;13/01/2026 11:20;04h00m;13/01/2026 14:23;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261121;Instalar ou desinstalar computador;13/01/2026 11:42;08h00m;14/01/2026 12:30;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261132;Instalar ou desinstalar computador;13/01/2026 11:46;08h00m;14/01/2026 12:26;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261137;Verificar erro em Softwares e Aplicativos;13/01/2026 11:48;02h00m;15/01/2026 14:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261186;Instalar ou Atualizar Softwares e Aplicativos - Licenciados;13/01/2026 12:17;04h00m;13/01/2026 17:29;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261190;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;13/01/2026 12:18;04h00m;13/01/2026 15:20;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261238;Instalar ou desinstalar computador;13/01/2026 13:09;08h00m;14/01/2026 12:27;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261450;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;13/01/2026 15:30;04h00m;14/01/2026 16:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261493;Configurar computador;13/01/2026 15:54;08h00m;14/01/2026 09:01;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261510;Configurar computador;13/01/2026 16:11;08h00m;14/01/2026 09:00;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261640;Mapear ou remover impressora - Automação;14/01/2026 08:44;08h00m;14/01/2026 17:47;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261642;Configurar computador;14/01/2026 08:46;08h00m;14/01/2026 09:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261687;Mapear Pasta de rede no computador;14/01/2026 09:28;04h00m;15/01/2026 09:25;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261798;Verificar erro em computador;14/01/2026 10:40;02h00m;14/01/2026 12:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261878;Verificar erro em computador;14/01/2026 11:33;02h00m;14/01/2026 12:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261995;Instalar ou Atualizar Softwares e Aplicativos - Licenciados;14/01/2026 14:12;04h00m;16/01/2026 12:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262016;Configurar computador;14/01/2026 14:32;08h00m;15/01/2026 11:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262130;Verificar erro em computador;14/01/2026 15:54;02h00m;14/01/2026 16:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262178;Instalar ou desinstalar computador;14/01/2026 16:31;08h00m;14/01/2026 18:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262222;Instalar ou desinstalar computador;14/01/2026 19:13;08h00m;15/01/2026 11:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262314;Instalar ou desinstalar computador;15/01/2026 09:33;08h00m;15/01/2026 10:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262411;Verificar erro em computador;15/01/2026 10:33;02h00m;15/01/2026 11:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262728;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;15/01/2026 14:39;04h00m;15/01/2026 14:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262808;Configurar computador;15/01/2026 15:27;08h00m;15/01/2026 16:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262818;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 15:33;04h00m;20/01/2026 10:29;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262820;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;15/01/2026 15:36;04h00m;15/01/2026 16:37;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263035;Configurar computador;16/01/2026 09:35;08h00m;16/01/2026 11:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263040;Formatar computador;16/01/2026 09:38;08h00m;16/01/2026 12:46;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263049;Verificar erro em computador;16/01/2026 09:49;02h00m;16/01/2026 11:04;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263160;Configurar computador;16/01/2026 11:23;08h00m;16/01/2026 12:29;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263277;Configurar computador;16/01/2026 13:11;08h00m;19/01/2026 15:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263296;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;16/01/2026 14:19;04h00m;16/01/2026 16:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263318;Formatar computador;16/01/2026 14:46;08h00m;16/01/2026 15:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263407;Formatar computador;16/01/2026 16:24;08h00m;16/01/2026 16:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263460;Instalar ou desinstalar computador;16/01/2026 20:41;08h00m;19/01/2026 10:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263528;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;19/01/2026 09:18;04h00m;19/01/2026 10:23;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263825;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;19/01/2026 11:56;04h00m;19/01/2026 13:50;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263828;Configurar computador;19/01/2026 11:58;08h00m;19/01/2026 15:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263908;Formatar computador;19/01/2026 13:49;08h00m;19/01/2026 15:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263942;Configurar computador;19/01/2026 14:18;08h00m;19/01/2026 15:49;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263950;Verificar lentidão de conexão de Internet;19/01/2026 14:22;04h00m;19/01/2026 14:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264023;Remanejar computador;19/01/2026 15:10;08h00m;19/01/2026 16:50;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264027;Verificar erro em computador;19/01/2026 15:13;02h00m;19/01/2026 15:49;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264074;Acionar garantia de equipamento;19/01/2026 15:48;08h00m;19/01/2026 16:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264077;Mapear ou remover impressora - Automação;19/01/2026 15:52;08h00m;19/01/2026 17:01;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264154;Configurar computador;19/01/2026 17:12;08h00m;21/01/2026 15:22;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264190;Verificar erro em computador;20/01/2026 08:02;02h00m;20/01/2026 09:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264246;Verificar erro na plataforma Microsoft 365;20/01/2026 09:37;02h00m;20/01/2026 10:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264313;Verificar indisponibilidade de conexão de Internet;20/01/2026 10:33;04h00m;20/01/2026 15:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264351;Instalar ou desinstalar computador;20/01/2026 11:02;08h00m;20/01/2026 17:04;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264558;Remanejar computador;20/01/2026 14:49;08h00m;20/01/2026 17:11;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264585;Verificar erro em computador;20/01/2026 15:11;02h00m;20/01/2026 16:30;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264589;Verificar erro em computador;20/01/2026 15:14;02h00m;20/01/2026 16:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264595;Verificar erro em computador;20/01/2026 15:21;02h00m;20/01/2026 15:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264606;Verificar erro em computador;20/01/2026 15:27;02h00m;20/01/2026 15:36;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264694;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;20/01/2026 16:46;04h00m;21/01/2026 10:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264796;Verificar erro em computador;21/01/2026 08:51;02h00m;21/01/2026 12:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264804;Formatar computador;21/01/2026 08:59;08h00m;21/01/2026 16:01;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264896;Verificar erro em computador;21/01/2026 10:07;02h00m;21/01/2026 10:44;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264923;Configurar software e aplicativos;21/01/2026 10:20;04h00m;21/01/2026 11:45;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264930;Verificar erro em computador;21/01/2026 10:23;02h00m;21/01/2026 15:10;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264957;Verificar erro na plataforma Microsoft 365;21/01/2026 10:35;02h00m;26/01/2026 16:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264981;Verificar erro em computador;21/01/2026 10:52;02h00m;26/01/2026 16:37;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264983;Instalar ou desinstalar computador;21/01/2026 10:54;08h00m;21/01/2026 17:56;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265029;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;21/01/2026 11:17;04h00m;21/01/2026 15:21;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265063;Instalar ou desinstalar computador;21/01/2026 11:47;08h00m;21/01/2026 16:39;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265069;Solicitar ou revogar acesso a pasta corporativa;21/01/2026 11:50;04h00m;21/01/2026 14:25;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265173;Configurar computador;21/01/2026 14:36;08h00m;21/01/2026 15:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265191;Remanejar computador;21/01/2026 15:01;08h00m;22/01/2026 14:46;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265202;Formatar computador;21/01/2026 15:09;08h00m;21/01/2026 16:38;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265520;Instalar ou desinstalar computador;22/01/2026 10:13;08h00m;22/01/2026 12:47;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265571;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;22/01/2026 10:46;04h00m;22/01/2026 12:59;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265763;Remanejar computador;22/01/2026 14:49;08h00m;23/01/2026 08:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265893;Instalar ou desinstalar computador;22/01/2026 16:45;08h00m;23/01/2026 08:14;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265916;Instalar ou desinstalar computador;22/01/2026 18:31;08h00m;23/01/2026 08:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265917;Instalar ou desinstalar computador;22/01/2026 18:34;08h00m;23/01/2026 08:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265919;Instalar ou desinstalar computador;22/01/2026 19:04;08h00m;23/01/2026 08:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265920;Instalar ou desinstalar computador;22/01/2026 19:04;08h00m;23/01/2026 08:17;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265921;Instalar ou desinstalar computador;22/01/2026 19:04;08h00m;23/01/2026 08:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265926;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;23/01/2026 07:31;04h00m;23/01/2026 11:12;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266015;Verificar erro em computador;23/01/2026 09:44;02h00m;23/01/2026 10:50;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266078;Verificar erro em computador;23/01/2026 10:30;02h00m;26/01/2026 09:38;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266100;Verificar erro no envio ou recebimento de mensagem;23/01/2026 10:53;02h00m;23/01/2026 16:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266139;Verificar erro em computador;23/01/2026 11:28;02h00m;23/01/2026 16:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266145;Instalar ou desinstalar computador;23/01/2026 11:35;08h00m;26/01/2026 12:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266483;Configurar computador;26/01/2026 09:18;08h00m;26/01/2026 10:19;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266513;Instalar ou desinstalar computador;26/01/2026 09:31;08h00m;26/01/2026 11:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266570;Verificar erro em computador;26/01/2026 10:10;02h00m;26/01/2026 11:47;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266589;Instalar ou desinstalar computador;26/01/2026 10:18;08h00m;26/01/2026 16:53;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266902;Instalar ou desinstalar computador;26/01/2026 15:08;08h00m;26/01/2026 16:09;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267076;Verificar erro no serviço de e-mail;26/01/2026 19:14;04h00m;27/01/2026 17:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267207;Instalar ou desinstalar computador;27/01/2026 09:57;08h00m;27/01/2026 12:53;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267230;Instalar ou desinstalar computador;27/01/2026 10:07;08h00m;27/01/2026 11:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267247;Verificar erro em computador;27/01/2026 10:17;02h00m;27/01/2026 10:53;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267346;Configurar computador;27/01/2026 11:10;08h00m;27/01/2026 17:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267461;Configurar computador;27/01/2026 12:37;08h00m;27/01/2026 12:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267560;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;27/01/2026 14:37;04h00m;28/01/2026 16:51;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267592;Configurar computador;27/01/2026 15:02;08h00m;27/01/2026 17:07;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267817;Verificar erro em computador;28/01/2026 08:48;02h00m;28/01/2026 09:58;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267844;Instalar ou desinstalar computador;28/01/2026 09:28;08h00m;28/01/2026 14:41;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267853;Verificar erro em computador;28/01/2026 09:39;02h00m;28/01/2026 12:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267857;Instalar ou desinstalar computador;28/01/2026 09:43;08h00m;28/01/2026 11:22;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267898;Instalar ou desinstalar computador;28/01/2026 10:15;08h00m;28/01/2026 11:22;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267924;Mapear impressora no computador;28/01/2026 10:29;08h00m;28/01/2026 17:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268151;Verificar indisponibilidade de conexão de Internet;28/01/2026 14:11;04h00m;28/01/2026 17:22;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268453;Formatar computador;29/01/2026 09:57;08h00m;29/01/2026 10:00;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268458;Formatar computador;29/01/2026 09:59;08h00m;29/01/2026 10:00;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268467;Instalar ou desinstalar computador;29/01/2026 10:04;08h00m;29/01/2026 14:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268571;Configurar computador;29/01/2026 11:11;08h00m;29/01/2026 14:23;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268599;Instalar ou desinstalar computador;29/01/2026 11:31;08h00m;29/01/2026 14:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268647;Instalar ou desinstalar computador;29/01/2026 12:09;08h00m;29/01/2026 14:55;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268649;Instalar ou desinstalar Periféricos;29/01/2026 12:14;08h00m;29/01/2026 16:26;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268726;Instalar ou desinstalar computador;29/01/2026 13:57;08h00m;29/01/2026 14:52;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268762;Verificar erro em computador;29/01/2026 14:29;02h00m;29/01/2026 15:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268816;Remanejar computador;29/01/2026 15:05;08h00m;29/01/2026 16:48;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268846;Instalar ou desinstalar computador;29/01/2026 15:37;08h00m;29/01/2026 16:27;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268930;Verificar indisponibilidade de conexão de Internet;29/01/2026 16:50;04h00m;29/01/2026 16:58;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257090;Dúvida e Orientações;02/01/2026 16:35;04h00m;02/01/2026 16:35;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257589;Verificar erro na plataforma Microsoft 365;05/01/2026 14:42;02h00m;12/01/2026 09:45;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257642;Dúvida e Orientações;05/01/2026 15:15;04h00m;12/01/2026 11:03;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257699;Dúvida e Orientações;05/01/2026 16:17;04h00m;05/01/2026 16:17;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258236;Dúvida e Orientações;06/01/2026 15:07;04h00m;06/01/2026 15:07;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259296;Dúvida e Orientações;08/01/2026 14:24;04h00m;08/01/2026 14:24;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259642;Dúvida e Orientações;09/01/2026 10:43;04h00m;09/01/2026 10:43;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259713;Solicitar ou revogar acesso a pasta corporativa;09/01/2026 11:56;04h00m;14/01/2026 13:45;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259856;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 15:10;04h00m;12/01/2026 18:40;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259882;Verificar indisponibilidade de internet;09/01/2026 15:26;04h00m;09/01/2026 15:35;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259920;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 16:06;04h00m;14/01/2026 13:26;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261000;Solicitar ou Instalar insumos;13/01/2026 10:47;08h00m;13/01/2026 14:34;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262832;Dúvida e Orientações;15/01/2026 15:50;04h00m;15/01/2026 15:50;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264646;Criar caixa de e-mail compartilhada;20/01/2026 15:56;08h00m;27/01/2026 10:13;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265143;Dúvida e Orientações;21/01/2026 14:10;04h00m;21/01/2026 14:11;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265279;Dúvida e Orientações;21/01/2026 16:18;04h00m;29/01/2026 11:53;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266715;Dúvida e Orientações;26/01/2026 11:30;04h00m;27/01/2026 14:52;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266874;Alterar atributos da conta de e-mail;26/01/2026 14:50;04h00m;27/01/2026 14:59;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267158;Configurar computador;27/01/2026 09:25;08h00m;27/01/2026 10:51;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268474;Configurar software e aplicativos;29/01/2026 10:08;04h00m;29/01/2026 11:14;Executores: 1º Nível;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257138;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 08:50;04h00m;05/01/2026 09:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257160;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 09:13;04h00m;05/01/2026 10:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257349;Reiniciar ou desbloquear de senha;05/01/2026 10:57;02h00m;05/01/2026 11:40;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257362;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 11:05;04h00m;05/01/2026 12:01;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257368;Reiniciar ou desbloquear de senha;05/01/2026 11:07;02h00m;05/01/2026 13:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257399;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 11:24;04h00m;05/01/2026 12:49;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257426;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 11:42;04h00m;05/01/2026 12:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257431;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 11:44;04h00m;05/01/2026 13:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257439;Vincular ou desvincular e-mail da lista de distribuição;05/01/2026 11:48;04h00m;05/01/2026 12:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257456;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 11:58;04h00m;05/01/2026 13:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257505;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 13:07;04h00m;05/01/2026 14:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257576;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);05/01/2026 14:33;04h00m;05/01/2026 14:45;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257601;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 14:52;04h00m;05/01/2026 15:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257650;Criar caixa de e-mail compartilhada;05/01/2026 15:23;08h00m;05/01/2026 19:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257785;Alterar atributos da conta de e-mail;05/01/2026 19:07;04h00m;05/01/2026 20:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257909;Vincular ou desvincular e-mail de caixa compartilhada;06/01/2026 10:00;04h00m;06/01/2026 11:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257964;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);06/01/2026 10:29;04h00m;06/01/2026 11:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257968;Reiniciar ou desbloquear de senha;06/01/2026 10:35;02h00m;06/01/2026 12:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258119;Vincular ou desvincular e-mail de caixa compartilhada;06/01/2026 12:35;04h00m;06/01/2026 14:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258125;Solicitar ou revogar acesso a pasta corporativa;06/01/2026 12:58;04h00m;06/01/2026 14:39;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258155;Reiniciar ou desbloquear de senha;06/01/2026 13:47;02h00m;06/01/2026 13:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258177;Vincular ou desvincular e-mail de caixa compartilhada;06/01/2026 14:16;04h00m;06/01/2026 14:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258183;Alterar atributos da conta de e-mail;06/01/2026 14:24;04h00m;06/01/2026 14:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258561;Solicitar licença de produto Microsoft 365;07/01/2026 10:43;04h00m;13/01/2026 16:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258568;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);07/01/2026 10:46;04h00m;07/01/2026 11:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258616;Solicitar ou revogar acesso a pasta corporativa;07/01/2026 11:16;04h00m;07/01/2026 14:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258620;Solicitar ou revogar acesso a pasta corporativa;07/01/2026 11:18;04h00m;07/01/2026 15:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258654;Reiniciar ou desbloquear de senha;07/01/2026 11:39;02h00m;07/01/2026 14:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258683;Reiniciar ou desbloquear de senha;07/01/2026 12:06;02h00m;07/01/2026 13:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258712;Reiniciar ou desbloquear de senha;07/01/2026 13:03;02h00m;07/01/2026 14:06;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258771;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);07/01/2026 14:28;04h00m;07/01/2026 15:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258775;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);07/01/2026 14:31;04h00m;07/01/2026 14:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258806;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);07/01/2026 14:56;04h00m;07/01/2026 16:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258904;Solicitar ou revogar acesso a pasta corporativa;07/01/2026 16:26;04h00m;07/01/2026 16:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259118;Solicitar ou revogar acesso a pasta corporativa;08/01/2026 10:48;04h00m;08/01/2026 11:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259121;Alterar atributos da conta de e-mail;08/01/2026 10:50;04h00m;08/01/2026 11:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259166;Reiniciar ou desbloquear de senha;08/01/2026 11:14;02h00m;08/01/2026 11:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259207;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 11:53;04h00m;08/01/2026 12:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259229;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 12:31;04h00m;08/01/2026 12:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259440;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 16:30;04h00m;08/01/2026 17:15;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259556;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 09:34;04h00m;09/01/2026 10:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259568;Reiniciar ou desbloquear de senha;09/01/2026 09:45;02h00m;12/01/2026 08:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259668;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);09/01/2026 11:05;04h00m;09/01/2026 11:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259695;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 11:37;04h00m;09/01/2026 15:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259703;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 11:44;04h00m;09/01/2026 15:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259705;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 11:47;04h00m;09/01/2026 17:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259796;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);09/01/2026 14:22;04h00m;09/01/2026 14:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259800;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);09/01/2026 14:23;04h00m;09/01/2026 15:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259854;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);09/01/2026 15:07;04h00m;12/01/2026 08:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259924;Solicitar ou revogar acesso a pasta corporativa;09/01/2026 16:16;04h00m;09/01/2026 16:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259974;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);09/01/2026 19:24;04h00m;13/01/2026 15:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260521;Solicitar licença de produto Microsoft 365;12/01/2026 14:51;04h00m;15/01/2026 09:21;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260552;Vincular ou desvincular e-mail de caixa compartilhada;12/01/2026 15:04;04h00m;12/01/2026 17:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260664;Criar, vincular ou desvincular a caixa de e-mail compartilhada - Automação;12/01/2026 16:22;08h00m;12/01/2026 18:21;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260741;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);12/01/2026 18:08;04h00m;12/01/2026 18:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260844;Reiniciar ou desbloquear de senha;13/01/2026 09:23;02h00m;13/01/2026 10:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260995;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 10:45;04h00m;13/01/2026 11:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261007;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);13/01/2026 10:48;04h00m;13/01/2026 16:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261019;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 10:53;04h00m;13/01/2026 11:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261067;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 11:20;04h00m;13/01/2026 11:38;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261103;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);13/01/2026 11:32;04h00m;13/01/2026 16:49;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261110;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 11:35;04h00m;13/01/2026 12:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261117;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 11:41;04h00m;13/01/2026 15:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261153;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 11:56;04h00m;13/01/2026 12:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261164;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 12:05;04h00m;13/01/2026 12:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261167;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 12:06;04h00m;13/01/2026 15:13;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261168;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 12:06;04h00m;13/01/2026 17:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261193;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 12:21;04h00m;13/01/2026 15:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261321;Criar, vincular ou desvincular a caixa de e-mail compartilhada - Automação;13/01/2026 14:26;08h00m;13/01/2026 18:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261375;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 14:46;04h00m;13/01/2026 18:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261446;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 15:26;04h00m;13/01/2026 16:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261490;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 15:54;04h00m;14/01/2026 15:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261731;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);14/01/2026 10:07;04h00m;14/01/2026 11:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261759;Alterar atributos da conta de e-mail;14/01/2026 10:22;04h00m;14/01/2026 11:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261840;Alterar atributos da conta de e-mail;14/01/2026 11:04;04h00m;14/01/2026 12:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261926;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 12:24;04h00m;14/01/2026 13:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261931;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 12:40;04h00m;14/01/2026 13:36;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261949;Alterar atributos da conta de e-mail;14/01/2026 13:12;04h00m;14/01/2026 14:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261974;Alterar atributos da conta de e-mail;14/01/2026 13:53;04h00m;14/01/2026 16:45;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262029;Reiniciar ou desbloquear de senha;14/01/2026 14:44;02h00m;14/01/2026 14:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262065;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 15:08;04h00m;14/01/2026 21:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262067;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);14/01/2026 15:09;04h00m;14/01/2026 16:39;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262185;Solicitar ou revogar acesso a pasta corporativa;14/01/2026 16:38;04h00m;14/01/2026 17:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262212;Alterar atributos da conta de e-mail;14/01/2026 17:40;04h00m;14/01/2026 18:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262223;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);14/01/2026 19:30;04h00m;14/01/2026 19:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262224;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);14/01/2026 19:31;04h00m;14/01/2026 19:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262281;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 09:17;04h00m;15/01/2026 11:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262564;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 11:53;04h00m;15/01/2026 14:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262810;Vincular ou desvincular e-mail da lista de distribuição;15/01/2026 15:29;04h00m;15/01/2026 15:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262814;Vincular ou desvincular e-mail da lista de distribuição;15/01/2026 15:31;04h00m;15/01/2026 15:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262875;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 16:19;04h00m;15/01/2026 16:40;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262882;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 16:26;04h00m;15/01/2026 16:40;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262887;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 16:32;04h00m;15/01/2026 16:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262903;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 16:49;04h00m;15/01/2026 17:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262916;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:03;04h00m;15/01/2026 17:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262921;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:11;04h00m;15/01/2026 18:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262922;Alterar atributos da conta de e-mail;15/01/2026 17:11;04h00m;15/01/2026 17:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262930;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:23;04h00m;16/01/2026 09:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262936;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:29;04h00m;16/01/2026 09:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262938;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:32;04h00m;16/01/2026 10:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262944;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 17:39;04h00m;16/01/2026 10:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263025;Solicitar ou revogar acesso a pasta corporativa;16/01/2026 09:23;04h00m;16/01/2026 11:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263028;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);16/01/2026 09:28;04h00m;16/01/2026 10:30;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263076;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 10:11;04h00m;16/01/2026 10:27;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263078;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 10:13;04h00m;16/01/2026 10:28;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263140;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 11:07;04h00m;16/01/2026 11:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263141;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);16/01/2026 11:09;04h00m;16/01/2026 12:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263143;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 11:10;04h00m;16/01/2026 11:45;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263207;Solicitar ou revogar acesso a pasta corporativa;16/01/2026 11:52;04h00m;16/01/2026 12:13;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263239;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);16/01/2026 12:15;04h00m;16/01/2026 12:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263274;Alterar atributos da conta de e-mail;16/01/2026 13:00;04h00m;16/01/2026 14:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263347;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);16/01/2026 15:15;04h00m;16/01/2026 15:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263405;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);16/01/2026 16:22;04h00m;16/01/2026 16:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263416;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 16:34;04h00m;16/01/2026 17:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263425;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 16:40;04h00m;16/01/2026 17:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263442;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);16/01/2026 17:05;04h00m;16/01/2026 17:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263457;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 18:41;04h00m;19/01/2026 09:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263462;Criar caixa de e-mail compartilhada;16/01/2026 20:56;08h00m;19/01/2026 08:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263513;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);19/01/2026 09:09;04h00m;19/01/2026 12:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263532;Vincular ou desvincular e-mail de caixa compartilhada;19/01/2026 09:20;04h00m;19/01/2026 09:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263580;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);19/01/2026 09:48;04h00m;19/01/2026 12:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263644;Alterar atributos da conta de e-mail;19/01/2026 10:26;04h00m;19/01/2026 10:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263798;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);19/01/2026 11:44;04h00m;19/01/2026 13:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263817;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);19/01/2026 11:51;04h00m;19/01/2026 13:13;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263843;Verificar erro no serviço de e-mail;19/01/2026 12:08;04h00m;19/01/2026 15:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263849;Verificar erro no serviço de e-mail;19/01/2026 12:12;04h00m;19/01/2026 15:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263916;Reiniciar ou desbloquear de senha;19/01/2026 13:59;02h00m;19/01/2026 14:46;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263943;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);19/01/2026 14:19;04h00m;19/01/2026 19:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264048;Reiniciar ou desbloquear de senha;19/01/2026 15:28;02h00m;19/01/2026 18:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264081;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);19/01/2026 15:54;04h00m;19/01/2026 16:13;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264089;Vincular ou desvincular e-mail de caixa compartilhada;19/01/2026 16:03;04h00m;19/01/2026 16:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264183;Reiniciar ou desbloquear de senha;19/01/2026 21:28;02h00m;20/01/2026 09:01;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264257;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 09:46;04h00m;20/01/2026 10:39;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264267;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 09:55;04h00m;20/01/2026 10:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264285;Liberar acesso à VPN;20/01/2026 10:11;16h00m;20/01/2026 18:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264323;Vincular ou desvincular e-mail de caixa compartilhada;20/01/2026 10:42;04h00m;20/01/2026 12:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264346;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 10:59;04h00m;20/01/2026 12:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264360;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 11:08;04h00m;20/01/2026 11:34;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264496;Vincular ou desvincular e-mail de caixa compartilhada;20/01/2026 14:02;04h00m;20/01/2026 14:46;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264497;Reiniciar ou desbloquear de senha;20/01/2026 14:02;02h00m;20/01/2026 16:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264528;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 14:28;04h00m;20/01/2026 15:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264572;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 15:01;04h00m;20/01/2026 15:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264582;Vincular ou desvincular e-mail de caixa compartilhada;20/01/2026 15:08;04h00m;20/01/2026 15:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264628;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 15:45;04h00m;20/01/2026 16:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264934;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);21/01/2026 10:24;04h00m;21/01/2026 14:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264962;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);21/01/2026 10:36;04h00m;21/01/2026 12:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265080;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);21/01/2026 12:05;04h00m;21/01/2026 12:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265132;Vincular ou desvincular e-mail de caixa compartilhada;21/01/2026 13:57;04h00m;21/01/2026 14:36;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265135;Vincular ou desvincular e-mail de caixa compartilhada;21/01/2026 13:59;04h00m;21/01/2026 14:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265185;Reiniciar ou desbloquear de senha;21/01/2026 14:54;02h00m;21/01/2026 16:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265246;Alterar atributos da conta de e-mail;21/01/2026 15:49;04h00m;21/01/2026 16:34;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265256;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);21/01/2026 15:55;04h00m;21/01/2026 16:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265257;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);21/01/2026 15:56;04h00m;21/01/2026 16:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265395;Alterar atributos da conta de e-mail;21/01/2026 18:03;04h00m;21/01/2026 19:01;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265434;Habilitar acesso ao Office 365 no exterior;22/01/2026 09:00;08h00m;22/01/2026 12:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265463;Reiniciar ou desbloquear de senha;22/01/2026 09:29;02h00m;22/01/2026 09:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265482;Reiniciar ou desbloquear de senha;22/01/2026 09:37;02h00m;22/01/2026 10:36;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265625;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 11:19;04h00m;22/01/2026 11:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265627;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 11:20;04h00m;22/01/2026 11:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265732;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 14:26;04h00m;22/01/2026 16:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265756;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);22/01/2026 14:45;04h00m;22/01/2026 14:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265764;Solicitar ou revogar acesso a pasta corporativa;22/01/2026 14:50;04h00m;22/01/2026 15:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265834;Solicitar ou revogar acesso a pasta corporativa;22/01/2026 15:43;04h00m;22/01/2026 16:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265909;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 17:36;04h00m;23/01/2026 10:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266012;Solicitar licença de produto Microsoft 365;23/01/2026 09:42;04h00m;23/01/2026 10:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266082;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 10:34;04h00m;23/01/2026 10:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266084;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 10:35;04h00m;23/01/2026 10:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266085;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 10:37;04h00m;23/01/2026 10:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266314;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 15:16;04h00m;23/01/2026 18:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266316;Alterar atributos da conta de e-mail;23/01/2026 15:18;04h00m;23/01/2026 15:34;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266498;Criar caixa de e-mail compartilhada;26/01/2026 09:26;08h00m;26/01/2026 12:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266512;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 09:31;04h00m;26/01/2026 12:40;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266571;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 10:10;04h00m;26/01/2026 12:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266655;Reiniciar ou desbloquear de senha;26/01/2026 10:56;02h00m;26/01/2026 12:19;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266671;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 11:02;04h00m;26/01/2026 12:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266676;Solicitar ou revogar acesso a pasta corporativa;26/01/2026 11:06;04h00m;26/01/2026 12:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266746;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);26/01/2026 11:59;04h00m;26/01/2026 12:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266771;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 12:50;04h00m;26/01/2026 14:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266811;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 14:00;04h00m;26/01/2026 14:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266878;Solicitar ou revogar acesso a pasta corporativa;26/01/2026 14:52;04h00m;26/01/2026 16:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266883;Alterar atributos da conta de e-mail;26/01/2026 14:53;04h00m;26/01/2026 16:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266937;Solicitar ou revogar acesso a pasta corporativa;26/01/2026 15:26;04h00m;26/01/2026 17:21;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267030;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 17:06;04h00m;27/01/2026 08:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267053;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 17:53;04h00m;27/01/2026 08:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267157;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 09:24;04h00m;27/01/2026 09:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267177;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 09:41;04h00m;27/01/2026 10:43;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267269;Vincular ou desvincular e-mail da lista de distribuição;27/01/2026 10:24;04h00m;27/01/2026 11:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267289;Configurar software e aplicativos;27/01/2026 10:34;04h00m;27/01/2026 11:13;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267334;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 11:04;04h00m;27/01/2026 11:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267380;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 11:28;04h00m;27/01/2026 16:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267416;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);27/01/2026 11:45;04h00m;27/01/2026 11:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267423;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);27/01/2026 11:52;04h00m;27/01/2026 12:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267448;Criar caixa de e-mail compartilhada;27/01/2026 12:26;08h00m;27/01/2026 15:27;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267485;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 13:22;04h00m;27/01/2026 14:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267499;Alterar atributos da conta de e-mail;27/01/2026 13:36;04h00m;27/01/2026 13:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267522;Solicitar ou revogar acesso a pasta corporativa;27/01/2026 14:10;04h00m;27/01/2026 16:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267553;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 14:32;04h00m;27/01/2026 16:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267588;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 15:00;04h00m;27/01/2026 16:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267697;Reiniciar ou desbloquear de senha;27/01/2026 16:17;02h00m;27/01/2026 18:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267726;Solicitar ou revogar acesso a pasta corporativa;27/01/2026 16:40;04h00m;28/01/2026 12:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267757;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);27/01/2026 17:23;04h00m;27/01/2026 19:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267815;Alterar atributos da conta de e-mail;28/01/2026 08:46;04h00m;28/01/2026 08:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267891;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 10:06;04h00m;28/01/2026 10:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267917;Verificar erro em Pasta de rede;28/01/2026 10:23;02h00m;28/01/2026 12:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267966;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 10:56;04h00m;28/01/2026 13:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268008;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 11:16;04h00m;28/01/2026 12:45;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268010;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 11:18;04h00m;28/01/2026 12:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268082;Reiniciar ou desbloquear de senha;28/01/2026 12:03;02h00m;28/01/2026 13:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268115;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);28/01/2026 13:32;04h00m;28/01/2026 14:15;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268168;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 14:29;04h00m;28/01/2026 17:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268319;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 17:54;04h00m;29/01/2026 09:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268582;Vincular ou desvincular e-mail da lista de distribuição;29/01/2026 11:19;04h00m;29/01/2026 12:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268700;Reiniciar ou desbloquear de senha;29/01/2026 13:18;02h00m;29/01/2026 14:06;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268905;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);29/01/2026 16:24;04h00m;29/01/2026 19:15;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257181;Banco de Dados - Restaurar Backup / Dump;05/01/2026 09:31;16h00m;16/01/2026 16:52;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257675;Banco de Dados - Extrair Dados;05/01/2026 15:53;16h00m;06/01/2026 23:55;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258679;Banco de Dados - Analisar erros ou falhas;07/01/2026 12:01;16h00m;15/01/2026 15:24;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259445;Banco de Dados - Realizar DUMP;08/01/2026 16:33;16h00m;15/01/2026 19:21;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260546;Banco de Dados - Extrair Dados;12/01/2026 15:03;16h00m;15/01/2026 15:29;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267043;Banco de Dados - Realizar DUMP;26/01/2026 17:34;16h00m;27/01/2026 22:01;Executores: 3º Nível - Infraestrutura de TIC - Banco de Dados;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257210;Verificar erro no serviço de e-mail;05/01/2026 09:50;04h00m;21/01/2026 18:11;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261077;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);13/01/2026 11:25;04h00m;13/01/2026 13:35;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262251;Verificar erro no envio ou recebimento de mensagem (Exchange Online) - Automação;15/01/2026 08:41;02h00m;15/01/2026 14:46;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262326;Verificar erro no envio ou recebimento de mensagem;15/01/2026 09:43;02h00m;15/01/2026 16:51;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262382;Verificar erro no serviço de e-mail;15/01/2026 10:13;04h00m;15/01/2026 16:39;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262383;Verificar erro no serviço de e-mail;15/01/2026 10:15;04h00m;15/01/2026 15:03;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262417;Criar lista de distribuição;15/01/2026 10:34;04h00m;15/01/2026 17:42;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262420;Verificar erro no envio ou recebimento de mensagem;15/01/2026 10:37;02h00m;15/01/2026 15:28;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262436;Verificar erro no envio ou recebimento de mensagem;15/01/2026 10:44;02h00m;15/01/2026 15:27;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262489;Verificar erro no serviço de e-mail;15/01/2026 11:13;04h00m;15/01/2026 17:38;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262516;Verificar erro no envio ou recebimento de mensagem;15/01/2026 11:27;02h00m;15/01/2026 17:38;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262520;Verificar erro no envio ou recebimento de mensagem;15/01/2026 11:30;02h00m;15/01/2026 17:37;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262530;Verificar erro no envio ou recebimento de mensagem;15/01/2026 11:37;02h00m;15/01/2026 17:37;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262533;Verificar erro no envio ou recebimento de mensagem;15/01/2026 11:40;02h00m;15/01/2026 17:36;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262543;Verificar erro no serviço de e-mail;15/01/2026 11:45;04h00m;15/01/2026 17:31;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262600;Verificar erro no envio ou recebimento de mensagem;15/01/2026 12:28;02h00m;15/01/2026 17:27;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262602;Verificar erro no serviço de e-mail;15/01/2026 12:32;04h00m;15/01/2026 17:23;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262721;Verificar erro no envio ou recebimento de mensagem;15/01/2026 14:37;02h00m;15/01/2026 15:22;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262746;Verificar erro no envio ou recebimento de mensagem;15/01/2026 14:53;02h00m;15/01/2026 15:22;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263165;Verificar erro no envio ou recebimento de mensagem;16/01/2026 11:25;02h00m;21/01/2026 18:41;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265975;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 09:16;04h00m;27/01/2026 16:59;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267235;Verificar erro no envio ou recebimento de mensagem;27/01/2026 10:09;02h00m;27/01/2026 11:15;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257363;Verificar erro em computador;05/01/2026 11:05;02h00m;05/01/2026 11:26;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257384;Formatar computador;05/01/2026 11:16;08h00m;05/01/2026 15:59;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257404;Verificar erro em computador;05/01/2026 11:26;02h00m;05/01/2026 15:58;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257454;Mapear ou remover impressora - Automação;05/01/2026 11:57;08h00m;05/01/2026 15:57;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257573;Instalar ou desinstalar computador;05/01/2026 14:30;08h00m;06/01/2026 10:40;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257780;Instalar ou desinstalar computador;05/01/2026 18:38;08h00m;06/01/2026 10:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257781;Instalar ou desinstalar computador;05/01/2026 18:41;08h00m;06/01/2026 10:44;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257782;Instalar ou desinstalar computador;05/01/2026 18:42;08h00m;06/01/2026 10:44;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257783;Instalar ou desinstalar computador;05/01/2026 18:45;08h00m;06/01/2026 10:44;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258263;Instalar ou desinstalar computador;06/01/2026 15:29;08h00m;07/01/2026 10:27;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258274;Verificar erro em computador;06/01/2026 15:37;02h00m;06/01/2026 15:56;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258298;Elaborar laudo técnico de equipamento;06/01/2026 16:02;08h00m;07/01/2026 10:35;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258594;Configurar computador;07/01/2026 11:06;08h00m;07/01/2026 11:46;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258702;Verificar erro em computador;07/01/2026 12:19;02h00m;07/01/2026 13:56;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259078;Instalar ou desinstalar computador;08/01/2026 10:20;08h00m;08/01/2026 11:27;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259079;Instalar ou desinstalar computador;08/01/2026 10:20;08h00m;08/01/2026 11:28;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259380;Instalar ou desinstalar computador;08/01/2026 15:41;08h00m;09/01/2026 08:40;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259406;Verificar erro em computador;08/01/2026 15:50;02h00m;08/01/2026 16:28;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260143;Formatar computador;12/01/2026 10:07;08h00m;13/01/2026 09:55;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260162;Verificar erro em computador;12/01/2026 10:15;02h00m;12/01/2026 11:15;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260186;Instalar ou desinstalar computador;12/01/2026 10:30;08h00m;12/01/2026 11:14;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260464;Instalar ou desinstalar computador;12/01/2026 14:09;08h00m;12/01/2026 14:39;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260542;Verificar erro na plataforma Microsoft 365;12/01/2026 15:02;02h00m;12/01/2026 15:22;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260647;Verificar erro em computador;12/01/2026 16:06;02h00m;12/01/2026 16:19;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260914;Configurar computador;13/01/2026 09:59;08h00m;13/01/2026 16:57;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261379;Configurar computador;13/01/2026 14:49;08h00m;13/01/2026 16:59;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261453;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 15:33;04h00m;14/01/2026 18:25;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261757;Configurar computador;14/01/2026 10:22;08h00m;15/01/2026 09:48;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261780;Verificar erro em computador;14/01/2026 10:31;02h00m;14/01/2026 10:41;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262304;Formatar computador;15/01/2026 09:29;08h00m;15/01/2026 10:35;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262546;Verificar erro em computador;15/01/2026 11:46;02h00m;15/01/2026 14:03;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263135;Instalar ou desinstalar computador;16/01/2026 11:00;08h00m;16/01/2026 11:32;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263184;Verificar erro em computador;16/01/2026 11:38;02h00m;16/01/2026 11:53;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263192;Formatar computador;16/01/2026 11:43;08h00m;16/01/2026 14:15;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263197;Verificar erro em computador;16/01/2026 11:47;02h00m;16/01/2026 14:14;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263777;Verificar erro em computador;19/01/2026 11:34;02h00m;19/01/2026 11:54;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263810;Configurar computador;19/01/2026 11:49;08h00m;19/01/2026 14:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264350;Configurar computador;20/01/2026 11:02;08h00m;20/01/2026 11:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264353;Configurar computador;20/01/2026 11:04;08h00m;20/01/2026 11:13;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264423;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;20/01/2026 11:56;04h00m;20/01/2026 14:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264514;Instalar ou desinstalar computador;20/01/2026 14:17;08h00m;21/01/2026 15:49;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264811;Mapear impressora no computador;21/01/2026 09:07;08h00m;21/01/2026 11:54;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264821;Configurar computador;21/01/2026 09:17;08h00m;21/01/2026 15:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264919;Mapear ou remover impressora - Automação;21/01/2026 10:18;08h00m;21/01/2026 10:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265169;Instalar ou desinstalar computador;21/01/2026 14:34;08h00m;21/01/2026 14:59;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265208;Verificar erro em computador;21/01/2026 15:13;02h00m;21/01/2026 16:28;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265214;Configurar computador;21/01/2026 15:15;08h00m;21/01/2026 15:45;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265267;Mapear impressora no computador;21/01/2026 16:03;08h00m;21/01/2026 17:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265284;Configurar computador;21/01/2026 16:22;08h00m;21/01/2026 17:22;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265706;Formatar computador;22/01/2026 13:16;08h00m;23/01/2026 11:45;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266121;Mapear impressora no computador;23/01/2026 11:16;08h00m;23/01/2026 14:08;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266243;Verificar erro na plataforma Microsoft 365;23/01/2026 14:10;02h00m;23/01/2026 14:35;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266414;Verificar indisponibilidade de conexão de Internet;26/01/2026 07:38;04h00m;26/01/2026 09:00;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266446;Remanejar computador;26/01/2026 08:53;08h00m;26/01/2026 11:31;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266574;Verificar erro em computador;26/01/2026 10:12;02h00m;26/01/2026 11:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266578;Configurar computador;26/01/2026 10:14;08h00m;26/01/2026 11:29;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266667;Instalar ou desinstalar computador;26/01/2026 10:59;08h00m;26/01/2026 11:31;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266695;Verificar lentidão de conexão de Internet;26/01/2026 11:15;04h00m;26/01/2026 11:41;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266756;Verificar indisponibilidade de conexão de Internet;26/01/2026 12:18;04h00m;26/01/2026 15:29;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266879;Remanejar computador;26/01/2026 14:52;08h00m;26/01/2026 15:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266888;Verificar erro em computador;26/01/2026 14:58;02h00m;26/01/2026 15:38;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267047;Instalar ou desinstalar computador;26/01/2026 17:46;08h00m;27/01/2026 10:57;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267050;Configurar computador;26/01/2026 17:49;08h00m;27/01/2026 10:58;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267343;Configurar computador;27/01/2026 11:09;08h00m;27/01/2026 15:05;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267650;Configurar computador;27/01/2026 15:37;08h00m;27/01/2026 15:45;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267733;Instalar ou desinstalar computador;27/01/2026 16:46;08h00m;28/01/2026 11:18;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268097;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;28/01/2026 12:29;04h00m;29/01/2026 11:11;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268626;Configurar software e aplicativos;29/01/2026 11:48;04h00m;30/01/2026 09:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258573;Registrar Requisição de Mudança;07/01/2026 10:49;02h00m;08/01/2026 12:34;Administradores: Mudanças em TIC | Gestão;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258696;Registrar Requisição de Mudança;07/01/2026 12:15;02h00m;08/01/2026 13:04;Administradores: Mudanças em TIC | Gestão;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258641;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 11:33;02h00m;07/01/2026 16:35;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258646;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 11:35;02h00m;07/01/2026 16:36;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258649;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 11:36;02h00m;07/01/2026 16:37;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258665;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 11:49;02h00m;09/01/2026 16:44;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258667;Servidor Linux - Analisar erros ou falhas;07/01/2026 11:50;16h00m;09/01/2026 16:43;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258668;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 11:51;02h00m;07/01/2026 16:37;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258749;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 14:02;02h00m;09/01/2026 16:42;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258751;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 14:04;02h00m;09/01/2026 16:43;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258840;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 15:20;02h00m;07/01/2026 16:33;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258851;Aplicações - Verificar indisponibilidade em sistemas;07/01/2026 15:24;02h00m;07/01/2026 16:34;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259003;Aplicações - Verificar indisponibilidade em sistemas;08/01/2026 09:10;02h00m;09/01/2026 16:38;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259019;Aplicações - Verificar indisponibilidade em sistemas;08/01/2026 09:31;02h00m;09/01/2026 16:50;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259246;Aplicações - Verificar indisponibilidade em sistemas;08/01/2026 12:56;02h00m;09/01/2026 16:54;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259517;Aplicações - Verificar indisponibilidade em sistemas;09/01/2026 08:42;02h00m;09/01/2026 16:55;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259689;Aplicações - Verificar indisponibilidade em sistemas;09/01/2026 11:28;02h00m;09/01/2026 16:34;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+260958;Aplicações - Verificar indisponibilidade em sistemas;13/01/2026 10:24;02h00m;13/01/2026 17:16;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261266;Firewall – Alterar regras;13/01/2026 13:54;08h00m;13/01/2026 17:01;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263435;Aplicações - Verificar indisponibilidade em sistemas;16/01/2026 16:55;02h00m;26/01/2026 14:51;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263901;Aplicações - Verificar indisponibilidade em sistemas;19/01/2026 13:41;02h00m;26/01/2026 12:49;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263904;Aplicações - Verificar indisponibilidade em sistemas;19/01/2026 13:44;02h00m;26/01/2026 14:46;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266458;Aplicações - Verificar indisponibilidade em sistemas;26/01/2026 09:04;02h00m;28/01/2026 17:01;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266464;Aplicações - Verificar indisponibilidade em sistemas;26/01/2026 09:09;02h00m;26/01/2026 14:49;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266610;Aplicações - Verificar indisponibilidade em sistemas;26/01/2026 10:33;02h00m;26/01/2026 14:48;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266717;Aplicações - Verificar indisponibilidade em sistemas;26/01/2026 11:32;02h00m;26/01/2026 14:48;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+266955;Aplicações - Verificar indisponibilidade em sistemas;26/01/2026 15:39;02h00m;28/01/2026 17:06;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267510;Aplicações - Verificar indisponibilidade em sistemas;27/01/2026 13:55;02h00m;27/01/2026 17:28;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério dos Direitos Humanos e da Cidadania
+258943;Atualização Cadastral;07/01/2026 17:27;56h00m;07/01/2026 17:28;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259945;Atualização Cadastral;09/01/2026 16:42;56h00m;09/01/2026 16:43;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263530;Atualização Cadastral;19/01/2026 09:19;56h00m;19/01/2026 09:20;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263816;Atualização Cadastral;19/01/2026 11:51;56h00m;19/01/2026 11:53;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263839;Atualização Cadastral;19/01/2026 12:05;56h00m;19/01/2026 12:06;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264604;Atualização Cadastral;20/01/2026 15:27;56h00m;20/01/2026 15:28;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264611;Atualização Cadastral;20/01/2026 15:29;56h00m;20/01/2026 15:31;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+264663;Atualização Cadastral;20/01/2026 16:16;56h00m;20/01/2026 16:17;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267820;Atualização Cadastral;28/01/2026 08:54;56h00m;28/01/2026 08:55;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259839;Aplicações - Configurar servidor de aplicação;09/01/2026 14:51;16h00m;15/01/2026 09:52;Solicitantes: Virtualização | Requisição;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259841;DHCP - Criar, alterar ou excluir cadastro;09/01/2026 14:53;04h00m;09/01/2026 16:42;Executores: 3º Nível - Infraestrutura de TIC - Redes;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261420;Controladora WI-FI - Cadastrar/Excluir SSID;13/01/2026 15:14;08h00m;15/01/2026 17:06;Executores: 3º Nível - Infraestrutura de TIC - Redes;Fechada;Ministério dos Direitos Humanos e da Cidadania
+265078;SWITCH - Analisar erros ou falhas;21/01/2026 12:05;16h00m;22/01/2026 15:11;Executores: 3º Nível - Infraestrutura de TIC - Redes;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268791;SWITCH - Analisar erros ou falhas;29/01/2026 14:45;16h00m;29/01/2026 14:56;Executores: 3º Nível - Infraestrutura de TIC - Redes;Fechada;Ministério dos Direitos Humanos e da Cidadania
+259885;Verificar erro no envio ou recebimento de mensagem;09/01/2026 15:28;02h00m;12/01/2026 12:02;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Linux;Fechada;Ministério dos Direitos Humanos e da Cidadania
+268787;Servidor Linux - Configurar servidor;29/01/2026 14:42;16h00m;30/01/2026 18:42;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Linux;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261343;Aplicações - Configurar servidor de aplicação;13/01/2026 14:38;16h00m;13/01/2026 17:51;Executores: 3º Nível - Infraestrutura de TIC - Backup;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261922;Verificar erro em computador;14/01/2026 12:17;02h00m;16/01/2026 11:50;Aprovadores: Gestor de TIC - MDHC/SE/SPOA/CGTI;Fechada;Ministério dos Direitos Humanos e da Cidadania
+261924;Verificar erro em computador;14/01/2026 12:22;02h00m;16/01/2026 11:50;Aprovadores: Gestor de TIC - MDHC/SE/SPOA/CGTI;Fechada;Ministério dos Direitos Humanos e da Cidadania
+262967;Verificar erro na plataforma Microsoft 365;15/01/2026 19:22;02h00m;30/01/2026 11:37;Administradores: Infraestrutura de TIC;Fechada;Ministério dos Direitos Humanos e da Cidadania
+263450;Firewall – Alterar regras;16/01/2026 17:25;08h00m;19/01/2026 13:55;Executores: 3º Nível - Segurança de TIC - Segurança;Fechada;Ministério dos Direitos Humanos e da Cidadania
+267171;Firewall - Criar regras;27/01/2026 09:33;08h00m;29/01/2026 18:59;Executores: 3º Nível - Segurança de TIC - Segurança;Fechada;Ministério dos Direitos Humanos e da Cidadania
+257152;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 09:07;04h00m;05/01/2026 10:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+257292;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 10:25;04h00m;05/01/2026 10:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+257455;Vincular ou desvincular e-mail de caixa compartilhada;05/01/2026 11:58;04h00m;05/01/2026 12:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+257922;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);06/01/2026 10:07;04h00m;06/01/2026 11:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+258530;Reiniciar ou desbloquear de senha;07/01/2026 10:22;02h00m;07/01/2026 10:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+258651;Solicitar licença de produto Microsoft 365;07/01/2026 11:36;04h00m;13/01/2026 16:28;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259137;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 11:02;04h00m;08/01/2026 12:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259146;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 11:05;04h00m;08/01/2026 12:46;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259169;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 11:16;04h00m;08/01/2026 12:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259222;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 12:08;04h00m;08/01/2026 12:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259399;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);08/01/2026 15:48;04h00m;08/01/2026 15:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259755;Criar caixa de e-mail compartilhada;09/01/2026 13:43;08h00m;09/01/2026 13:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259761;Criar caixa de e-mail compartilhada;09/01/2026 13:50;08h00m;09/01/2026 15:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259764;Criar caixa de e-mail compartilhada;09/01/2026 13:52;08h00m;09/01/2026 15:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259767;Criar caixa de e-mail compartilhada;09/01/2026 13:55;08h00m;09/01/2026 15:12;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259769;Criar caixa de e-mail compartilhada;09/01/2026 13:57;08h00m;09/01/2026 15:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259811;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);09/01/2026 14:30;04h00m;13/01/2026 16:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+259833;Vincular ou desvincular e-mail de caixa compartilhada;09/01/2026 14:48;04h00m;09/01/2026 15:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260161;Solicitar ou revogar acesso a pasta corporativa;12/01/2026 10:15;04h00m;12/01/2026 13:27;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260236;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);12/01/2026 10:59;04h00m;13/01/2026 17:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260286;Vincular ou desvincular e-mail de caixa compartilhada;12/01/2026 11:22;04h00m;12/01/2026 11:51;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260377;Vincular ou desvincular e-mail de caixa compartilhada;12/01/2026 12:24;04h00m;14/01/2026 14:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260899;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 09:52;04h00m;13/01/2026 11:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+260938;Solicitar ou revogar acesso a pasta corporativa;13/01/2026 10:17;04h00m;13/01/2026 12:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+261485;Solicitar licença de produto Microsoft 365;13/01/2026 15:50;04h00m;15/01/2026 09:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+261551;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 16:50;04h00m;14/01/2026 12:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+261823;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 10:52;04h00m;14/01/2026 11:49;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+262048;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 14:57;04h00m;14/01/2026 15:46;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+262118;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 15:46;04h00m;14/01/2026 16:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+262319;Vincular ou desvincular e-mail de caixa compartilhada;15/01/2026 09:36;04h00m;15/01/2026 10:02;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+262331;Vincular ou desvincular e-mail de caixa compartilhada;15/01/2026 09:51;04h00m;15/01/2026 10:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+263010;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);16/01/2026 09:10;04h00m;16/01/2026 10:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+263120;Criar caixa de e-mail compartilhada;16/01/2026 10:45;08h00m;16/01/2026 11:17;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+263182;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 11:38;04h00m;16/01/2026 12:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+263183;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 11:38;04h00m;16/01/2026 12:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+263186;Vincular ou desvincular e-mail de caixa compartilhada;16/01/2026 11:39;04h00m;16/01/2026 12:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264028;Vincular ou desvincular e-mail de caixa compartilhada;19/01/2026 15:14;04h00m;19/01/2026 16:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264620;Vincular ou desvincular e-mail de caixa compartilhada;20/01/2026 15:36;04h00m;20/01/2026 16:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264623;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);20/01/2026 15:43;04h00m;20/01/2026 16:45;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264696;Vincular ou desvincular e-mail de caixa compartilhada;20/01/2026 16:49;04h00m;21/01/2026 08:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264705;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 17:03;04h00m;20/01/2026 17:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264819;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);21/01/2026 09:14;04h00m;21/01/2026 10:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264869;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);21/01/2026 09:53;04h00m;21/01/2026 10:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+264906;Criar caixa de e-mail compartilhada;21/01/2026 10:13;08h00m;21/01/2026 10:38;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265481;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 09:37;04h00m;22/01/2026 14:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265488;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);22/01/2026 09:40;04h00m;22/01/2026 10:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265603;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 11:09;04h00m;22/01/2026 12:15;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265778;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 14:57;04h00m;22/01/2026 15:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265787;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 15:03;04h00m;22/01/2026 16:04;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265802;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 15:14;04h00m;22/01/2026 15:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265947;Reiniciar ou desbloquear de senha;23/01/2026 08:46;02h00m;23/01/2026 09:30;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265952;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 08:54;04h00m;23/01/2026 10:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265956;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 08:58;04h00m;23/01/2026 10:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265957;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:00;04h00m;23/01/2026 10:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265960;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:03;04h00m;23/01/2026 10:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265962;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:05;04h00m;23/01/2026 11:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265964;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:06;04h00m;23/01/2026 10:36;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265967;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:08;04h00m;23/01/2026 10:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265968;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:09;04h00m;23/01/2026 11:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265970;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:11;04h00m;23/01/2026 09:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265972;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:12;04h00m;23/01/2026 09:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+265974;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 09:13;04h00m;23/01/2026 09:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266116;Vincular ou desvincular e-mail da lista de distribuição;23/01/2026 11:12;04h00m;23/01/2026 11:46;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266472;Alterar atributos da conta de e-mail;26/01/2026 09:13;04h00m;26/01/2026 14:10;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266563;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 10:04;04h00m;26/01/2026 12:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266590;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 10:19;04h00m;26/01/2026 12:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266958;Vincular ou desvincular e-mail de caixa compartilhada;26/01/2026 15:41;04h00m;26/01/2026 16:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+266963;Reiniciar ou desbloquear de senha;26/01/2026 15:48;02h00m;27/01/2026 08:17;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+267151;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 09:21;04h00m;27/01/2026 11:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+267160;Vincular ou desvincular e-mail de caixa compartilhada;27/01/2026 09:26;04h00m;27/01/2026 09:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+267574;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 14:48;04h00m;27/01/2026 16:27;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+267645;Reiniciar ou desbloquear de senha;27/01/2026 15:34;02h00m;27/01/2026 16:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268403;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 09:15;04h00m;29/01/2026 10:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268404;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 09:17;04h00m;29/01/2026 10:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268436;Reiniciar ou desbloquear de senha;29/01/2026 09:47;02h00m;29/01/2026 10:01;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268496;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 10:24;04h00m;29/01/2026 10:29;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268504;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 10:30;04h00m;29/01/2026 11:06;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268631;Reiniciar ou desbloquear de senha;29/01/2026 11:53;02h00m;29/01/2026 12:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268742;Reiniciar ou desbloquear de senha;29/01/2026 14:15;02h00m;29/01/2026 14:28;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268887;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 16:06;04h00m;29/01/2026 17:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268900;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 16:18;04h00m;29/01/2026 17:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+268904;Vincular ou desvincular e-mail de caixa compartilhada;29/01/2026 16:23;04h00m;29/01/2026 17:41;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério das Mulheres
+257562;Mapear ou remover impressora - Automação;05/01/2026 14:25;08h00m;06/01/2026 09:55;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+257583;Instalar ou desinstalar computador;05/01/2026 14:38;08h00m;05/01/2026 14:40;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+257587;Instalar ou desinstalar computador;05/01/2026 14:41;08h00m;05/01/2026 14:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+257593;Solicitar acesso a impressora (Adicionar impressora no perfil de usuário);05/01/2026 14:48;08h00m;05/01/2026 15:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258150;Verificar erro em computador;06/01/2026 13:43;02h00m;06/01/2026 13:47;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258542;Configurar computador;07/01/2026 10:28;08h00m;07/01/2026 11:28;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258571;Mapear ou remover impressora - Automação;07/01/2026 10:49;08h00m;07/01/2026 11:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258593;Solicitar acesso a impressora (Adicionar impressora no perfil de usuário);07/01/2026 11:04;08h00m;07/01/2026 14:41;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258595;Instalar ou desinstalar computador;07/01/2026 11:06;08h00m;08/01/2026 14:22;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258607;Instalar ou desinstalar computador;07/01/2026 11:09;08h00m;08/01/2026 14:22;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258609;Instalar ou desinstalar computador;07/01/2026 11:11;08h00m;08/01/2026 14:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258611;Instalar ou desinstalar computador;07/01/2026 11:13;08h00m;08/01/2026 14:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258615;Instalar ou desinstalar computador;07/01/2026 11:15;08h00m;08/01/2026 14:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258621;Instalar ou desinstalar computador;07/01/2026 11:18;08h00m;08/01/2026 14:24;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258622;Instalar ou desinstalar computador;07/01/2026 11:19;08h00m;08/01/2026 14:25;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258625;Instalar ou desinstalar computador;07/01/2026 11:21;08h00m;08/01/2026 14:25;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258626;Instalar ou desinstalar computador;07/01/2026 11:23;08h00m;08/01/2026 14:25;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258629;Instalar ou desinstalar computador;07/01/2026 11:26;08h00m;08/01/2026 14:21;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258635;Instalar ou desinstalar computador;07/01/2026 11:29;08h00m;08/01/2026 14:21;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258640;Instalar ou desinstalar computador;07/01/2026 11:32;08h00m;08/01/2026 14:20;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258653;Instalar ou desinstalar computador;07/01/2026 11:37;08h00m;08/01/2026 14:20;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258656;Instalar ou desinstalar computador;07/01/2026 11:40;08h00m;08/01/2026 14:19;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258657;Instalar ou desinstalar computador;07/01/2026 11:43;08h00m;08/01/2026 14:18;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258660;Instalar ou desinstalar computador;07/01/2026 11:45;08h00m;08/01/2026 14:17;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258663;Instalar ou desinstalar computador;07/01/2026 11:48;08h00m;08/01/2026 14:17;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258666;Instalar ou desinstalar computador;07/01/2026 11:50;08h00m;08/01/2026 14:16;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+258827;Verificar erro em computador;07/01/2026 15:12;02h00m;07/01/2026 15:17;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+259311;Mapear ou remover impressora - Automação;08/01/2026 14:43;08h00m;08/01/2026 15:10;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+259874;Verificar erro em computador;09/01/2026 15:21;02h00m;12/01/2026 15:09;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+259886;Remanejar computador;09/01/2026 15:32;08h00m;09/01/2026 16:04;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+259915;Remanejar computador;09/01/2026 16:04;08h00m;09/01/2026 16:08;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+260210;Configurar computador;12/01/2026 10:41;08h00m;12/01/2026 11:01;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+260250;Verificar erro em computador;12/01/2026 11:06;02h00m;12/01/2026 11:15;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+260268;Formatar computador;12/01/2026 11:16;08h00m;12/01/2026 17:59;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+260882;Instalar ou desinstalar computador;13/01/2026 09:45;08h00m;14/01/2026 11:26;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+260960;Instalar ou desinstalar computador;13/01/2026 10:27;08h00m;13/01/2026 16:48;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+261065;Formatar computador;13/01/2026 11:20;08h00m;13/01/2026 16:52;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+261747;Verificar erro em computador;14/01/2026 10:18;02h00m;14/01/2026 18:26;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262100;Verificar erro em computador;14/01/2026 15:32;02h00m;14/01/2026 15:36;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262105;Configurar computador;14/01/2026 15:37;08h00m;14/01/2026 18:21;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262202;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;14/01/2026 17:12;04h00m;15/01/2026 08:49;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262260;Instalar ou desinstalar Periféricos;15/01/2026 08:52;08h00m;15/01/2026 10:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262479;Instalar ou desinstalar computador;15/01/2026 11:06;08h00m;15/01/2026 16:31;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262575;Instalar ou desinstalar computador;15/01/2026 11:59;08h00m;15/01/2026 17:12;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262593;Instalar ou desinstalar computador;15/01/2026 12:14;08h00m;15/01/2026 15:54;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262596;Instalar ou desinstalar computador;15/01/2026 12:20;08h00m;15/01/2026 16:32;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262598;Instalar ou desinstalar computador;15/01/2026 12:25;08h00m;15/01/2026 17:13;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262609;Instalar ou desinstalar computador;15/01/2026 12:44;08h00m;15/01/2026 17:14;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262619;Instalar ou desinstalar computador;15/01/2026 13:02;08h00m;15/01/2026 16:33;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262621;Instalar ou desinstalar computador;15/01/2026 13:02;08h00m;15/01/2026 17:21;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262623;Instalar ou desinstalar computador;15/01/2026 13:04;08h00m;15/01/2026 16:33;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262626;Instalar ou desinstalar computador;15/01/2026 13:09;08h00m;15/01/2026 17:19;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262627;Instalar ou desinstalar computador;15/01/2026 13:16;08h00m;15/01/2026 17:11;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262633;Instalar ou desinstalar computador;15/01/2026 13:25;08h00m;15/01/2026 17:11;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262634;Instalar ou desinstalar computador;15/01/2026 13:25;08h00m;15/01/2026 17:08;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262638;Instalar ou desinstalar computador;15/01/2026 13:30;08h00m;15/01/2026 17:24;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262640;Instalar ou desinstalar computador;15/01/2026 13:31;08h00m;15/01/2026 17:25;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262646;Instalar ou desinstalar computador;15/01/2026 13:37;08h00m;15/01/2026 17:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262655;Verificar erro em computador;15/01/2026 13:43;02h00m;15/01/2026 17:10;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262658;Instalar ou desinstalar computador;15/01/2026 13:44;08h00m;15/01/2026 17:07;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262670;Verificar erro em computador;15/01/2026 13:48;02h00m;15/01/2026 17:10;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262672;Instalar ou desinstalar computador;15/01/2026 13:50;08h00m;15/01/2026 17:20;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262681;Instalar ou desinstalar computador;15/01/2026 13:56;08h00m;15/01/2026 17:07;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262688;Instalar ou desinstalar computador;15/01/2026 14:04;08h00m;15/01/2026 17:07;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262695;Instalar ou desinstalar computador;15/01/2026 14:13;08h00m;15/01/2026 17:06;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262706;Instalar ou desinstalar computador;15/01/2026 14:20;08h00m;16/01/2026 08:35;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262715;Instalar ou desinstalar computador;15/01/2026 14:29;08h00m;15/01/2026 16:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262718;Instalar ou desinstalar computador;15/01/2026 14:35;08h00m;15/01/2026 16:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262723;Instalar ou desinstalar computador;15/01/2026 14:37;08h00m;16/01/2026 08:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262734;Instalar ou desinstalar computador;15/01/2026 14:41;08h00m;16/01/2026 08:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262778;Instalar ou desinstalar computador;15/01/2026 15:08;08h00m;16/01/2026 08:43;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262782;Instalar ou desinstalar computador;15/01/2026 15:11;08h00m;16/01/2026 08:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262790;Instalar ou desinstalar computador;15/01/2026 15:16;08h00m;16/01/2026 08:42;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262812;Instalar ou desinstalar computador;15/01/2026 15:31;08h00m;16/01/2026 08:41;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262815;Instalar ou desinstalar computador;15/01/2026 15:32;08h00m;16/01/2026 08:38;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262825;Instalar ou desinstalar computador;15/01/2026 15:38;08h00m;15/01/2026 15:53;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262833;Instalar ou desinstalar computador;15/01/2026 15:51;08h00m;15/01/2026 15:53;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262839;Instalar ou desinstalar computador;15/01/2026 15:56;08h00m;16/01/2026 08:38;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262850;Instalar ou desinstalar computador;15/01/2026 16:01;08h00m;16/01/2026 08:36;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262855;Instalar ou desinstalar computador;15/01/2026 16:04;08h00m;16/01/2026 08:36;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262860;Instalar ou desinstalar computador;15/01/2026 16:07;08h00m;16/01/2026 08:36;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262863;Instalar ou desinstalar computador;15/01/2026 16:10;08h00m;15/01/2026 17:18;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262866;Instalar ou desinstalar computador;15/01/2026 16:12;08h00m;15/01/2026 17:17;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262880;Instalar ou desinstalar computador;15/01/2026 16:23;08h00m;15/01/2026 17:16;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262881;Instalar ou desinstalar computador;15/01/2026 16:25;08h00m;15/01/2026 17:16;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262885;Instalar ou desinstalar computador;15/01/2026 16:27;08h00m;15/01/2026 17:05;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262886;Instalar ou desinstalar computador;15/01/2026 16:28;08h00m;15/01/2026 17:15;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262891;Instalar ou desinstalar computador;15/01/2026 16:33;08h00m;15/01/2026 17:04;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262947;Formatar computador;15/01/2026 17:41;08h00m;16/01/2026 10:19;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+262993;Instalar ou desinstalar computador;16/01/2026 08:50;08h00m;16/01/2026 09:47;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263043;Instalar ou desinstalar computador;16/01/2026 09:42;08h00m;16/01/2026 09:48;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263130;Instalar ou desinstalar computador;16/01/2026 10:51;08h00m;16/01/2026 11:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263137;Instalar ou desinstalar computador;16/01/2026 11:02;08h00m;16/01/2026 11:29;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263144;Instalar ou desinstalar computador;16/01/2026 11:11;08h00m;16/01/2026 11:29;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263216;Instalar ou desinstalar computador;16/01/2026 11:59;08h00m;16/01/2026 12:31;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263233;Instalar ou desinstalar computador;16/01/2026 12:09;08h00m;16/01/2026 13:35;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263246;Instalar ou desinstalar computador;16/01/2026 12:24;08h00m;16/01/2026 12:32;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263341;Configurar computador;16/01/2026 15:12;08h00m;16/01/2026 18:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263472;Formatar computador;19/01/2026 08:20;08h00m;19/01/2026 15:27;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263662;Configurar computador;19/01/2026 10:36;08h00m;19/01/2026 15:10;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263724;Verificar erro em computador;19/01/2026 11:10;02h00m;19/01/2026 11:23;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263761;Formatar computador;19/01/2026 11:25;08h00m;19/01/2026 15:12;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263785;Verificar erro em computador;19/01/2026 11:37;02h00m;19/01/2026 12:04;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263883;Verificar erro em computador;19/01/2026 13:09;02h00m;19/01/2026 13:38;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263915;Formatar computador;19/01/2026 13:58;08h00m;20/01/2026 09:07;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+263921;Verificar erro em computador;19/01/2026 14:05;02h00m;19/01/2026 15:13;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+264141;Configurar computador;19/01/2026 16:50;08h00m;19/01/2026 17:02;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+264477;Configurar computador;20/01/2026 13:43;08h00m;20/01/2026 14:28;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+265039;Formatar computador;21/01/2026 11:25;08h00m;21/01/2026 13:55;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+265062;Mapear ou remover impressora - Automação;21/01/2026 11:47;08h00m;21/01/2026 11:54;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+265624;Mapear ou remover impressora - Automação;22/01/2026 11:19;08h00m;23/01/2026 10:26;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+265984;Mapear ou remover impressora - Automação;23/01/2026 09:24;08h00m;23/01/2026 10:26;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266050;Mapear ou remover impressora - Automação;23/01/2026 10:06;08h00m;23/01/2026 10:22;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266217;Instalar ou desinstalar computador;23/01/2026 13:12;08h00m;23/01/2026 14:57;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266280;Instalar ou desinstalar computador;23/01/2026 14:39;08h00m;23/01/2026 15:29;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266298;Remanejar computador;23/01/2026 14:57;08h00m;23/01/2026 15:06;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266317;Instalar ou desinstalar computador;23/01/2026 15:19;08h00m;23/01/2026 15:30;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266321;Instalar ou Atualizar Softwares e Aplicativos - Não licenciados;23/01/2026 15:24;04h00m;23/01/2026 15:37;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+266657;Verificar erro em computador;26/01/2026 10:57;02h00m;26/01/2026 11:05;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267154;Configurar computador;27/01/2026 09:23;08h00m;27/01/2026 09:53;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267568;Configurar computador;27/01/2026 14:44;08h00m;27/01/2026 15:07;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267840;Verificar erro em computador;28/01/2026 09:26;02h00m;28/01/2026 10:24;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267896;Configurar computador;28/01/2026 10:12;08h00m;29/01/2026 14:18;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267964;Migração/Configuração de Estação para COLABORAGOV;28/01/2026 10:55;16h00m;28/01/2026 15:49;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267982;Migração/Configuração de Estação para COLABORAGOV;28/01/2026 11:05;16h00m;28/01/2026 15:34;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267985;Migração/Configuração de Estação para COLABORAGOV;28/01/2026 11:06;16h00m;28/01/2026 15:36;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267988;Migração/Configuração de Estação para COLABORAGOV;28/01/2026 11:08;16h00m;28/01/2026 15:37;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+267994;Migração/Configuração de Estação para COLABORAGOV;28/01/2026 11:10;16h00m;28/01/2026 15:48;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268181;Mapear ou remover impressora - Automação;28/01/2026 14:39;08h00m;29/01/2026 15:50;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268311;Instalar ou desinstalar computador;28/01/2026 17:13;08h00m;28/01/2026 18:50;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268590;Instalar ou desinstalar computador;29/01/2026 11:25;08h00m;29/01/2026 15:51;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268592;Instalar ou desinstalar computador;29/01/2026 11:27;08h00m;29/01/2026 15:52;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268604;Instalar ou desinstalar computador;29/01/2026 11:34;08h00m;29/01/2026 15:51;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268619;Instalar ou desinstalar computador;29/01/2026 11:43;08h00m;29/01/2026 15:51;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268624;Migração/Configuração de Estação para COLABORAGOV;29/01/2026 11:47;16h00m;29/01/2026 15:50;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268878;Instalar ou desinstalar computador;29/01/2026 15:59;08h00m;29/01/2026 16:39;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268880;Instalar ou desinstalar computador;29/01/2026 16:01;08h00m;29/01/2026 16:04;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268890;Mapear impressora no computador;29/01/2026 16:10;08h00m;29/01/2026 17:45;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+268911;Instalar ou desinstalar computador;29/01/2026 16:26;08h00m;29/01/2026 16:33;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério das Mulheres
+257622;Atualização Cadastral;05/01/2026 15:03;56h00m;05/01/2026 15:04;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério das Mulheres
+258896;Atualização Cadastral;07/01/2026 16:17;56h00m;07/01/2026 16:18;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério das Mulheres
+264336;Atualização Cadastral;20/01/2026 10:52;56h00m;20/01/2026 10:53;Desenvolvimento: Novos Fluxos e Formulários;Fechada;Ministério das Mulheres
+257880;Bloquear ou desbloquear endereço de Internet;06/01/2026 09:41;04h00m;07/01/2026 17:44;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+257914;Verificar erro em computador;06/01/2026 10:03;02h00m;14/01/2026 18:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+258059;Verificar indisponibilidade de conexão de Internet;06/01/2026 11:29;04h00m;07/01/2026 17:28;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+258617;Verificar erro em computador;07/01/2026 11:17;02h00m;07/01/2026 17:26;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+259889;Verificar erro em computador;09/01/2026 15:34;02h00m;14/01/2026 10:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+260335;Verificar erro em computador;12/01/2026 11:47;02h00m;14/01/2026 10:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+260597;Verificar erro em computador;12/01/2026 15:30;02h00m;14/01/2026 10:15;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+261422;Verificar erro em computador;13/01/2026 15:15;02h00m;14/01/2026 10:13;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+262284;Mapear ou remover impressora - Automação;15/01/2026 09:19;08h00m;15/01/2026 10:16;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+263517;Verificar erro em computador;19/01/2026 09:13;02h00m;19/01/2026 11:54;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+263588;Configurar software e aplicativos;19/01/2026 09:54;04h00m;19/01/2026 12:17;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+263776;Verificar erro em computador;19/01/2026 11:33;02h00m;19/01/2026 16:50;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+265037;Verificar erro em computador;21/01/2026 11:24;02h00m;22/01/2026 14:35;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+266262;Mapear ou remover impressora - Automação;23/01/2026 14:25;08h00m;23/01/2026 15:51;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+266966;Instalar ou desinstalar computador;26/01/2026 15:50;08h00m;27/01/2026 17:12;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267062;Instalar ou desinstalar computador;26/01/2026 18:38;08h00m;26/01/2026 19:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267064;Instalar ou desinstalar computador;26/01/2026 18:44;08h00m;26/01/2026 19:02;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267066;Instalar ou desinstalar computador;26/01/2026 18:49;08h00m;26/01/2026 19:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267067;Instalar ou desinstalar computador;26/01/2026 18:51;08h00m;26/01/2026 19:03;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267069;Instalar ou desinstalar computador;26/01/2026 18:53;08h00m;26/01/2026 19:04;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267070;Instalar ou desinstalar computador;26/01/2026 18:56;08h00m;26/01/2026 19:08;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267071;Instalar ou desinstalar computador;26/01/2026 18:59;08h00m;26/01/2026 19:09;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267072;Instalar ou desinstalar computador;26/01/2026 19:01;08h00m;26/01/2026 19:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267073;Instalar ou desinstalar computador;26/01/2026 19:04;08h00m;27/01/2026 07:59;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267074;Instalar ou desinstalar computador;26/01/2026 19:07;08h00m;26/01/2026 19:34;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267075;Instalar ou desinstalar computador;26/01/2026 19:09;08h00m;26/01/2026 19:35;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267519;Instalar ou desinstalar computador;27/01/2026 14:08;08h00m;27/01/2026 14:27;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267520;Instalar ou desinstalar computador;27/01/2026 14:10;08h00m;27/01/2026 14:31;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267528;Instalar ou desinstalar computador;27/01/2026 14:13;08h00m;27/01/2026 14:33;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267538;Instalar ou desinstalar computador;27/01/2026 14:19;08h00m;27/01/2026 14:32;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267541;Instalar ou desinstalar computador;27/01/2026 14:22;08h00m;27/01/2026 14:25;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267547;Instalar ou desinstalar computador;27/01/2026 14:25;08h00m;27/01/2026 14:34;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267556;Instalar ou desinstalar computador;27/01/2026 14:34;08h00m;27/01/2026 15:51;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267721;Instalar ou desinstalar computador;27/01/2026 16:35;08h00m;27/01/2026 17:09;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267723;Instalar ou desinstalar computador;27/01/2026 16:38;08h00m;27/01/2026 17:10;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267727;Instalar ou desinstalar computador;27/01/2026 16:41;08h00m;27/01/2026 17:10;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+267731;Instalar ou desinstalar computador;27/01/2026 16:45;08h00m;27/01/2026 17:11;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+268050;Desinstalar Softwares e Aplicativos;28/01/2026 11:43;04h00m;30/01/2026 10:26;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério das Mulheres
+258846;Configurar computador;07/01/2026 15:22;08h00m;07/01/2026 16:40;Executores: 1º Nível;Fechada;Ministério das Mulheres
+258929;Alterar atributos da conta de e-mail;07/01/2026 16:57;04h00m;08/01/2026 10:28;Executores: 1º Nível;Fechada;Ministério das Mulheres
+260352;Dúvida e Orientações;12/01/2026 12:00;04h00m;12/01/2026 17:04;Executores: 1º Nível;Fechada;Ministério das Mulheres
+260621;Solicitar ou revogar acesso a pasta corporativa;12/01/2026 15:44;04h00m;13/01/2026 10:44;Executores: 1º Nível;Fechada;Ministério das Mulheres
+261908;Instalar ou desinstalar Periféricos;14/01/2026 11:59;08h00m;14/01/2026 12:12;Executores: 1º Nível;Fechada;Ministério das Mulheres
+262466;Configurar computador;15/01/2026 10:57;08h00m;19/01/2026 14:32;Executores: 1º Nível;Fechada;Ministério das Mulheres
+268290;Reiniciar ou desbloquear de senha;28/01/2026 16:32;02h00m;29/01/2026 10:25;Executores: 1º Nível;Fechada;Ministério das Mulheres
+262311;Verificar erro no envio ou recebimento de mensagem;15/01/2026 09:32;02h00m;15/01/2026 16:55;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério das Mulheres
+262444;Verificar erro no envio ou recebimento de mensagem;15/01/2026 10:46;02h00m;15/01/2026 15:21;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério das Mulheres
+265685;Remanejar computador;22/01/2026 12:14;08h00m;22/01/2026 14:20;Executores: 2º Nível - Distrito Federal;Fechada;Ministério das Mulheres
+257211;Criar caixa de e-mail compartilhada;05/01/2026 09:50;08h00m;05/01/2026 13:57;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257266;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);05/01/2026 10:09;04h00m;05/01/2026 11:39;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257271;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 10:13;04h00m;05/01/2026 12:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257314;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 10:36;04h00m;05/01/2026 12:26;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257430;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);05/01/2026 11:44;04h00m;05/01/2026 13:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257801;Vincular ou desvincular e-mail de caixa compartilhada;06/01/2026 08:13;04h00m;06/01/2026 08:27;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+258093;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);06/01/2026 11:51;04h00m;06/01/2026 12:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+258099;Vincular ou desvincular e-mail de caixa compartilhada;06/01/2026 11:57;04h00m;06/01/2026 13:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+258758;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);07/01/2026 14:10;04h00m;07/01/2026 14:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+258820;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);07/01/2026 15:09;04h00m;07/01/2026 15:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+258853;Reiniciar ou desbloquear de senha;07/01/2026 15:25;02h00m;07/01/2026 16:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259026;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);08/01/2026 09:37;04h00m;08/01/2026 10:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259029;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);08/01/2026 09:38;04h00m;08/01/2026 10:03;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259033;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);08/01/2026 09:40;04h00m;13/01/2026 16:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259097;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);08/01/2026 10:32;04h00m;08/01/2026 10:40;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259101;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);08/01/2026 10:34;04h00m;12/01/2026 08:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259275;Solicitar licença de produto Microsoft 365;08/01/2026 14:09;04h00m;13/01/2026 16:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259284;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);08/01/2026 14:17;04h00m;08/01/2026 14:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259316;Vincular ou desvincular e-mail de caixa compartilhada;08/01/2026 14:48;04h00m;08/01/2026 15:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259506;Reiniciar ou desbloquear de senha;09/01/2026 07:56;02h00m;09/01/2026 16:32;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259647;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);09/01/2026 10:47;04h00m;09/01/2026 11:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259650;Reiniciar ou desbloquear de senha;09/01/2026 10:49;02h00m;09/01/2026 13:33;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259737;Alterar atributos da conta de e-mail;09/01/2026 13:02;04h00m;09/01/2026 13:06;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259742;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);09/01/2026 13:18;04h00m;13/01/2026 16:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259753;Alterar atributos da conta de e-mail;09/01/2026 13:37;04h00m;09/01/2026 16:20;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+259876;Reiniciar ou desbloquear de senha;09/01/2026 15:22;02h00m;13/01/2026 08:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+260499;Solicitar ou revogar acesso a pasta corporativa;12/01/2026 14:40;04h00m;12/01/2026 18:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+260711;Alterar atributos da conta de e-mail;12/01/2026 17:14;04h00m;13/01/2026 15:17;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261438;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);13/01/2026 15:23;04h00m;13/01/2026 16:50;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261466;Reiniciar ou desbloquear de senha;13/01/2026 15:40;02h00m;13/01/2026 16:25;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261483;Vincular ou desvincular e-mail de caixa compartilhada;13/01/2026 15:49;04h00m;13/01/2026 16:36;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261547;Alterar atributos da conta de e-mail;13/01/2026 16:46;04h00m;13/01/2026 18:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261555;Alterar atributos da conta de e-mail;13/01/2026 16:57;04h00m;13/01/2026 18:08;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261563;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);13/01/2026 17:13;04h00m;13/01/2026 19:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+261879;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);14/01/2026 11:33;04h00m;14/01/2026 12:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+262001;Vincular ou desvincular e-mail de caixa compartilhada;14/01/2026 14:20;04h00m;14/01/2026 14:35;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+262012;Alterar atributos da conta de e-mail;14/01/2026 14:28;04h00m;14/01/2026 14:54;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+262054;Alterar atributos da conta de e-mail;14/01/2026 15:00;04h00m;14/01/2026 17:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+262266;Vincular ou desvincular e-mail de caixa compartilhada;15/01/2026 08:59;04h00m;15/01/2026 09:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+262412;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);15/01/2026 10:33;04h00m;15/01/2026 11:05;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+263590;Vincular ou desvincular e-mail de caixa compartilhada;19/01/2026 09:56;04h00m;19/01/2026 10:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264333;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 10:50;04h00m;20/01/2026 14:44;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264335;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 10:52;04h00m;20/01/2026 19:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264340;Alterar atributos da conta de e-mail;20/01/2026 10:53;04h00m;20/01/2026 11:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264431;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:29;04h00m;20/01/2026 12:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264432;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:31;04h00m;20/01/2026 12:55;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264434;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:32;04h00m;20/01/2026 14:21;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264435;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:35;04h00m;20/01/2026 12:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264436;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:36;04h00m;20/01/2026 12:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264438;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:38;04h00m;20/01/2026 14:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264439;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:40;04h00m;20/01/2026 14:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264441;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:42;04h00m;20/01/2026 14:34;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264443;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:43;04h00m;20/01/2026 13:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264444;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 12:45;04h00m;20/01/2026 14:37;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264539;Alterar atributos da conta de e-mail;20/01/2026 14:39;04h00m;20/01/2026 18:18;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264735;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264736;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:21;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264737;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264738;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:19;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264739;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:31;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264740;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:17;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264741;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:23;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+264742;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);20/01/2026 19:07;04h00m;20/01/2026 19:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265403;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);21/01/2026 18:51;04h00m;21/01/2026 19:00;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265516;Reiniciar ou desbloquear de senha;22/01/2026 10:11;02h00m;22/01/2026 13:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265540;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 10:26;04h00m;22/01/2026 14:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265634;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 11:28;04h00m;22/01/2026 14:59;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265758;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 14:45;04h00m;22/01/2026 15:53;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265846;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);22/01/2026 15:56;04h00m;23/01/2026 08:16;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+265848;Vincular ou desvincular e-mail de caixa compartilhada;22/01/2026 15:58;04h00m;22/01/2026 17:07;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+266315;Vincular ou desvincular e-mail de caixa compartilhada;23/01/2026 15:17;04h00m;23/01/2026 18:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+266323;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);23/01/2026 15:30;04h00m;23/01/2026 15:42;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+266846;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 14:28;04h00m;26/01/2026 16:09;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+266899;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);26/01/2026 15:07;04h00m;26/01/2026 16:52;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+267277;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 10:27;04h00m;27/01/2026 11:47;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+267322;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 10:55;04h00m;27/01/2026 11:58;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+267504;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 13:46;04h00m;27/01/2026 15:48;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+267658;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);27/01/2026 15:42;04h00m;27/01/2026 19:34;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+267941;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 10:39;04h00m;28/01/2026 13:17;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268023;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);28/01/2026 11:28;04h00m;28/01/2026 12:56;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268043;Revogar conta na plataforma Microsoft 365 (Desativar Login e E-mail);28/01/2026 11:40;04h00m;28/01/2026 12:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268094;Vincular ou desvincular e-mail de caixa compartilhada;28/01/2026 12:18;04h00m;28/01/2026 16:14;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268128;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);28/01/2026 13:51;04h00m;28/01/2026 15:11;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268216;Alterar atributos da conta de e-mail;28/01/2026 15:14;04h00m;28/01/2026 15:24;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268460;Criar conta na plataforma Microsoft 365 (Criar Login e E-mail);29/01/2026 10:01;04h00m;29/01/2026 12:22;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+268598;Alterar atributos da conta de e-mail;29/01/2026 11:31;04h00m;29/01/2026 15:06;Executores: 3º Nível - Segurança de TIC - Autenticação e Acessos;Fechada;Ministério da Igualdade Racial
+257803;Alterar atributos da conta de e-mail;06/01/2026 08:16;04h00m;06/01/2026 08:50;Executores: 1º Nível;Fechada;Ministério da Igualdade Racial
+267265;Alterar atributos da conta de e-mail;27/01/2026 10:22;04h00m;27/01/2026 12:00;Executores: 1º Nível;Fechada;Ministério da Igualdade Racial
+260497;Verificar erro no serviço de e-mail;12/01/2026 14:38;04h00m;19/01/2026 12:20;Executores: 2º Nível - Distrito Federal - Região 6;Fechada;Ministério da Igualdade Racial
+262386;Verificar erro no serviço de e-mail;15/01/2026 10:16;04h00m;15/01/2026 16:27;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério da Igualdade Racial
+262448;Verificar erro no serviço de e-mail;15/01/2026 10:47;04h00m;15/01/2026 17:39;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério da Igualdade Racial
+262572;Verificar erro no serviço de e-mail;15/01/2026 11:58;04h00m;15/01/2026 17:29;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério da Igualdade Racial
+262580;Verificar erro no serviço de e-mail;15/01/2026 12:03;04h00m;15/01/2026 17:28;Executores: 3º Nível - Infraestrutura de TIC - Mensageria;Fechada;Ministério da Igualdade Racial
+262767;Servidor Windows - Analisar ambiente;15/01/2026 15:01;16h00m;20/01/2026 16:27;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Windows;Fechada;Ministério da Igualdade Racial
+265564;Servidor Linux - Configurar servidor;22/01/2026 10:44;16h00m;27/01/2026 10:48;Executores: 3º Nível - Infraestrutura de TIC - Sistemas Operacionais - Linux;Fechada;Ministério da Igualdade Racial
+266355;Aplicações - Configurar servidor de aplicação;23/01/2026 16:19;16h00m;28/01/2026 18:02;Executores: 3º Nível - Infraestrutura de TIC - Aplicações;Fechada;Ministério da Igualdade Racial
+268149;Configurar computador;28/01/2026 14:10;08h00m;29/01/2026 11:44;Executores: 2º Nível - Distrito Federal - Região 1;Fechada;Ministério da Igualdade Racial
+268454;Reset de Senha - Automatizado;29/01/2026 09:57;02h00m;30/01/2026 09:45;Automações: Serviços Automatizados de TIC;Fechada;Ministério da Igualdade Racial
